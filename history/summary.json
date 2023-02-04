@@ -27,18 +27,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "41.33%",
-    "uptimeDay": "57.65%",
-    "uptimeWeek": "40.46%",
-    "uptimeMonth": "40.30%",
-    "uptimeYear": "41.33%",
+    "status": "down",
+    "uptime": "41.62%",
+    "uptimeDay": "58.06%",
+    "uptimeWeek": "40.52%",
+    "uptimeMonth": "40.31%",
+    "uptimeYear": "41.62%",
     "time": 624,
     "timeDay": 372,
     "timeWeek": 272,
     "timeMonth": 346,
     "timeYear": 624,
     "dailyMinutesDown": {
+      "2023-02-04": 1,
       "2023-02-03": 634,
       "2023-02-02": 638,
       "2023-02-01": 632,
@@ -174,8 +175,7 @@
       "2022-09-24": 1392,
       "2022-09-23": 550,
       "2022-09-22": 561,
-      "2022-09-21": 527,
-      "2022-09-20": 571
+      "2022-09-21": 527
     }
   },
   {
@@ -195,7 +195,7 @@
     "timeMonth": 878,
     "timeYear": 803,
     "dailyMinutesDown": {
-      "2023-02-04": 61,
+      "2023-02-04": 68,
       "2023-02-03": 848,
       "2023-02-02": 860,
       "2023-02-01": 845,
@@ -374,7 +374,7 @@
     "timeMonth": 231,
     "timeYear": 214,
     "dailyMinutesDown": {
-      "2023-02-04": 61,
+      "2023-02-04": 68,
       "2023-02-03": 1440,
       "2023-02-02": 1440,
       "2023-02-01": 1440,
