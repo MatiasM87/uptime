@@ -27,19 +27,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "49.55%",
-    "uptimeDay": "49.85%",
-    "uptimeWeek": "52.95%",
-    "uptimeMonth": "40.18%",
-    "uptimeYear": "49.55%",
+    "status": "down",
+    "uptime": "49.81%",
+    "uptimeDay": "49.93%",
+    "uptimeWeek": "52.94%",
+    "uptimeMonth": "40.17%",
+    "uptimeYear": "49.81%",
     "time": 679,
     "timeDay": 216,
     "timeWeek": 293,
     "timeMonth": 839,
     "timeYear": 679,
     "dailyMinutesDown": {
-      "2023-02-27": 673,
+      "2023-02-27": 674,
       "2023-02-26": 716,
       "2023-02-25": 720,
       "2023-02-24": 724,
@@ -174,8 +174,7 @@
       "2022-10-18": 568,
       "2022-10-17": 675,
       "2022-10-16": 1440,
-      "2022-10-15": 1374,
-      "2022-10-14": 541
+      "2022-10-15": 1374
     }
   },
   {
@@ -183,19 +182,19 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "40.04%",
-    "uptimeDay": "49.88%",
-    "uptimeWeek": "45.99%",
-    "uptimeMonth": "30.29%",
-    "uptimeYear": "40.04%",
+    "status": "down",
+    "uptime": "40.43%",
+    "uptimeDay": "49.96%",
+    "uptimeWeek": "46.62%",
+    "uptimeMonth": "30.43%",
+    "uptimeYear": "40.43%",
     "time": 845,
     "timeDay": 1207,
     "timeWeek": 1163,
     "timeMonth": 1048,
     "timeYear": 845,
     "dailyMinutesDown": {
-      "2023-02-27": 673,
+      "2023-02-27": 674,
       "2023-02-26": 716,
       "2023-02-25": 719,
       "2023-02-24": 724,
@@ -332,8 +331,7 @@
       "2022-10-16": 1440,
       "2022-10-15": 1440,
       "2022-10-14": 867,
-      "2022-10-13": 842,
-      "2022-10-12": 112
+      "2022-10-13": 110
     }
   },
   {
@@ -374,7 +372,7 @@
     "timeMonth": 160,
     "timeYear": 203,
     "dailyMinutesDown": {
-      "2023-02-27": 767,
+      "2023-02-27": 867,
       "2023-02-26": 1440,
       "2023-02-25": 1440,
       "2023-02-24": 914,
