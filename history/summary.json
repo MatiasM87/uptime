@@ -27,19 +27,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "77.91%",
-    "uptimeDay": "49.85%",
+    "status": "down",
+    "uptime": "78.10%",
+    "uptimeDay": "50.14%",
     "uptimeWeek": "50.27%",
     "uptimeMonth": "50.54%",
-    "uptimeYear": "77.91%",
+    "uptimeYear": "78.10%",
     "time": 646,
     "timeDay": 112,
     "timeWeek": 2651,
     "timeMonth": 916,
     "timeYear": 646,
     "dailyMinutesDown": {
-      "2023-05-22": 670,
+      "2023-05-22": 671,
       "2023-05-21": 721,
       "2023-05-20": 722,
       "2023-05-19": 712,
@@ -141,8 +141,7 @@
       "2023-02-12": 1440,
       "2023-02-11": 1402,
       "2023-02-10": 624,
-      "2023-02-09": 630,
-      "2023-02-08": 635
+      "2023-02-09": 630
     }
   },
   {
@@ -150,19 +149,19 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "77.56%",
-    "uptimeDay": "49.88%",
+    "status": "down",
+    "uptime": "77.81%",
+    "uptimeDay": "50.18%",
     "uptimeWeek": "50.30%",
-    "uptimeMonth": "50.54%",
-    "uptimeYear": "77.56%",
+    "uptimeMonth": "50.53%",
+    "uptimeYear": "77.81%",
     "time": 860,
     "timeDay": 952,
     "timeWeek": 1238,
     "timeMonth": 1229,
     "timeYear": 860,
     "dailyMinutesDown": {
-      "2023-05-22": 670,
+      "2023-05-22": 671,
       "2023-05-21": 721,
       "2023-05-20": 721,
       "2023-05-19": 711,
@@ -265,8 +264,7 @@
       "2023-02-11": 1440,
       "2023-02-10": 855,
       "2023-02-09": 852,
-      "2023-02-08": 853,
-      "2023-02-07": 109
+      "2023-02-08": 108
     }
   },
   {
@@ -307,7 +305,7 @@
     "timeMonth": 206,
     "timeYear": 199,
     "dailyMinutesDown": {
-      "2023-05-22": 821,
+      "2023-05-22": 861,
       "2023-05-21": 1440,
       "2023-05-20": 1440,
       "2023-05-19": 908,
