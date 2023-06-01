@@ -11,8 +11,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.40%",
     "time": 213,
-    "timeDay": 192,
-    "timeWeek": 199,
+    "timeDay": 0,
+    "timeWeek": 221,
     "timeMonth": 183,
     "timeYear": 213,
     "dailyMinutesDown": {
@@ -27,19 +27,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "80.10%",
-    "uptimeDay": "50.06%",
-    "uptimeWeek": "50.18%",
-    "uptimeMonth": "49.34%",
-    "uptimeYear": "80.10%",
+    "status": "down",
+    "uptime": "80.27%",
+    "uptimeDay": "50.19%",
+    "uptimeWeek": "50.20%",
+    "uptimeMonth": "49.33%",
+    "uptimeYear": "80.27%",
     "time": 638,
     "timeDay": 419,
     "timeWeek": 422,
     "timeMonth": 898,
     "timeYear": 638,
     "dailyMinutesDown": {
-      "2023-06-01": 671,
+      "2023-06-01": 672,
       "2023-05-31": 715,
       "2023-05-30": 712,
       "2023-05-29": 715,
@@ -137,8 +137,7 @@
       "2023-02-26": 716,
       "2023-02-25": 720,
       "2023-02-24": 724,
-      "2023-02-23": 647,
-      "2023-02-22": 633
+      "2023-02-23": 647
     }
   },
   {
@@ -146,19 +145,19 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "80.37%",
-    "uptimeDay": "50.09%",
-    "uptimeWeek": "50.22%",
+    "status": "down",
+    "uptime": "80.60%",
+    "uptimeDay": "50.22%",
+    "uptimeWeek": "50.23%",
     "uptimeMonth": "49.34%",
-    "uptimeYear": "80.37%",
+    "uptimeYear": "80.60%",
     "time": 866,
     "timeDay": 344,
     "timeWeek": 1044,
     "timeMonth": 1120,
     "timeYear": 866,
     "dailyMinutesDown": {
-      "2023-06-01": 671,
+      "2023-06-01": 672,
       "2023-05-31": 714,
       "2023-05-30": 712,
       "2023-05-29": 714,
@@ -257,8 +256,7 @@
       "2023-02-25": 719,
       "2023-02-24": 724,
       "2023-02-23": 798,
-      "2023-02-22": 859,
-      "2023-02-21": 107
+      "2023-02-22": 113
     }
   },
   {
@@ -273,8 +271,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 583,
-    "timeDay": 1119,
-    "timeWeek": 665,
+    "timeDay": 0,
+    "timeWeek": 733,
     "timeMonth": 626,
     "timeYear": 583,
     "dailyMinutesDown": {
@@ -299,7 +297,7 @@
     "timeMonth": 207,
     "timeYear": 199,
     "dailyMinutesDown": {
-      "2023-06-01": 821,
+      "2023-06-01": 862,
       "2023-05-31": 909,
       "2023-05-30": 907,
       "2023-05-29": 911,
