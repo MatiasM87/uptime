@@ -29,19 +29,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "84.23%",
+    "status": "down",
+    "uptime": "84.39%",
     "uptimeDay": "49.92%",
     "uptimeWeek": "50.22%",
     "uptimeMonth": "47.85%",
-    "uptimeYear": "84.23%",
+    "uptimeYear": "84.39%",
     "time": 624,
     "timeDay": 785,
     "timeWeek": 370,
     "timeMonth": 526,
     "timeYear": 624,
     "dailyMinutesDown": {
-      "2023-08-04": 672,
+      "2023-08-04": 673,
       "2023-08-03": 713,
       "2023-08-02": 716,
       "2023-08-01": 715,
@@ -140,8 +140,7 @@
       "2023-04-30": 723,
       "2023-04-29": 724,
       "2023-04-28": 883,
-      "2023-04-27": 714,
-      "2023-04-26": 56
+      "2023-04-27": 47
     }
   },
   {
@@ -149,19 +148,19 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "84.37%",
-    "uptimeDay": "49.95%",
-    "uptimeWeek": "50.26%",
+    "status": "down",
+    "uptime": "84.53%",
+    "uptimeDay": "49.96%",
+    "uptimeWeek": "50.25%",
     "uptimeMonth": "49.27%",
-    "uptimeYear": "84.37%",
+    "uptimeYear": "84.53%",
     "time": 916,
     "timeDay": 1019,
     "timeWeek": 1123,
     "timeMonth": 1036,
     "timeYear": 916,
     "dailyMinutesDown": {
-      "2023-08-04": 672,
+      "2023-08-04": 673,
       "2023-08-03": 713,
       "2023-08-02": 716,
       "2023-08-01": 714,
@@ -260,8 +259,7 @@
       "2023-04-30": 723,
       "2023-04-29": 724,
       "2023-04-28": 889,
-      "2023-04-27": 714,
-      "2023-04-26": 56
+      "2023-04-27": 47
     }
   },
   {
@@ -299,10 +297,10 @@
     "time": 197,
     "timeDay": 206,
     "timeWeek": 239,
-    "timeMonth": 192,
+    "timeMonth": 194,
     "timeYear": 197,
     "dailyMinutesDown": {
-      "2023-08-04": 824,
+      "2023-08-04": 863,
       "2023-08-03": 912,
       "2023-08-02": 908,
       "2023-08-01": 908,
