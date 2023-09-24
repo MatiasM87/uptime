@@ -1,7 +1,7 @@
 url: https://backoffice.greenpeace.org.ar/
-status: down
-code: 502
-responseTime: 631
-lastUpdated: 2023-09-24T19:18:12.942Z
+status: up
+code: 200
+responseTime: 387
+lastUpdated: 2023-09-24T19:23:17.424Z
 startTime: 2022-09-19T14:06:53.000Z
 generator: Upptime <https://github.com/upptime/upptime>
