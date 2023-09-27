@@ -293,16 +293,16 @@
     "url": "https://backoffice.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
-    "status": "up",
-    "uptime": "66.98%",
-    "uptimeDay": "36.71%",
-    "uptimeWeek": "26.14%",
-    "uptimeMonth": "25.46%",
-    "uptimeYear": "66.24%",
+    "status": "down",
+    "uptime": "67.16%",
+    "uptimeDay": "36.69%",
+    "uptimeWeek": "26.13%",
+    "uptimeMonth": "25.84%",
+    "uptimeYear": "66.41%",
     "time": 198,
-    "timeDay": 141,
+    "timeDay": 183,
     "timeWeek": 262,
-    "timeMonth": 204,
+    "timeMonth": 205,
     "timeYear": 195,
     "dailyMinutesDown": {
       "2023-09-27": 764,
@@ -464,8 +464,7 @@
       "2023-04-24": 911,
       "2023-04-23": 1440,
       "2023-04-22": 1440,
-      "2023-04-21": 907,
-      "2023-04-20": 88
+      "2023-04-21": 86
     }
   }
 ]
