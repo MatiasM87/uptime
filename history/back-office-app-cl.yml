@@ -1,7 +1,7 @@
 url: https://backoffice.voluntariosgreenpeace.cl/
-status: up
-code: 200
-responseTime: 388
-lastUpdated: 2023-11-14T12:55:03.516Z
+status: down
+code: 502
+responseTime: 398
+lastUpdated: 2023-11-14T21:31:16.880Z
 startTime: 2022-09-19T14:06:54.000Z
 generator: Upptime <https://github.com/upptime/upptime>
