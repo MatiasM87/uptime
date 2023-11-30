@@ -42,7 +42,7 @@
     "timeMonth": 1133,
     "timeYear": 844,
     "dailyMinutesDown": {
-      "2023-11-30": 164,
+      "2023-11-30": 170,
       "2023-11-29": 722,
       "2023-11-28": 722,
       "2023-11-27": 715,
@@ -163,7 +163,7 @@
     "timeMonth": 1334,
     "timeYear": 1033,
     "dailyMinutesDown": {
-      "2023-11-30": 164,
+      "2023-11-30": 170,
       "2023-11-29": 721,
       "2023-11-28": 721,
       "2023-11-27": 715,
@@ -292,12 +292,12 @@
     "url": "https://backoffice.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
-    "status": "up",
-    "uptime": "74.45%",
-    "uptimeDay": "36.67%",
-    "uptimeWeek": "21.67%",
-    "uptimeMonth": "22.67%",
-    "uptimeYear": "69.44%",
+    "status": "down",
+    "uptime": "74.60%",
+    "uptimeDay": "37.06%",
+    "uptimeWeek": "21.72%",
+    "uptimeMonth": "22.68%",
+    "uptimeYear": "69.62%",
     "time": 192,
     "timeDay": 192,
     "timeWeek": 202,
@@ -451,8 +451,7 @@
       "2023-07-09": 1440,
       "2023-07-08": 1440,
       "2023-07-07": 907,
-      "2023-07-06": 912,
-      "2023-07-05": 89
+      "2023-07-06": 87
     }
   }
 ]
