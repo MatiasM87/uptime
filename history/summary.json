@@ -151,7 +151,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "up",
-    "uptime": "90.82%",
+    "uptime": "90.83%",
     "uptimeDay": "54.04%",
     "uptimeWeek": "54.12%",
     "uptimeMonth": "54.86%",
@@ -289,14 +289,14 @@
     "url": "https://backoffice.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
-    "status": "up",
-    "uptime": "79.70%",
-    "uptimeDay": "36.28%",
+    "status": "down",
+    "uptime": "79.83%",
+    "uptimeDay": "36.54%",
     "uptimeWeek": "26.05%",
-    "uptimeMonth": "23.38%",
-    "uptimeYear": "71.52%",
+    "uptimeMonth": "24.57%",
+    "uptimeYear": "71.70%",
     "time": 186,
-    "timeDay": 145,
+    "timeDay": 132,
     "timeWeek": 112,
     "timeMonth": 152,
     "timeYear": 186,
@@ -440,8 +440,7 @@
       "2023-09-30": 1440,
       "2023-09-29": 910,
       "2023-09-28": 913,
-      "2023-09-27": 912,
-      "2023-09-26": 147
+      "2023-09-27": 148
     }
   }
 ]
