@@ -30,7 +30,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "up",
-    "uptime": "90.94%",
+    "uptime": "90.95%",
     "uptimeDay": "54.02%",
     "uptimeWeek": "54.10%",
     "uptimeMonth": "53.23%",
@@ -151,7 +151,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "up",
-    "uptime": "90.97%",
+    "uptime": "90.98%",
     "uptimeDay": "54.05%",
     "uptimeWeek": "54.13%",
     "uptimeMonth": "54.87%",
@@ -289,16 +289,16 @@
     "url": "https://backoffice.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
-    "status": "up",
-    "uptime": "79.93%",
-    "uptimeDay": "0.02%",
-    "uptimeWeek": "26.07%",
+    "status": "down",
+    "uptime": "80.07%",
+    "uptimeDay": "36.97%",
+    "uptimeWeek": "26.17%",
     "uptimeMonth": "23.39%",
-    "uptimeYear": "71.52%",
+    "uptimeYear": "71.70%",
     "time": 185,
-    "timeDay": 104,
-    "timeWeek": 149,
-    "timeMonth": 156,
+    "timeDay": 108,
+    "timeWeek": 147,
+    "timeMonth": 157,
     "timeYear": 185,
     "dailyMinutesDown": {
       "2024-02-19": 762,
@@ -440,8 +440,7 @@
       "2023-10-06": 915,
       "2023-10-05": 916,
       "2023-10-04": 913,
-      "2023-10-03": 923,
-      "2023-10-02": 146
+      "2023-10-03": 147
     }
   }
 ]
