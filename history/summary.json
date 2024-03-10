@@ -6,9 +6,9 @@
     "slug": "greenpeace-app",
     "status": "up",
     "uptime": "99.60%",
-    "uptimeDay": "99.50%",
-    "uptimeWeek": "97.91%",
-    "uptimeMonth": "98.74%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "97.98%",
+    "uptimeMonth": "98.76%",
     "uptimeYear": "99.84%",
     "time": 215,
     "timeDay": 167,
@@ -16,7 +16,6 @@
     "timeMonth": 217,
     "timeYear": 215,
     "dailyMinutesDown": {
-      "2024-03-10": 7,
       "2024-03-08": 29,
       "2024-03-04": 175,
       "2024-03-03": 52,
@@ -36,19 +35,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "91.44%",
-    "uptimeDay": "54.28%",
+    "status": "down",
+    "uptime": "91.53%",
+    "uptimeDay": "54.36%",
     "uptimeWeek": "53.40%",
     "uptimeMonth": "56.15%",
-    "uptimeYear": "87.37%",
-    "time": 1018,
+    "uptimeYear": "87.50%",
+    "time": 1019,
     "timeDay": 195,
     "timeWeek": 219,
     "timeMonth": 1061,
     "timeYear": 1045,
     "dailyMinutesDown": {
-      "2024-03-10": 634,
+      "2024-03-10": 635,
       "2024-03-09": 660,
       "2024-03-08": 662,
       "2024-03-07": 662,
@@ -148,8 +147,7 @@
       "2023-11-29": 722,
       "2023-11-28": 722,
       "2023-11-27": 715,
-      "2023-11-26": 716,
-      "2023-11-25": 46
+      "2023-11-26": 48
     }
   },
   {
@@ -157,12 +155,12 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "91.46%",
-    "uptimeDay": "54.31%",
+    "status": "down",
+    "uptime": "91.55%",
+    "uptimeDay": "54.40%",
     "uptimeWeek": "53.43%",
     "uptimeMonth": "56.17%",
-    "uptimeYear": "87.40%",
+    "uptimeYear": "87.54%",
     "time": 991,
     "timeDay": 519,
     "timeWeek": 497,
@@ -267,8 +265,7 @@
       "2023-12-06": 725,
       "2023-12-05": 714,
       "2023-12-04": 721,
-      "2023-12-03": 714,
-      "2023-12-02": 47
+      "2023-12-03": 47
     }
   },
   {
@@ -308,7 +305,7 @@
     "timeMonth": 166,
     "timeYear": 185,
     "dailyMinutesDown": {
-      "2024-03-10": 1394,
+      "2024-03-10": 1417,
       "2024-03-09": 1440,
       "2024-03-08": 914,
       "2024-03-07": 916,
