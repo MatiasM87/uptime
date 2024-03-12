@@ -11,8 +11,8 @@
     "uptimeMonth": "98.69%",
     "uptimeYear": "99.83%",
     "time": 216,
-    "timeDay": 266,
-    "timeWeek": 220,
+    "timeDay": 368,
+    "timeWeek": 226,
     "timeMonth": 218,
     "timeYear": 216,
     "dailyMinutesDown": {
@@ -296,16 +296,16 @@
     "url": "https://backoffice.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
-    "status": "up",
-    "uptime": "79.39%",
-    "uptimeDay": "36.06%",
+    "status": "down",
+    "uptime": "79.52%",
+    "uptimeDay": "36.05%",
     "uptimeWeek": "26.02%",
-    "uptimeMonth": "22.81%",
-    "uptimeYear": "69.52%",
-    "time": 184,
-    "timeDay": 204,
-    "timeWeek": 176,
-    "timeMonth": 169,
+    "uptimeMonth": "22.82%",
+    "uptimeYear": "69.69%",
+    "time": 185,
+    "timeDay": 268,
+    "timeWeek": 183,
+    "timeMonth": 172,
     "timeYear": 185,
     "dailyMinutesDown": {
       "2024-03-12": 771,
@@ -454,8 +454,7 @@
       "2023-10-21": 1440,
       "2023-10-20": 913,
       "2023-10-19": 916,
-      "2023-10-18": 912,
-      "2023-10-17": 145
+      "2023-10-18": 145
     }
   }
 ]
