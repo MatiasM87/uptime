@@ -39,14 +39,15 @@
     "uptimeDay": "53.80%",
     "uptimeWeek": "54.07%",
     "uptimeMonth": "54.76%",
-    "uptimeYear": "87.92%",
+    "uptimeYear": "87.90%",
     "time": 964,
     "timeDay": 318,
     "timeWeek": 318,
     "timeMonth": 1199,
     "timeYear": 924,
     "dailyMinutesDown": {
-      "2024-12-23": 642,
+      "2024-12-24": 69,
+      "2024-12-23": 665,
       "2024-12-22": 660,
       "2024-12-21": 663,
       "2024-12-20": 665,
@@ -152,17 +153,18 @@
     "slug": "inventario-app",
     "status": "down",
     "uptime": "94.50%",
-    "uptimeDay": "53.84%",
+    "uptimeDay": "53.83%",
     "uptimeWeek": "54.10%",
     "uptimeMonth": "54.73%",
-    "uptimeYear": "87.56%",
+    "uptimeYear": "87.54%",
     "time": 811,
     "timeDay": 449,
     "timeWeek": 550,
     "timeMonth": 767,
     "timeYear": 787,
     "dailyMinutesDown": {
-      "2024-12-23": 641,
+      "2024-12-24": 69,
+      "2024-12-23": 665,
       "2024-12-22": 660,
       "2024-12-21": 662,
       "2024-12-20": 665,
@@ -292,7 +294,7 @@
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "82.38%",
+    "uptimeYear": "82.39%",
     "time": 187,
     "timeDay": 242,
     "timeWeek": 190,
@@ -384,8 +386,7 @@
       "2023-12-29": 909,
       "2023-12-28": 911,
       "2023-12-27": 908,
-      "2023-12-26": 908,
-      "2023-12-25": 911
+      "2023-12-26": 908
     }
   }
 ]
