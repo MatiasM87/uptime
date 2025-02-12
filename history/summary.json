@@ -44,7 +44,7 @@
     "timeMonth": 739,
     "timeYear": 913,
     "dailyMinutesDown": {
-      "2025-02-12": 419,
+      "2025-02-12": 430,
       "2025-02-11": 663,
       "2025-02-10": 665,
       "2025-02-09": 659,
@@ -164,7 +164,7 @@
     "timeMonth": 841,
     "timeYear": 758,
     "dailyMinutesDown": {
-      "2025-02-12": 419,
+      "2025-02-12": 430,
       "2025-02-11": 652,
       "2025-02-10": 664,
       "2025-02-09": 659,
@@ -272,19 +272,19 @@
     "url": "https://backoffice.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.greenpeace.org.ar.ico",
     "slug": "back-office-app-ar",
-    "status": "down",
+    "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.25%",
+    "uptimeWeek": "99.89%",
+    "uptimeMonth": "99.98%",
     "uptimeYear": "100.00%",
-    "time": 296,
-    "timeDay": 149,
-    "timeWeek": 221,
-    "timeMonth": 229,
+    "time": 295,
+    "timeDay": 148,
+    "timeWeek": 212,
+    "timeMonth": 227,
     "timeYear": 229,
     "dailyMinutesDown": {
-      "2025-02-12": 0
+      "2025-02-12": 11
     }
   },
   {
