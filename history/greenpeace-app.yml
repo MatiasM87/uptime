@@ -1,7 +1,7 @@
 url: https://app.greenpeace.org.ar/coupon/regular/forms/registration
-status: up
-code: 200
-responseTime: 129
-lastUpdated: 2025-09-03T23:16:46.490Z
+status: down
+code: 502
+responseTime: 413
+lastUpdated: 2025-09-04T13:59:54.219Z
 startTime: 2022-09-19T14:06:51.000Z
 generator: Upptime <https://github.com/upptime/upptime>
