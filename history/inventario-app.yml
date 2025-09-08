@@ -1,7 +1,7 @@
 url: https://inventario.voluntariosgreenpeace.cl/
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2025-09-07T23:35:43.349Z
+status: up
+code: 200
+responseTime: 400
+lastUpdated: 2025-09-08T10:39:08.562Z
 startTime: 2022-09-19T14:06:52.000Z
 generator: Upptime <https://github.com/upptime/upptime>
