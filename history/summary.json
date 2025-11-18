@@ -268,19 +268,19 @@
     "url": "https://backoffice.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.greenpeace.org.ar.ico",
     "slug": "back-office-app-ar",
-    "status": "up",
+    "status": "down",
     "uptime": "99.99%",
-    "uptimeDay": "99.48%",
-    "uptimeWeek": "99.93%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "99.98%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 269,
-    "timeDay": 267,
-    "timeWeek": 246,
-    "timeMonth": 271,
+    "timeDay": 246,
+    "timeWeek": 240,
+    "timeMonth": 269,
     "timeYear": 280,
     "dailyMinutesDown": {
-      "2025-11-18": 8
+      "2025-11-18": 0
     }
   },
   {
