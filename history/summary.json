@@ -28,12 +28,12 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "96.22%",
-    "uptimeDay": "48.01%",
+    "status": "down",
+    "uptime": "96.26%",
+    "uptimeDay": "48.00%",
     "uptimeWeek": "51.07%",
     "uptimeMonth": "50.35%",
-    "uptimeYear": "87.29%",
+    "uptimeYear": "87.42%",
     "time": 553,
     "timeDay": 756,
     "timeWeek": 446,
@@ -138,8 +138,7 @@
       "2025-10-26": 663,
       "2025-10-25": 663,
       "2025-10-24": 656,
-      "2025-10-23": 662,
-      "2025-10-22": 24
+      "2025-10-23": 23
     }
   },
   {
