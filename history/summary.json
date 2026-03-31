@@ -11,8 +11,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 278,
-    "timeDay": 365,
-    "timeWeek": 316,
+    "timeDay": 354,
+    "timeWeek": 334,
     "timeMonth": 401,
     "timeYear": 296,
     "dailyMinutesDown": {
@@ -28,19 +28,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "96.31%",
-    "uptimeDay": "51.31%",
-    "uptimeWeek": "52.27%",
-    "uptimeMonth": "52.22%",
-    "uptimeYear": "86.97%",
+    "status": "down",
+    "uptime": "96.35%",
+    "uptimeDay": "54.07%",
+    "uptimeWeek": "52.52%",
+    "uptimeMonth": "52.23%",
+    "uptimeYear": "87.10%",
     "time": 445,
-    "timeDay": 364,
-    "timeWeek": 302,
-    "timeMonth": 321,
+    "timeDay": 272,
+    "timeWeek": 283,
+    "timeMonth": 318,
     "timeYear": 438,
     "dailyMinutesDown": {
-      "2026-03-31": 638,
+      "2026-03-31": 639,
       "2026-03-30": 701,
       "2026-03-29": 679,
       "2026-03-28": 677,
@@ -138,8 +138,7 @@
       "2025-12-26": 655,
       "2025-12-25": 659,
       "2025-12-24": 661,
-      "2025-12-23": 663,
-      "2025-12-22": 19
+      "2025-12-23": 22
     }
   },
   {
@@ -147,17 +146,17 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "96.41%",
-    "uptimeDay": "51.35%",
-    "uptimeWeek": "52.30%",
-    "uptimeMonth": "52.26%",
-    "uptimeYear": "87.31%",
-    "time": 765,
-    "timeDay": 885,
-    "timeWeek": 528,
-    "timeMonth": 464,
-    "timeYear": 768,
+    "status": "down",
+    "uptime": "96.44%",
+    "uptimeDay": "54.14%",
+    "uptimeWeek": "52.55%",
+    "uptimeMonth": "52.27%",
+    "uptimeYear": "87.44%",
+    "time": 766,
+    "timeDay": 1134,
+    "timeWeek": 520,
+    "timeMonth": 453,
+    "timeYear": 769,
     "dailyMinutesDown": {
       "2026-03-31": 638,
       "2026-03-30": 700,
@@ -256,8 +255,7 @@
       "2025-12-27": 656,
       "2025-12-26": 655,
       "2025-12-25": 659,
-      "2025-12-24": 661,
-      "2025-12-23": 21
+      "2025-12-24": 19
     }
   },
   {
@@ -272,9 +270,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.97%",
     "time": 297,
-    "timeDay": 444,
-    "timeWeek": 372,
-    "timeMonth": 313,
+    "timeDay": 436,
+    "timeWeek": 389,
+    "timeMonth": 314,
     "timeYear": 313,
     "dailyMinutesDown": {
       "2025-11-18": 154
@@ -292,10 +290,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.83%",
     "time": 202,
-    "timeDay": 370,
-    "timeWeek": 221,
-    "timeMonth": 207,
-    "timeYear": 212,
+    "timeDay": 305,
+    "timeWeek": 230,
+    "timeMonth": 203,
+    "timeYear": 211,
     "dailyMinutesDown": {
       "2026-02-26": 882
     }
