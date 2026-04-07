@@ -12,9 +12,9 @@
     "uptimeYear": "99.96%",
     "time": 278,
     "timeDay": 373,
-    "timeWeek": 301,
-    "timeMonth": 419,
-    "timeYear": 297,
+    "timeWeek": 293,
+    "timeMonth": 424,
+    "timeYear": 296,
     "dailyMinutesDown": {
       "2025-10-21": 16,
       "2025-09-04": 44,
@@ -28,19 +28,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "96.33%",
-    "uptimeDay": "51.74%",
+    "status": "down",
+    "uptime": "96.36%",
+    "uptimeDay": "51.70%",
     "uptimeWeek": "53.44%",
-    "uptimeMonth": "52.22%",
-    "uptimeYear": "86.96%",
+    "uptimeMonth": "52.23%",
+    "uptimeYear": "87.08%",
     "time": 452,
     "timeDay": 500,
     "timeWeek": 942,
-    "timeMonth": 423,
+    "timeMonth": 425,
     "timeYear": 441,
     "dailyMinutesDown": {
-      "2026-04-07": 673,
+      "2026-04-07": 674,
       "2026-04-06": 662,
       "2026-04-05": 658,
       "2026-04-04": 672,
@@ -138,8 +138,7 @@
       "2026-01-02": 656,
       "2026-01-01": 665,
       "2025-12-31": 657,
-      "2025-12-30": 663,
-      "2025-12-29": 20
+      "2025-12-30": 21
     }
   },
   {
@@ -147,16 +146,16 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "96.42%",
-    "uptimeDay": "51.78%",
-    "uptimeWeek": "53.47%",
+    "status": "down",
+    "uptime": "96.46%",
+    "uptimeDay": "51.76%",
+    "uptimeWeek": "53.48%",
     "uptimeMonth": "52.26%",
-    "uptimeYear": "87.30%",
+    "uptimeYear": "87.42%",
     "time": 766,
     "timeDay": 562,
     "timeWeek": 763,
-    "timeMonth": 502,
+    "timeMonth": 506,
     "timeYear": 769,
     "dailyMinutesDown": {
       "2026-04-07": 673,
@@ -256,8 +255,7 @@
       "2026-01-03": 660,
       "2026-01-02": 655,
       "2026-01-01": 665,
-      "2025-12-31": 656,
-      "2025-12-30": 21
+      "2025-12-31": 18
     }
   },
   {
@@ -273,9 +271,9 @@
     "uptimeYear": "99.97%",
     "time": 299,
     "timeDay": 837,
-    "timeWeek": 381,
+    "timeWeek": 374,
     "timeMonth": 335,
-    "timeYear": 314,
+    "timeYear": 313,
     "dailyMinutesDown": {
       "2025-11-18": 154
     }
@@ -293,8 +291,8 @@
     "uptimeYear": "99.83%",
     "time": 203,
     "timeDay": 248,
-    "timeWeek": 229,
-    "timeMonth": 215,
+    "timeWeek": 227,
+    "timeMonth": 214,
     "timeYear": 212,
     "dailyMinutesDown": {
       "2026-02-26": 882
