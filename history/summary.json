@@ -28,19 +28,19 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "96.43%",
-    "uptimeDay": "49.03%",
-    "uptimeWeek": "52.41%",
+    "status": "down",
+    "uptime": "96.46%",
+    "uptimeDay": "52.60%",
+    "uptimeWeek": "52.36%",
     "uptimeMonth": "53.31%",
-    "uptimeYear": "86.96%",
+    "uptimeYear": "87.08%",
     "time": 485,
-    "timeDay": 386,
+    "timeDay": 321,
     "timeWeek": 466,
     "timeMonth": 1644,
     "timeYear": 512,
     "dailyMinutesDown": {
-      "2026-05-14": 678,
+      "2026-05-14": 683,
       "2026-05-13": 739,
       "2026-05-12": 693,
       "2026-05-11": 649,
@@ -139,8 +139,7 @@
       "2026-02-07": 676,
       "2026-02-06": 681,
       "2026-02-05": 680,
-      "2026-02-04": 647,
-      "2026-02-03": 18
+      "2026-02-04": 12
     }
   },
   {
@@ -148,17 +147,17 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "96.45%",
-    "uptimeDay": "49.37%",
+    "status": "down",
+    "uptime": "96.49%",
+    "uptimeDay": "53.27%",
     "uptimeWeek": "53.51%",
-    "uptimeMonth": "53.48%",
-    "uptimeYear": "87.04%",
-    "time": 790,
-    "timeDay": 349,
+    "uptimeMonth": "53.49%",
+    "uptimeYear": "87.17%",
+    "time": 791,
+    "timeDay": 379,
     "timeWeek": 3575,
     "timeMonth": 1253,
-    "timeYear": 800,
+    "timeYear": 801,
     "dailyMinutesDown": {
       "2026-05-14": 673,
       "2026-05-13": 739,
@@ -259,8 +258,7 @@
       "2026-02-07": 675,
       "2026-02-06": 680,
       "2026-02-05": 680,
-      "2026-02-04": 646,
-      "2026-02-03": 18
+      "2026-02-04": 11
     }
   },
   {
@@ -277,7 +275,7 @@
     "time": 299,
     "timeDay": 133,
     "timeWeek": 145,
-    "timeMonth": 268,
+    "timeMonth": 267,
     "timeYear": 315,
     "dailyMinutesDown": {
       "2026-04-09": 59,
@@ -298,7 +296,7 @@
     "time": 202,
     "timeDay": 20,
     "timeWeek": 87,
-    "timeMonth": 158,
+    "timeMonth": 157,
     "timeYear": 209,
     "dailyMinutesDown": {
       "2026-02-26": 882
