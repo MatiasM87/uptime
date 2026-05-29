@@ -11,10 +11,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 280,
-    "timeDay": 149,
+    "timeDay": 0,
     "timeWeek": 198,
-    "timeMonth": 220,
-    "timeYear": 298,
+    "timeMonth": 213,
+    "timeYear": 299,
     "dailyMinutesDown": {
       "2025-06-26": 39,
       "2025-08-29": 90,
@@ -28,21 +28,20 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "up",
-    "uptime": "96.43%",
-    "uptimeDay": "44.90%",
-    "uptimeWeek": "48.54%",
+    "status": "down",
+    "uptime": "96.48%",
+    "uptimeDay": "48.23%",
+    "uptimeWeek": "48.49%",
     "uptimeMonth": "51.99%",
-    "uptimeYear": "86.83%",
+    "uptimeYear": "87.01%",
     "time": 488,
-    "timeDay": 325,
+    "timeDay": 339,
     "timeWeek": 444,
     "timeMonth": 1668,
     "timeYear": 520,
     "dailyMinutesDown": {
-      "2026-02-18": 1028,
-      "2026-02-17": 270,
       "2026-02-19": 683,
+      "2026-02-18": 359,
       "2026-02-20": 677,
       "2026-02-21": 950,
       "2026-02-22": 662,
@@ -140,7 +139,8 @@
       "2026-05-25": 783,
       "2026-05-26": 874,
       "2026-05-27": 794,
-      "2026-05-28": 744
+      "2026-05-28": 746,
+      "2026-05-29": 3
     }
   },
   {
@@ -148,21 +148,20 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "up",
-    "uptime": "96.46%",
-    "uptimeDay": "45.24%",
+    "status": "down",
+    "uptime": "96.50%",
+    "uptimeDay": "48.56%",
     "uptimeWeek": "48.88%",
-    "uptimeMonth": "52.42%",
-    "uptimeYear": "86.93%",
-    "time": 782,
-    "timeDay": 218,
+    "uptimeMonth": "52.43%",
+    "uptimeYear": "87.06%",
+    "time": 783,
+    "timeDay": 140,
     "timeWeek": 499,
     "timeMonth": 1303,
-    "timeYear": 807,
+    "timeYear": 808,
     "dailyMinutesDown": {
-      "2026-02-18": 696,
-      "2026-02-17": 14,
       "2026-02-19": 683,
+      "2026-02-18": 27,
       "2026-02-20": 676,
       "2026-02-21": 666,
       "2026-02-22": 661,
@@ -260,7 +259,8 @@
       "2026-05-25": 773,
       "2026-05-26": 869,
       "2026-05-27": 789,
-      "2026-05-28": 744
+      "2026-05-28": 744,
+      "2026-05-29": 0
     }
   },
   {
@@ -277,8 +277,8 @@
     "time": 299,
     "timeDay": 179,
     "timeWeek": 239,
-    "timeMonth": 246,
-    "timeYear": 315,
+    "timeMonth": 239,
+    "timeYear": 316,
     "dailyMinutesDown": {
       "2025-11-18": 154,
       "2026-04-09": 59
@@ -298,7 +298,7 @@
     "time": 200,
     "timeDay": 134,
     "timeWeek": 175,
-    "timeMonth": 149,
+    "timeMonth": 144,
     "timeYear": 208,
     "dailyMinutesDown": {
       "2026-02-26": 882
