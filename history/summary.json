@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 280,
-    "timeDay": 150,
-    "timeWeek": 229,
-    "timeMonth": 215,
+    "timeDay": 362,
+    "timeWeek": 257,
+    "timeMonth": 225,
     "timeYear": 300,
     "dailyMinutesDown": {
       "2025-06-26": 39,
@@ -29,12 +29,12 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.50%",
+    "uptime": "96.49%",
     "uptimeDay": "54.99%",
-    "uptimeWeek": "47.65%",
-    "uptimeMonth": "50.42%",
-    "uptimeYear": "87.07%",
-    "time": 522,
+    "uptimeWeek": "47.50%",
+    "uptimeMonth": "50.41%",
+    "uptimeYear": "87.02%",
+    "time": 523,
     "timeDay": 27943,
     "timeWeek": 4335,
     "timeMonth": 2514,
@@ -139,7 +139,8 @@
       "2026-05-28": 746,
       "2026-05-29": 762,
       "2026-05-30": 681,
-      "2026-05-31": 638
+      "2026-05-31": 648,
+      "2026-06-01": 226
     }
   },
   {
@@ -148,11 +149,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.50%",
+    "uptime": "96.49%",
     "uptimeDay": "55.31%",
-    "uptimeWeek": "48.04%",
-    "uptimeMonth": "50.89%",
-    "uptimeYear": "87.06%",
+    "uptimeWeek": "47.84%",
+    "uptimeMonth": "50.88%",
+    "uptimeYear": "87.01%",
     "time": 790,
     "timeDay": 6679,
     "timeWeek": 1197,
@@ -258,7 +259,8 @@
       "2026-05-28": 744,
       "2026-05-29": 754,
       "2026-05-30": 676,
-      "2026-05-31": 633
+      "2026-05-31": 644,
+      "2026-06-01": 226
     }
   },
   {
@@ -273,9 +275,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 300,
-    "timeDay": 165,
-    "timeWeek": 257,
-    "timeMonth": 240,
+    "timeDay": 416,
+    "timeWeek": 289,
+    "timeMonth": 250,
     "timeYear": 316,
     "dailyMinutesDown": {
       "2025-11-18": 154,
@@ -294,9 +296,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.83%",
     "time": 200,
-    "timeDay": 23,
-    "timeWeek": 162,
-    "timeMonth": 140,
+    "timeDay": 250,
+    "timeWeek": 181,
+    "timeMonth": 146,
     "timeYear": 208,
     "dailyMinutesDown": {
       "2026-02-26": 882
