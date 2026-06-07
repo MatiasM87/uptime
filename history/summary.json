@@ -28,17 +28,17 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "down",
-    "uptime": "96.52%",
-    "uptimeDay": "54.04%",
-    "uptimeWeek": "52.56%",
-    "uptimeMonth": "50.44%",
-    "uptimeYear": "87.05%",
+    "status": "up",
+    "uptime": "96.50%",
+    "uptimeDay": "54.05%",
+    "uptimeWeek": "52.53%",
+    "uptimeMonth": "50.43%",
+    "uptimeYear": "86.98%",
     "time": 525,
-    "timeDay": 213,
-    "timeWeek": 4483,
-    "timeMonth": 2561,
-    "timeYear": 570,
+    "timeDay": 210,
+    "timeWeek": 521,
+    "timeMonth": 1313,
+    "timeYear": 569,
     "dailyMinutesDown": {
       "2026-02-28": 666,
       "2026-02-27": 23,
@@ -140,7 +140,7 @@
       "2026-06-04": 686,
       "2026-06-05": 767,
       "2026-06-06": 659,
-      "2026-06-07": 208
+      "2026-06-07": 627
     }
   },
   {
@@ -148,17 +148,17 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "down",
-    "uptime": "96.53%",
-    "uptimeDay": "54.38%",
-    "uptimeWeek": "52.89%",
+    "status": "up",
+    "uptime": "96.51%",
+    "uptimeDay": "54.39%",
+    "uptimeWeek": "52.86%",
     "uptimeMonth": "50.95%",
-    "uptimeYear": "87.09%",
-    "time": 790,
-    "timeDay": 501,
-    "timeWeek": 1424,
-    "timeMonth": 1453,
-    "timeYear": 816,
+    "uptimeYear": "87.02%",
+    "time": 791,
+    "timeDay": 867,
+    "timeWeek": 646,
+    "timeMonth": 1445,
+    "timeYear": 817,
     "dailyMinutesDown": {
       "2026-02-28": 666,
       "2026-02-27": 22,
@@ -260,7 +260,7 @@
       "2026-06-04": 676,
       "2026-06-05": 767,
       "2026-06-06": 655,
-      "2026-06-07": 203
+      "2026-06-07": 622
     }
   },
   {
