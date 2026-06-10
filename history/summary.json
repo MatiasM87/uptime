@@ -28,16 +28,16 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "down",
-    "uptime": "96.52%",
-    "uptimeDay": "52.31%",
-    "uptimeWeek": "52.24%",
-    "uptimeMonth": "50.37%",
-    "uptimeYear": "87.05%",
+    "status": "up",
+    "uptime": "96.49%",
+    "uptimeDay": "43.99%",
+    "uptimeWeek": "50.85%",
+    "uptimeMonth": "50.02%",
+    "uptimeYear": "86.93%",
     "time": 526,
-    "timeDay": 472,
-    "timeWeek": 463,
-    "timeMonth": 1307,
+    "timeDay": 318,
+    "timeWeek": 396,
+    "timeMonth": 1292,
     "timeYear": 572,
     "dailyMinutesDown": {
       "2026-03-03": 682,
@@ -140,7 +140,7 @@
       "2026-06-07": 641,
       "2026-06-08": 688,
       "2026-06-09": 707,
-      "2026-06-10": 188
+      "2026-06-10": 807
     }
   },
   {
@@ -148,16 +148,16 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "down",
-    "uptime": "96.54%",
-    "uptimeDay": "52.65%",
-    "uptimeWeek": "52.57%",
-    "uptimeMonth": "50.71%",
-    "uptimeYear": "87.09%",
+    "status": "up",
+    "uptime": "96.50%",
+    "uptimeDay": "44.32%",
+    "uptimeWeek": "51.18%",
+    "uptimeMonth": "50.36%",
+    "uptimeYear": "86.98%",
     "time": 788,
-    "timeDay": 285,
-    "timeWeek": 602,
-    "timeMonth": 727,
+    "timeDay": 222,
+    "timeWeek": 518,
+    "timeMonth": 707,
     "timeYear": 816,
     "dailyMinutesDown": {
       "2026-03-03": 681,
@@ -260,7 +260,7 @@
       "2026-06-07": 631,
       "2026-06-08": 687,
       "2026-06-09": 704,
-      "2026-06-10": 183
+      "2026-06-10": 802
     }
   },
   {
@@ -290,7 +290,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
     "status": "up",
-    "uptime": "92.22%",
+    "uptime": "92.23%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
