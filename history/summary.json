@@ -28,11 +28,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.54%",
+    "uptime": "96.53%",
     "uptimeDay": "55.69%",
     "uptimeWeek": "53.12%",
     "uptimeMonth": "50.31%",
-    "uptimeYear": "86.95%",
+    "uptimeYear": "86.91%",
     "time": 535,
     "timeDay": 397,
     "timeWeek": 457,
@@ -139,7 +139,7 @@
       "2026-06-26": 663,
       "2026-06-27": 723,
       "2026-06-28": 653,
-      "2026-06-29": 5
+      "2026-06-29": 202
     }
   },
   {
@@ -150,9 +150,9 @@
     "status": "down",
     "uptime": "96.56%",
     "uptimeDay": "56.03%",
-    "uptimeWeek": "53.48%",
+    "uptimeWeek": "53.46%",
     "uptimeMonth": "50.91%",
-    "uptimeYear": "87.03%",
+    "uptimeYear": "86.99%",
     "time": 797,
     "timeDay": 1137,
     "timeWeek": 640,
@@ -259,7 +259,7 @@
       "2026-06-26": 654,
       "2026-06-27": 717,
       "2026-06-28": 653,
-      "2026-06-29": 0
+      "2026-06-29": 197
     }
   },
   {
@@ -275,8 +275,8 @@
     "uptimeYear": "99.96%",
     "time": 305,
     "timeDay": 427,
-    "timeWeek": 357,
-    "timeMonth": 308,
+    "timeWeek": 348,
+    "timeMonth": 312,
     "timeYear": 321,
     "dailyMinutesDown": {
       "2025-11-18": 154,
@@ -296,8 +296,8 @@
     "uptimeYear": "99.83%",
     "time": 202,
     "timeDay": 426,
-    "timeWeek": 235,
-    "timeMonth": 186,
+    "timeWeek": 230,
+    "timeMonth": 189,
     "timeYear": 205,
     "dailyMinutesDown": {
       "2026-02-26": 882
