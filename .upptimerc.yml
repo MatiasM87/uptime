@@ -17,16 +17,26 @@ sites:
     url: https://backoffice.infogreenpeace.org/
   - name: Bajemos Los Bronces
     url: https://bajemoslosbronces.cl/
+  - name: Salva las Leyes Ambientales
+    url: https://salvalasleyesambientales.org/
   - name: Builder Greenpeace AR
     url: https://builder.greenpeace.org.ar/
   - name: Greenpeace en las Escuelas
     url: https://greenpeaceenlasescuelas.org/
   - name: Middleware Consultas
     url: https://middleware-consultas.infogreenpeace.org/
+  - name: Middleware Consultas Login
+    url: https://middleware-consultas.infogreenpeace.org/login
   - name: Monitor Info Greenpeace
     url: https://monitor.infogreenpeace.org/
   - name: No a Dominga
     url: https://noadominga.cl/
+  - name: Animales en Peligro
+    url: https://animalesenpeligro.org/
+  - name: Exceso de Desmontes
+    url: https://excesodedesmontes.org/
+  - name: Protege las Ballenas
+    url: https://protegelasballenas.org/
   - name: Respeta la Amazonia
     url: https://respetalaamazonia.org/
   - name: Salvemos los Glaciares
