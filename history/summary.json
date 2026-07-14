@@ -4,23 +4,23 @@
     "url": "https://app.greenpeace.org.ar/coupon/regular/forms/registration",
     "icon": "https://icons.duckduckgo.com/ip3/app.greenpeace.org.ar.ico",
     "slug": "greenpeace-app",
-    "status": "down",
+    "status": "up",
     "uptime": "99.83%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "99.96%",
+    "uptimeDay": "94.05%",
+    "uptimeWeek": "99.15%",
+    "uptimeMonth": "99.80%",
+    "uptimeYear": "99.95%",
     "time": 286,
-    "timeDay": 177,
-    "timeWeek": 306,
-    "timeMonth": 278,
+    "timeDay": 231,
+    "timeWeek": 310,
+    "timeMonth": 279,
     "timeYear": 297,
     "dailyMinutesDown": {
       "2025-08-29": 90,
       "2025-09-04": 44,
       "2025-10-21": 16,
       "2026-04-18": 47,
-      "2026-07-14": 0
+      "2026-07-14": 86
     }
   },
   {
@@ -291,10 +291,10 @@
     "slug": "back-office-app-cl",
     "status": "down",
     "uptime": "92.43%",
-    "uptimeDay": "59.30%",
-    "uptimeWeek": "94.19%",
-    "uptimeMonth": "98.66%",
-    "uptimeYear": "99.72%",
+    "uptimeDay": "53.35%",
+    "uptimeWeek": "93.34%",
+    "uptimeMonth": "98.47%",
+    "uptimeYear": "99.70%",
     "time": 201,
     "timeDay": 174,
     "timeWeek": 176,
@@ -302,7 +302,7 @@
     "timeYear": 203,
     "dailyMinutesDown": {
       "2026-02-26": 882,
-      "2026-07-14": 586
+      "2026-07-14": 672
     }
   }
 ]
