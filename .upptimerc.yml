@@ -13,6 +13,38 @@ sites:
     url: https://backoffice.greenpeace.org.ar/
   - name: BackOffice App [CL]
     url: https://backoffice.voluntariosgreenpeace.cl/
+  - name: BackOffice Info Greenpeace
+    url: https://backoffice.infogreenpeace.org/
+  - name: Bajemos Los Bronces
+    url: https://bajemoslosbronces.cl/
+  - name: Builder Greenpeace AR
+    url: https://builder.greenpeace.org.ar/
+  - name: Greenpeace en las Escuelas
+    url: https://greenpeaceenlasescuelas.org/
+  - name: Middleware Consultas
+    url: https://middleware-consultas.infogreenpeace.org/
+  - name: Monitor Info Greenpeace
+    url: https://monitor.infogreenpeace.org/
+  - name: No a Dominga
+    url: https://noadominga.cl/
+  - name: Respeta la Amazonia
+    url: https://respetalaamazonia.org/
+  - name: Salvemos los Glaciares
+    url: https://salvemoslosglaciares.org/
+  - name: Test Middleware Consultas
+    url: https://test-middleware-consultas.infogreenpeace.org/
+  - name: UniFi Controller
+    url: https://unificontroller.voluntariosgreenpeace.cl/
+  - name: Upgrade Greenpeace AR
+    url: https://upgrade.greenpeace.ar/
+  - name: Upgrade Greenpeace CL
+    url: https://upgrade.greenpeace.cl/
+  - name: Dev App Greenpeace CL
+    url: https://www-dev.app.greenpeace.cl/
+  - name: Dev App Greenpeace CO
+    url: https://www-dev.app.greenpeace.co/
+  - name: Dev App Greenpeace AR
+    url: https://www-dev.app.greenpeace.org.ar/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
