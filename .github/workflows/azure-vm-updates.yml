@@ -37,6 +37,8 @@ jobs:
 
       - name: Generate report
         shell: pwsh
+        env:
+          AZURE_SUBSCRIPTIONS: 70b01afc-3cbb-4bfc-89ff-a30126b8daaa,ce31d5ca-bfab-4bd4-836d-de818b73f22d
         run: ./scripts/update-azure-vm-updates-report.ps1
 
       - name: Commit report data

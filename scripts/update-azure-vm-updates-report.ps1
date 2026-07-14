@@ -1,9 +1,14 @@
 param(
   [string]$OutputDir = "updates",
-  [string]$SiteDir = "updates-site"
+  [string]$SiteDir = "updates-site",
+  [string[]]$Subscriptions = @()
 )
 
 $ErrorActionPreference = "Stop"
+
+if (($Subscriptions.Count -eq 0) -and $env:AZURE_SUBSCRIPTIONS) {
+  $Subscriptions = @($env:AZURE_SUBSCRIPTIONS -split "," | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+}
 
 function ConvertTo-PlainText {
   param([object]$Value)
@@ -33,6 +38,9 @@ function HtmlEncode {
 function Invoke-GraphQuery {
   param([string]$Query)
   $oneLineQuery = (($Query -split "\r?\n") | ForEach-Object { $_.Trim() } | Where-Object { $_ }) -join " "
+  if ($Subscriptions.Count -gt 0) {
+    return (az graph query -q $oneLineQuery --subscriptions $Subscriptions --first 1000 -o json | ConvertFrom-Json).data
+  }
   return (az graph query -q $oneLineQuery --first 1000 -o json | ConvertFrom-Json).data
 }
 
