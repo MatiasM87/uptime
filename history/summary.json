@@ -4,22 +4,23 @@
     "url": "https://app.greenpeace.org.ar/coupon/regular/forms/registration",
     "icon": "https://icons.duckduckgo.com/ip3/app.greenpeace.org.ar.ico",
     "slug": "greenpeace-app",
-    "status": "up",
+    "status": "down",
     "uptime": "99.83%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 286,
-    "timeDay": 202,
-    "timeWeek": 328,
-    "timeMonth": 282,
+    "timeDay": 177,
+    "timeWeek": 306,
+    "timeMonth": 278,
     "timeYear": 297,
     "dailyMinutesDown": {
       "2025-08-29": 90,
       "2025-09-04": 44,
       "2025-10-21": 16,
-      "2026-04-18": 47
+      "2026-04-18": 47,
+      "2026-07-14": 0
     }
   },
   {
@@ -31,12 +32,12 @@
     "uptime": "96.53%",
     "uptimeDay": "50.83%",
     "uptimeWeek": "53.11%",
-    "uptimeMonth": "51.45%",
+    "uptimeMonth": "51.47%",
     "uptimeYear": "86.73%",
     "time": 544,
     "timeDay": 647,
     "timeWeek": 512,
-    "timeMonth": 491,
+    "timeMonth": 495,
     "timeYear": 599,
     "dailyMinutesDown": {
       "2026-04-06": 662,
@@ -151,12 +152,12 @@
     "uptime": "96.55%",
     "uptimeDay": "51.16%",
     "uptimeWeek": "53.45%",
-    "uptimeMonth": "52.21%",
+    "uptimeMonth": "52.24%",
     "uptimeYear": "86.84%",
     "time": 808,
     "timeDay": 509,
     "timeWeek": 759,
-    "timeMonth": 1040,
+    "timeMonth": 1064,
     "timeYear": 846,
     "dailyMinutesDown": {
       "2026-04-06": 661,
@@ -289,11 +290,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/backoffice.voluntariosgreenpeace.cl.ico",
     "slug": "back-office-app-cl",
     "status": "down",
-    "uptime": "92.44%",
-    "uptimeDay": "70.57%",
-    "uptimeWeek": "95.80%",
-    "uptimeMonth": "99.03%",
-    "uptimeYear": "99.75%",
+    "uptime": "92.43%",
+    "uptimeDay": "59.30%",
+    "uptimeWeek": "94.19%",
+    "uptimeMonth": "98.66%",
+    "uptimeYear": "99.72%",
     "time": 201,
     "timeDay": 174,
     "timeWeek": 176,
@@ -301,7 +302,7 @@
     "timeYear": 203,
     "dailyMinutesDown": {
       "2026-02-26": 882,
-      "2026-07-14": 424
+      "2026-07-14": 586
     }
   }
 ]
