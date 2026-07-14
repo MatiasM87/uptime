@@ -1,0 +1,64 @@
+name: Azure VM Updates Report
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Static Site CI"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.repository }}-${{ github.ref_name }}-azure-vm-updates
+  cancel-in-progress: false
+
+jobs:
+  report:
+    name: Generate Azure VM updates report
+    runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name || 'master' }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Ensure Azure Resource Graph extension
+        run: az extension add --name resource-graph --yes
+
+      - name: Generate report
+        shell: pwsh
+        run: ./scripts/update-azure-vm-updates-report.ps1
+
+      - name: Commit report data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updates/azure-vm-updates.md updates/azure-vm-updates.json
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+          else
+            git commit -m "Update Azure VM updates report [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME:-master}"
+            git push origin "HEAD:${GITHUB_REF_NAME:-master}"
+          fi
+
+      - name: Publish VM updates page
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_PAT || github.token }}
+          publish_dir: updates-site
+          destination_dir: vm-updates
+          keep_files: true
+          user_name: "github-actions[bot]"
+          user_email: "41898282+github-actions[bot]@users.noreply.github.com"

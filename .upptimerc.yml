@@ -58,6 +58,8 @@ status-website:
   navbar:
     - title: Status
       href: /
+    - title: VM Updates
+      href: /uptime/vm-updates/
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
