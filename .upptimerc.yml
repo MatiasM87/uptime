@@ -29,6 +29,10 @@ sites:
     url: https://middleware-consultas.infogreenpeace.org/login
   - name: Monitor Info Greenpeace
     url: https://monitor.infogreenpeace.org/
+  - name: Hub Data Info Greenpeace
+    url: https://hub.data.infogreenpeace.org/browser
+  - name: Dev Upgrade Info Greenpeace
+    url: https://dev-upgrade.infogreenpeace.org/
   - name: No a Dominga
     url: https://noadominga.cl/
   - name: Animales en Peligro
