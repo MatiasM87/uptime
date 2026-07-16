@@ -44,6 +44,58 @@ function Invoke-GraphQuery {
   return (az graph query -q $oneLineQuery --first 1000 -o json | ConvertFrom-Json).data
 }
 
+function Invoke-SubscriptionMonthToDateCost {
+  param([string]$SubscriptionId)
+
+  $body = @{
+    type = "ActualCost"
+    timeframe = "MonthToDate"
+    dataset = @{
+      granularity = "None"
+      aggregation = @{
+        totalCost = @{
+          name = "PreTaxCost"
+          function = "Sum"
+        }
+      }
+    }
+  } | ConvertTo-Json -Depth 10
+
+  $bodyPath = Join-Path ([System.IO.Path]::GetTempPath()) "azure-cost-query-$SubscriptionId.json"
+  $body | Set-Content -Path $bodyPath -Encoding UTF8
+
+  $url = "https://management.azure.com/subscriptions/$SubscriptionId/providers/Microsoft.CostManagement/query?api-version=2023-03-01"
+  $response = az rest --method post --url $url --headers "Content-Type=application/json" --body "@$bodyPath" -o json | ConvertFrom-Json
+  $row = @($response.properties.rows)[0]
+
+  if (-not $row) {
+    return [pscustomobject]@{
+      subscriptionId = $SubscriptionId
+      cost = 0.0
+      currency = ""
+    }
+  }
+
+  return [pscustomobject]@{
+    subscriptionId = $SubscriptionId
+    cost = [double]$row[0]
+    currency = [string]$row[1]
+  }
+}
+
+function Format-Currency {
+  param(
+    [double]$Amount,
+    [string]$Currency
+  )
+
+  if (-not $Currency) {
+    return ""
+  }
+
+  return ("{0} {1:N2}" -f $Currency, $Amount)
+}
+
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 New-Item -ItemType Directory -Force -Path $SiteDir | Out-Null
 
@@ -100,6 +152,32 @@ Resources
 $assessments = @(Invoke-GraphQuery $assessmentQuery)
 $patchSummaries = @(Invoke-GraphQuery $patchQuery)
 $vms = @(Invoke-GraphQuery $vmQuery)
+
+$costRows = @()
+$costWarnings = @()
+foreach ($subscriptionId in $Subscriptions) {
+  try {
+    $costRows += Invoke-SubscriptionMonthToDateCost -SubscriptionId $subscriptionId
+  }
+  catch {
+    $costWarnings += "Cost query failed for ${subscriptionId}: $($_.Exception.Message)"
+  }
+}
+
+$costCurrencies = @($costRows | Where-Object currency | Select-Object -ExpandProperty currency -Unique)
+$costCurrency = if ($costCurrencies.Count -eq 1) { $costCurrencies[0] } elseif ($costCurrencies.Count -gt 1) { "mixed" } else { "" }
+$monthlyAzureCost = if ($costRows.Count -gt 0 -and $costCurrency -ne "mixed") {
+  [double](($costRows | Measure-Object cost -Sum).Sum)
+} else {
+  0.0
+}
+$monthlyAzureCostDisplay = if ($costRows.Count -gt 0 -and $costCurrency -ne "mixed") {
+  Format-Currency -Amount $monthlyAzureCost -Currency $costCurrency
+} elseif ($costCurrency -eq "mixed") {
+  "Mixed currencies"
+} else {
+  "Unavailable"
+}
 
 $patchByKey = @{}
 foreach ($patch in $patchSummaries) {
@@ -181,6 +259,12 @@ $summary = [pscustomobject]@{
   totalSecurity = ($rows | Measure-Object security -Sum).Sum
   totalCritical = ($rows | Measure-Object critical -Sum).Sum
   totalPendingPatches = ($rows | Measure-Object pendingPatches -Sum).Sum
+  monthlyAzureCost = [math]::Round($monthlyAzureCost, 2)
+  monthlyAzureCostCurrency = $costCurrency
+  monthlyAzureCostDisplay = $monthlyAzureCostDisplay
+  monthlyAzureCostScope = "MonthToDate ActualCost PreTaxCost across configured subscriptions"
+  monthlyAzureCostSubscriptions = $costRows
+  monthlyAzureCostWarnings = $costWarnings
   rows = $rows
 }
 
@@ -208,6 +292,7 @@ $md.Add("| Reboot pending | $($summary.rebootPending) |")
 $md.Add("| Assessment warnings/errors | $($summary.assessmentWarnings) |")
 $md.Add("| Assessment not succeeded | $($summary.assessmentAttention) |")
 $md.Add("| VMs with Ubuntu ESM required patches | $($summary.esmRequiredVMs) |")
+$md.Add("| Costo mensual AZ acumulado | $($summary.monthlyAzureCostDisplay) |")
 $md.Add("| Total security updates | $($summary.totalSecurity) |")
 $md.Add("| Total critical updates | $($summary.totalCritical) |")
 $md.Add("| Total pending patches listed | $($summary.totalPendingPatches) |")
@@ -273,7 +358,7 @@ $html = @"
     h1 { margin:0; font-size:26px; }
     p { margin:6px 0 0; color:var(--muted); }
     main { padding:18px 0 36px; }
-    .metrics { display:grid; grid-template-columns:repeat(6, minmax(0, 1fr)); gap:10px; margin-bottom:14px; }
+    .metrics { display:grid; grid-template-columns:repeat(7, minmax(0, 1fr)); gap:10px; margin-bottom:14px; }
     .metric { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:13px; }
     .metric span { display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
     .metric strong { display:block; margin-top:6px; font-size:24px; }
@@ -310,6 +395,7 @@ $html = @"
       <article class="metric"><span>Updates pending</span><strong>$($summary.updatesPending)</strong></article>
       <article class="metric"><span>Security</span><strong>$($summary.totalSecurity)</strong></article>
       <article class="metric"><span>ESM required VMs</span><strong>$($summary.esmRequiredVMs)</strong></article>
+      <article class="metric"><span>Costo mensual AZ</span><strong>$(HtmlEncode $summary.monthlyAzureCostDisplay)</strong></article>
       <article class="metric"><span>Warnings</span><strong>$($summary.assessmentWarnings)</strong></article>
     </section>
     <section class="table">
