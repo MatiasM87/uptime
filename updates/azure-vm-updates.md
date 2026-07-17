@@ -1,6 +1,6 @@
 # Azure VM Updates
 
-Generated: 2026-07-17 20:26:35 UTC
+Generated: 2026-07-17 20:32:23 UTC
 
 Source: Azure Resource Graph patchassessmentresources. This report is read-only: it does not install patches and does not reboot VMs.
 
@@ -29,7 +29,7 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | Webserver-Ar-Dev | Linux | assessment_warning | 186 | 0 | 0 | 186 | False | 2026-07-17T02:07:12Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | snipe-inventario-srv | Linux | assessment_warning | 154 | 0 | 0 | 154 | False | 2026-07-17T10:32:14Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Greenpos-Chile-srv | Linux | assessment_warning | 141 | 0 | 0 | 141 | False | 2026-07-17T14:09:01Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| FGARGv2 | Linux | assessment_warning | 138 | 0 | 0 | 138 | False | 2026-07-17T03:05:07Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| FGARGv2 | Linux | assessment_warning | 138 | 0 | 0 | 138 | False | 2026-07-17T14:06:00Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | middleware-integracion-prod-srv | Linux | updates_pending | 12 | 0 | 6 | 0 | False | 2026-07-17T10:54:32Z |  |
 | salvemoslosglaciares-srv | Linux | assessment_warning | 12 | 0 | 6 | 9 | False | 2026-07-17T02:10:06Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | migracion-hubspotmagma-srv | Linux | assessment_warning | 12 | 0 | 3 | 9 | False | 2026-07-17T02:13:47Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
