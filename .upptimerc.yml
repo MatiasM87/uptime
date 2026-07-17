@@ -65,6 +65,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   #cname: demo.upptime.js.org
   baseUrl: /uptime
+  themeUrl: https://raw.githubusercontent.com/MatiasM87/uptime/master/assets/greenpeace-monitor.css
   logoUrl: https://raw.githubusercontent.com/MatiasM87/uptime/master/assets/upptime-icon.svg
   name: Estado de Servicios Greenpeace
   introTitle: "**Estado de Servicios de Greenpeace**"
