@@ -1,6 +1,6 @@
 # Azure VM Updates
 
-Generated: 2026-07-18 17:35:10 UTC
+Generated: 2026-07-18 17:35:51 UTC
 
 Source: Azure Resource Graph patchassessmentresources. This report is read-only: it does not install patches and does not reboot VMs.
 
