@@ -29,6 +29,7 @@
     .metric span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
+    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(5, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong, .action1 .metric:nth-child(4) strong { color:var(--bad); }.action1 .metric:nth-child(5) strong { color:var(--warn); }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -47,8 +48,8 @@
     .notes { max-width:360px; color:var(--muted); }
     footer { color:var(--muted); font-size:12px; margin-top:14px; }
     a { color:var(--blue); }
-    @media (max-width: 900px) { .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
-    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
+    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
   </style>
 </head>
 <body>
@@ -69,7 +70,7 @@
     <section class="page-head">
       <h1>Azure VM Updates</h1>
       <p>Read-only daily patch assessment report. No installs, no reboots.</p>
-      <p class="generated">Generated: 2026-07-18 12:58:27 UTC</p>
+      <p class="generated">Generated: 2026-07-18 17:30:35 UTC</p>
     </section>
     <section class="metrics">
       <article class="metric"><span>VMs assessed</span><strong>21</strong></article>
@@ -77,8 +78,21 @@
       <article class="metric"><span>Updates pending</span><strong>5</strong></article>
       <article class="metric"><span>Security</span><strong>912</strong></article>
       <article class="metric"><span>ESM required VMs</span><strong>10</strong></article>
-      <article class="metric"><span>Costo mensual AZ</span><strong>USD 1,056.65</strong></article>
+      <article class="metric"><span>Costo mensual AZ</span><strong>USD 1,064.34</strong></article>
       <article class="metric"><span>Warnings</span><strong>9</strong></article>
+    </section>
+    <section class="action1">
+      <div class="action1-head">
+        <h2>Action1 endpoint security</h2>
+        <p>82 Windows, 5 macOS. Data: 07/18/2026 17:30:25</p>
+      </div>
+      <div class="metrics">
+        <article class="metric"><span>Managed endpoints</span><strong>87</strong></article>
+        <article class="metric"><span>Connected now</span><strong>3</strong></article>
+        <article class="metric"><span>Critical patches pending</span><strong>83</strong></article>
+        <article class="metric"><span>Critical vulnerability findings</span><strong>3049</strong></article>
+        <article class="metric"><span>Reboots pending</span><strong>10</strong></article>
+      </div>
     </section>
     <section class="table">
       <div class="table-head">
@@ -101,7 +115,7 @@
           <td class="num">59</td>
           <td class="num">186</td>
           <td>False</td>
-          <td>2026-07-17T15:28:15Z</td>
+          <td>2026-07-18T13:42:16Z</td>
           <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/26.core.log</td>
         </tr>
         <tr>
@@ -125,7 +139,7 @@
           <td class="num">0</td>
           <td class="num">154</td>
           <td>False</td>
-          <td>2026-07-17T10:32:14Z</td>
+          <td>2026-07-18T10:32:10Z</td>
           <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/24.core.log</td>
         </tr>
         <tr>
@@ -149,7 +163,7 @@
           <td class="num">0</td>
           <td class="num">138</td>
           <td>False</td>
-          <td>2026-07-17T14:06:00Z</td>
+          <td>2026-07-18T12:10:08Z</td>
           <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/469.core.log</td>
         </tr>
         <tr>
@@ -161,7 +175,7 @@
           <td class="num">6</td>
           <td class="num">0</td>
           <td>False</td>
-          <td>2026-07-17T10:54:32Z</td>
+          <td>2026-07-18T09:04:36Z</td>
           <td class="notes"></td>
         </tr>
         <tr>
@@ -221,7 +235,7 @@
           <td class="num">2</td>
           <td class="num">0</td>
           <td>False</td>
-          <td>2026-07-17T14:16:15Z</td>
+          <td>2026-07-18T12:17:34Z</td>
           <td class="notes"></td>
         </tr>
         <tr>
