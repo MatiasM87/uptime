@@ -39,14 +39,18 @@ jobs:
         shell: pwsh
         env:
           AZURE_SUBSCRIPTIONS: 70b01afc-3cbb-4bfc-89ff-a30126b8daaa,ce31d5ca-bfab-4bd4-836d-de818b73f22d
-        run: ./scripts/update-azure-vm-updates-report.ps1
+          ACTION1_CLIENT_ID: ${{ secrets.ACTION1_CLIENT_ID }}
+          ACTION1_CLIENT_SECRET: ${{ secrets.ACTION1_CLIENT_SECRET }}
+        run: |
+          ./scripts/update-action1-executive-report.ps1
+          ./scripts/update-azure-vm-updates-report.ps1
 
       - name: Commit report data
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add updates/azure-vm-updates.md updates/azure-vm-updates.json
+          git add updates/azure-vm-updates.md updates/azure-vm-updates.json updates/action1-executive.json
           if git diff --cached --quiet; then
             echo "No report changes to commit."
           else

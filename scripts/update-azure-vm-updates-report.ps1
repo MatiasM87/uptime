@@ -99,6 +99,25 @@ function Format-Currency {
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 New-Item -ItemType Directory -Force -Path $SiteDir | Out-Null
 
+$action1Path = Join-Path $OutputDir "action1-executive.json"
+$action1Summary = if (Test-Path $action1Path) {
+  Get-Content $action1Path -Raw | ConvertFrom-Json
+} else {
+  [pscustomobject]@{
+    generatedAt = ""
+    totalEndpoints = 0
+    connectedEndpoints = 0
+    disconnectedEndpoints = 0
+    rebootPending = 0
+    endpointsWithCriticalUpdates = 0
+    criticalMissingUpdates = 0
+    endpointsWithCriticalVulnerabilities = 0
+    criticalVulnerabilityFindings = 0
+    windowsEndpoints = 0
+    macEndpoints = 0
+  }
+}
+
 $assessmentQuery = @"
 patchassessmentresources
 | where type == 'microsoft.compute/virtualmachines/patchassessmentresults'
@@ -373,6 +392,7 @@ $html = @"
     .metric span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
+    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(5, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong, .action1 .metric:nth-child(4) strong { color:var(--bad); }.action1 .metric:nth-child(5) strong { color:var(--warn); }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -391,8 +411,8 @@ $html = @"
     .notes { max-width:360px; color:var(--muted); }
     footer { color:var(--muted); font-size:12px; margin-top:14px; }
     a { color:var(--blue); }
-    @media (max-width: 900px) { .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
-    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
+    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
   </style>
 </head>
 <body>
@@ -423,6 +443,19 @@ $html = @"
       <article class="metric"><span>ESM required VMs</span><strong>$($summary.esmRequiredVMs)</strong></article>
       <article class="metric"><span>Costo mensual AZ</span><strong>$(HtmlEncode $summary.monthlyAzureCostDisplay)</strong></article>
       <article class="metric"><span>Warnings</span><strong>$($summary.assessmentWarnings)</strong></article>
+    </section>
+    <section class="action1">
+      <div class="action1-head">
+        <h2>Action1 endpoint security</h2>
+        <p>$(HtmlEncode $action1Summary.windowsEndpoints) Windows, $(HtmlEncode $action1Summary.macEndpoints) macOS. Data: $(HtmlEncode $action1Summary.generatedAt)</p>
+      </div>
+      <div class="metrics">
+        <article class="metric"><span>Managed endpoints</span><strong>$(HtmlEncode $action1Summary.totalEndpoints)</strong></article>
+        <article class="metric"><span>Connected now</span><strong>$(HtmlEncode $action1Summary.connectedEndpoints)</strong></article>
+        <article class="metric"><span>Critical patches pending</span><strong>$(HtmlEncode $action1Summary.criticalMissingUpdates)</strong></article>
+        <article class="metric"><span>Critical vulnerability findings</span><strong>$(HtmlEncode $action1Summary.criticalVulnerabilityFindings)</strong></article>
+        <article class="metric"><span>Reboots pending</span><strong>$(HtmlEncode $action1Summary.rebootPending)</strong></article>
+      </div>
     </section>
     <section class="table">
       <div class="table-head">
