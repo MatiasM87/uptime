@@ -29,7 +29,7 @@
     .metric span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
-    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(5, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong, .action1 .metric:nth-child(4) strong { color:var(--bad); }.action1 .metric:nth-child(5) strong { color:var(--warn); }
+    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(4, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong { color:var(--bad); }.action1 .metric:nth-child(4) strong { color:var(--warn); }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -70,7 +70,7 @@
     <section class="page-head">
       <h1>Azure VM Updates</h1>
       <p>Read-only daily patch assessment report. No installs, no reboots.</p>
-      <p class="generated">Generated: 2026-07-18 17:35:10 UTC</p>
+      <p class="generated">Generated: 2026-07-18 17:35:51 UTC</p>
     </section>
     <section class="metrics">
       <article class="metric"><span>VMs assessed</span><strong>21</strong></article>
@@ -84,13 +84,12 @@
     <section class="action1">
       <div class="action1-head">
         <h2>Action1 endpoint security</h2>
-        <p>82 Windows, 5 macOS. Data: 07/18/2026 17:35:03</p>
+        <p>82 Windows, 5 macOS. Data: 07/18/2026 17:35:45</p>
       </div>
       <div class="metrics">
         <article class="metric"><span>Managed endpoints</span><strong>87</strong></article>
         <article class="metric"><span>Connected now</span><strong>6</strong></article>
         <article class="metric"><span>Critical patches pending</span><strong>83</strong></article>
-        <article class="metric"><span>Critical vulnerability findings</span><strong>3049</strong></article>
         <article class="metric"><span>Reboots pending</span><strong>10</strong></article>
       </div>
     </section>
