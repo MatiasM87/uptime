@@ -111,8 +111,6 @@ $action1Summary = if (Test-Path $action1Path) {
     rebootPending = 0
     endpointsWithCriticalUpdates = 0
     criticalMissingUpdates = 0
-    endpointsWithCriticalVulnerabilities = 0
-    criticalVulnerabilityFindings = 0
     windowsEndpoints = 0
     macEndpoints = 0
   }
@@ -392,7 +390,7 @@ $html = @"
     .metric span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
-    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(5, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong, .action1 .metric:nth-child(4) strong { color:var(--bad); }.action1 .metric:nth-child(5) strong { color:var(--warn); }
+    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(4, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong { color:var(--bad); }.action1 .metric:nth-child(4) strong { color:var(--warn); }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -453,7 +451,6 @@ $html = @"
         <article class="metric"><span>Managed endpoints</span><strong>$(HtmlEncode $action1Summary.totalEndpoints)</strong></article>
         <article class="metric"><span>Connected now</span><strong>$(HtmlEncode $action1Summary.connectedEndpoints)</strong></article>
         <article class="metric"><span>Critical patches pending</span><strong>$(HtmlEncode $action1Summary.criticalMissingUpdates)</strong></article>
-        <article class="metric"><span>Critical vulnerability findings</span><strong>$(HtmlEncode $action1Summary.criticalVulnerabilityFindings)</strong></article>
         <article class="metric"><span>Reboots pending</span><strong>$(HtmlEncode $action1Summary.rebootPending)</strong></article>
       </div>
     </section>
