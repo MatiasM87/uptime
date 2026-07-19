@@ -38,10 +38,24 @@ function HtmlEncode {
 function Invoke-GraphQuery {
   param([string]$Query)
   $oneLineQuery = (($Query -split "\r?\n") | ForEach-Object { $_.Trim() } | Where-Object { $_ }) -join " "
-  if ($Subscriptions.Count -gt 0) {
-    return (az graph query -q $oneLineQuery --subscriptions $Subscriptions --first 1000 -o json | ConvertFrom-Json).data
+  for ($attempt = 1; $attempt -le 5; $attempt++) {
+    if ($Subscriptions.Count -gt 0) {
+      $result = az graph query -q $oneLineQuery --subscriptions $Subscriptions --first 1000 -o json 2>&1
+    } else {
+      $result = az graph query -q $oneLineQuery --first 1000 -o json 2>&1
+    }
+
+    if ($LASTEXITCODE -eq 0) {
+      return ($result | ConvertFrom-Json).data
+    }
+
+    $message = ($result | Out-String).Trim()
+    if ($attempt -eq 5 -or $message -notmatch "429|Too Many Requests") {
+      throw "Azure Resource Graph query failed: $message"
+    }
+
+    Start-Sleep -Seconds (3 * $attempt)
   }
-  return (az graph query -q $oneLineQuery --first 1000 -o json | ConvertFrom-Json).data
 }
 
 function Invoke-SubscriptionMonthToDateCost {
@@ -65,7 +79,21 @@ function Invoke-SubscriptionMonthToDateCost {
   $body | Set-Content -Path $bodyPath -Encoding UTF8
 
   $url = "https://management.azure.com/subscriptions/$SubscriptionId/providers/Microsoft.CostManagement/query?api-version=2023-03-01"
-  $response = az rest --method post --url $url --headers "Content-Type=application/json" --body "@$bodyPath" -o json | ConvertFrom-Json
+  for ($attempt = 1; $attempt -le 5; $attempt++) {
+    $result = az rest --method post --url $url --headers "Content-Type=application/json" --body "@$bodyPath" -o json 2>&1
+    if ($LASTEXITCODE -eq 0) {
+      $response = $result | ConvertFrom-Json
+      break
+    }
+
+    $message = ($result | Out-String).Trim()
+    if ($attempt -eq 5 -or $message -notmatch "429|Too Many Requests") {
+      throw "Azure Cost Management query failed for subscription ${SubscriptionId}: $message"
+    }
+
+    Start-Sleep -Seconds (3 * $attempt)
+  }
+
   $row = @($response.properties.rows)[0]
 
   if (-not $row) {
