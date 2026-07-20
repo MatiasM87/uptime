@@ -427,6 +427,14 @@ $backupAlertHtml = foreach ($backup in @($operationsSummary.backups.items | Wher
 "@
 }
 
+$backupProtectedHtml = foreach ($backup in @($operationsSummary.backups.items)) {
+  $class = if ($backup.stale) { "warn" } elseif ($backup.healthy) { "ok" } else { "bad" }
+  $status = if ($backup.stale) { "Outside RPO" } elseif ($backup.healthy) { "Healthy" } else { "Attention" }
+  @"
+          <div class="ops-row"><div><strong>$(HtmlEncode $backup.vm)</strong><span>$(HtmlEncode $backup.lastBackupTime) · $(HtmlEncode $backup.policy) · $(HtmlEncode $backup.frequency)</span></div><span class="pill $class">$status</span></div>
+"@
+}
+
 $backupFrequencies = @($operationsSummary.backups.policies | Select-Object -ExpandProperty frequency -Unique) -join ", "
 $retentions = @($operationsSummary.backups.policies | Select-Object -ExpandProperty retentionDays | Where-Object { $_ -gt 0 })
 $retentionSummary = if ($retentions.Count -gt 0) { "$($retentions | Measure-Object -Minimum | Select-Object -ExpandProperty Minimum)-$($retentions | Measure-Object -Maximum | Select-Object -ExpandProperty Maximum) dias" } else { "No informado" }
@@ -555,6 +563,10 @@ $($runbookHtml -join "`n")
           <details>
             <summary>Ver VMs fuera de su umbral de recuperacion</summary>
 $($backupAlertHtml -join "`n")
+          </details>
+          <details>
+            <summary>Ver VMs protegidas ($($operationsSummary.backups.protectedVMs))</summary>
+$($backupProtectedHtml -join "`n")
           </details>
         </article>
       </div>
