@@ -1,6 +1,6 @@
 # Azure VM Updates
 
-Generated: 2026-07-20 13:52:50 UTC
+Generated: 2026-07-20 14:36:59 UTC
 
 Source: Azure Resource Graph patchassessmentresources. This report is read-only: it does not install patches and does not reboot VMs.
 
@@ -15,10 +15,21 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | Assessment warnings/errors | 9 |
 | Assessment not succeeded | 1 |
 | VMs with Ubuntu ESM required patches | 10 |
-| Costo mensual AZ acumulado | USD 1,120.79 |
+| Costo mensual AZ acumulado | USD 1,123.21 |
 | Total security updates | 883 |
 | Total critical updates | 0 |
 | Total pending patches listed | 1242 |
+
+## Automation and backups
+
+| Metric | Value |
+| --- | ---: |
+| Published runbooks | 9 |
+| Runbooks whose latest job completed | 5 |
+| Runbooks whose latest job failed | 3 |
+| Protected VMs | 28 |
+| Backups reported healthy by Azure | 28 |
+| Backups outside their RPO threshold | 11 |
 
 ## VM Detail
 
@@ -43,7 +54,7 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | middleware-integracion-prod-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-20T06:06:49Z |  |
 | middleware-integracion-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-20T06:12:03Z |  |
 | middleware-staging | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-20T05:01:38Z |  |
-| Monitores-Grafana-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-19T16:09:55Z |  |
+| Monitores-Grafana-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-20T14:14:20Z |  |
 | UniFi-Controller-VM | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-07-20T05:03:49Z |  |
 
 ## Notes
