@@ -144,6 +144,18 @@ $action1Summary = if (Test-Path $action1Path) {
   }
 }
 
+$operationsPath = Join-Path $OutputDir "azure-operations.json"
+$operationsSummary = if (Test-Path $operationsPath) {
+  Get-Content $operationsPath -Raw | ConvertFrom-Json
+} else {
+  [pscustomobject]@{
+    generatedAt = ""
+    automation = [pscustomobject]@{ accounts = 0; publishedRunbooks = 0; completed = 0; failed = 0; notRun = 0; runbooks = @() }
+    backups = [pscustomobject]@{ protectedVMs = 0; healthy = 0; failed = 0; outsideRpo = 0; policies = @(); items = @() }
+    errors = @("Operations report unavailable")
+  }
+}
+
 $assessmentQuery = @"
 patchassessmentresources
 | where type == 'microsoft.compute/virtualmachines/patchassessmentresults'
@@ -310,6 +322,7 @@ $summary = [pscustomobject]@{
   monthlyAzureCostScope = "MonthToDate ActualCost PreTaxCost across configured subscriptions"
   monthlyAzureCostSubscriptions = $costRows
   monthlyAzureCostWarnings = $costWarnings
+  operations = $operationsSummary
   rows = $rows
 }
 
@@ -341,6 +354,17 @@ $md.Add("| Costo mensual AZ acumulado | $($summary.monthlyAzureCostDisplay) |")
 $md.Add("| Total security updates | $($summary.totalSecurity) |")
 $md.Add("| Total critical updates | $($summary.totalCritical) |")
 $md.Add("| Total pending patches listed | $($summary.totalPendingPatches) |")
+$md.Add("")
+$md.Add("## Automation and backups")
+$md.Add("")
+$md.Add("| Metric | Value |")
+$md.Add("| --- | ---: |")
+$md.Add("| Published runbooks | $($operationsSummary.automation.publishedRunbooks) |")
+$md.Add("| Runbooks whose latest job completed | $($operationsSummary.automation.completed) |")
+$md.Add("| Runbooks whose latest job failed | $($operationsSummary.automation.failed) |")
+$md.Add("| Protected VMs | $($operationsSummary.backups.protectedVMs) |")
+$md.Add("| Backups reported healthy by Azure | $($operationsSummary.backups.healthy) |")
+$md.Add("| Backups outside their RPO threshold | $($operationsSummary.backups.outsideRpo) |")
 $md.Add("")
 $md.Add("## VM Detail")
 $md.Add("")
@@ -386,6 +410,27 @@ $rowHtml = foreach ($row in $rows) {
 "@
 }
 
+$runbookHtml = foreach ($runbook in @($operationsSummary.automation.runbooks)) {
+  $class = switch ($runbook.lastStatus) {
+    "Completed" { "ok" }
+    "Failed" { "bad" }
+    default { "warn" }
+  }
+  @"
+          <div class="ops-row"><div><strong>$(HtmlEncode $runbook.name)</strong><span>$(HtmlEncode $runbook.lastEnded)</span></div><span class="pill $class">$(HtmlEncode $runbook.lastStatus)</span></div>
+"@
+}
+
+$backupAlertHtml = foreach ($backup in @($operationsSummary.backups.items | Where-Object stale | Select-Object -First 12)) {
+  @"
+          <div class="ops-row"><div><strong>$(HtmlEncode $backup.vm)</strong><span>$(HtmlEncode $backup.lastBackupTime) · $(HtmlEncode $backup.policy)</span></div><span class="pill warn">Outside RPO</span></div>
+"@
+}
+
+$backupFrequencies = @($operationsSummary.backups.policies | Select-Object -ExpandProperty frequency -Unique) -join ", "
+$retentions = @($operationsSummary.backups.policies | Select-Object -ExpandProperty retentionDays | Where-Object { $_ -gt 0 })
+$retentionSummary = if ($retentions.Count -gt 0) { "$($retentions | Measure-Object -Minimum | Select-Object -ExpandProperty Minimum)-$($retentions | Measure-Object -Maximum | Select-Object -ExpandProperty Maximum) dias" } else { "No informado" }
+
 $html = @"
 <!doctype html>
 <html lang="en">
@@ -419,6 +464,7 @@ $html = @"
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
     .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(4, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong { color:var(--bad); }.action1 .metric:nth-child(4) strong { color:var(--warn); }
+    .operations { margin-bottom:28px; }.operations-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }.ops-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }.ops-card h3 { font-family:Geist,Arial,sans-serif; font-size:16px; margin:0; }.ops-card > p { font-size:12px; margin:5px 0 14px; }.ops-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 12px; }.ops-metric { background:#f8fafc; border:1px solid var(--line); border-radius:6px; padding:10px; }.ops-metric span { color:var(--muted); display:block; font-size:11px; font-weight:600; }.ops-metric strong { display:block; font-family:Geist,Arial,sans-serif; font-size:20px; margin-top:4px; }.ops-row { align-items:center; border-top:1px solid var(--line); display:flex; gap:10px; justify-content:space-between; padding:9px 0; }.ops-row strong { display:block; font-size:12px; }.ops-row span { color:var(--muted); font-size:11px; }.ops-row .pill { flex:none; }.ops-card details { margin-top:6px; }.ops-card summary { color:var(--blue); cursor:pointer; font-size:12px; font-weight:700; }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -437,8 +483,8 @@ $html = @"
     .notes { max-width:360px; color:var(--muted); }
     footer { color:var(--muted); font-size:12px; margin-top:14px; }
     a { color:var(--blue); }
-    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
-    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
+    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } .operations-grid { grid-template-columns:1fr; } }
+    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .ops-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
   </style>
 </head>
 <body>
@@ -480,6 +526,37 @@ $html = @"
         <article class="metric"><span>Connected now</span><strong>$(HtmlEncode $action1Summary.connectedEndpoints)</strong></article>
         <article class="metric"><span>Critical patches pending</span><strong>$(HtmlEncode $action1Summary.criticalMissingUpdates)</strong></article>
         <article class="metric"><span>Reboots pending</span><strong>$(HtmlEncode $action1Summary.rebootPending)</strong></article>
+      </div>
+    </section>
+    <section class="operations">
+      <div class="action1-head">
+        <h2>Automatizaciones y backups</h2>
+        <p>Datos: $(HtmlEncode $operationsSummary.generatedAt)</p>
+      </div>
+      <div class="operations-grid">
+        <article class="ops-card">
+          <h3>Azure Automation</h3>
+          <p>Ultimo job registrado por cada runbook publicado.</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>Runbooks</span><strong>$(HtmlEncode $operationsSummary.automation.publishedRunbooks)</strong></div>
+            <div class="ops-metric"><span>Ultimo OK</span><strong>$(HtmlEncode $operationsSummary.automation.completed)</strong></div>
+            <div class="ops-metric"><span>Ultimo fallo</span><strong>$(HtmlEncode $operationsSummary.automation.failed)</strong></div>
+          </div>
+$($runbookHtml -join "`n")
+        </article>
+        <article class="ops-card">
+          <h3>Azure Backup</h3>
+          <p>Politicas: $(HtmlEncode $backupFrequencies). Retencion configurada: $(HtmlEncode $retentionSummary).</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>VMs protegidas</span><strong>$(HtmlEncode $operationsSummary.backups.protectedVMs)</strong></div>
+            <div class="ops-metric"><span>Azure saludable</span><strong>$(HtmlEncode $operationsSummary.backups.healthy)</strong></div>
+            <div class="ops-metric"><span>Fuera de RPO</span><strong>$(HtmlEncode $operationsSummary.backups.outsideRpo)</strong></div>
+          </div>
+          <details>
+            <summary>Ver VMs fuera de su umbral de recuperacion</summary>
+$($backupAlertHtml -join "`n")
+          </details>
+        </article>
       </div>
     </section>
     <section class="table">
