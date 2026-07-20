@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-20T15:08:28Z",
+  "generatedAt": "2026-07-20T15:19:35Z",
   "totalEndpoints": 87,
-  "connectedEndpoints": 42,
-  "disconnectedEndpoints": 45,
-  "rebootPending": 13,
+  "connectedEndpoints": 38,
+  "disconnectedEndpoints": 49,
+  "rebootPending": 11,
   "endpointsWithCriticalUpdates": 36,
   "criticalMissingUpdates": 89,
   "windowsEndpoints": 82,
