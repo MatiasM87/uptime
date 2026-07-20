@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T15:08:47Z",
+  "generatedAt": "2026-07-20T15:19:56Z",
   "source": "Azure Resource Graph patchassessmentresources",
   "totalVMsWithAssessment": 21,
   "ok": 10,
@@ -29,7 +29,7 @@
   ],
   "monthlyAzureCostWarnings": [],
   "operations": {
-    "generatedAt": "2026-07-20T15:08:28Z",
+    "generatedAt": "2026-07-20T15:19:35Z",
     "automation": {
       "accounts": 1,
       "publishedRunbooks": 9,
