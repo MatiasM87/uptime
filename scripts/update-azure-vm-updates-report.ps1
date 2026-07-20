@@ -473,7 +473,7 @@ $html = @"
     <section class="action1">
       <div class="action1-head">
         <h2>Action1 endpoint security</h2>
-        <p>$(HtmlEncode $action1Summary.windowsEndpoints) Windows, $(HtmlEncode $action1Summary.macEndpoints) macOS. Data: $(HtmlEncode $action1Summary.generatedAt)</p>
+        <p>$(HtmlEncode $action1Summary.windowsEndpoints) Windows, $(HtmlEncode $action1Summary.macEndpoints) macOS. Data: $(HtmlEncode $action1Summary.generatedAt) · <span id="next-update">Actualizacion diaria, 09:00 ART. Calculando proxima...</span></p>
       </div>
       <div class="metrics">
         <article class="metric"><span>Managed endpoints</span><strong>$(HtmlEncode $action1Summary.totalEndpoints)</strong></article>
@@ -503,6 +503,27 @@ $($rowHtml -join "`n")
     </footer>
   </main>
   <script>
+    (function () {
+      const target = document.getElementById("next-update");
+      if (!target) return;
+
+      function updateNextRun() {
+        const nowInBuenosAires = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Buenos_Aires" }));
+        const nextRun = new Date(nowInBuenosAires);
+        nextRun.setHours(9, 0, 0, 0);
+        if (nextRun <= nowInBuenosAires) nextRun.setDate(nextRun.getDate() + 1);
+
+        const remainingMinutes = Math.max(0, Math.ceil((nextRun - nowInBuenosAires) / 60000));
+        const hours = Math.floor(remainingMinutes / 60);
+        const minutes = remainingMinutes % 60;
+        const when = hours === 0 ? "en " + minutes + " min" : "en " + hours + " h " + minutes + " min";
+        target.textContent = "Actualizacion diaria, 09:00 ART. Proxima: " + when + ".";
+      }
+
+      updateNextRun();
+      setInterval(updateNextRun, 60000);
+    })();
+
     const filter = document.getElementById("vm-filter");
     const rows = Array.from(document.querySelectorAll("tbody tr"));
     filter.addEventListener("input", () => {
