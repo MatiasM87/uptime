@@ -550,7 +550,10 @@ $html = @"
             <div class="ops-metric"><span>Ultimo OK</span><strong>$(HtmlEncode $operationsSummary.automation.completed)</strong></div>
             <div class="ops-metric"><span>Ultimo fallo</span><strong>$(HtmlEncode $operationsSummary.automation.failed)</strong></div>
           </div>
+          <details>
+            <summary>Ver runbooks ($($operationsSummary.automation.publishedRunbooks))</summary>
 $($runbookHtml -join "`n")
+          </details>
         </article>
         <article class="ops-card">
           <h3>Azure Backup</h3>
