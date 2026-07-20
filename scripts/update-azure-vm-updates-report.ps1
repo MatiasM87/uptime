@@ -512,7 +512,6 @@ $html = @"
   <main class="wrap">
     <section class="page-head">
       <h1>Azure VM Updates</h1>
-      <p>Read-only daily patch assessment report. No installs, no reboots.</p>
       <p class="generated">Generated: $(HtmlEncode $generatedDisplay)</p>
     </section>
     <section class="metrics">
