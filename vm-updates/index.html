@@ -30,6 +30,7 @@
     .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
     .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
     .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(4, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong { color:var(--bad); }.action1 .metric:nth-child(4) strong { color:var(--warn); }
+    .operations { margin-bottom:28px; }.operations-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }.ops-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }.ops-card h3 { font-family:Geist,Arial,sans-serif; font-size:16px; margin:0; }.ops-card > p { font-size:12px; margin:5px 0 14px; }.ops-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 12px; }.ops-metric { background:#f8fafc; border:1px solid var(--line); border-radius:6px; padding:10px; }.ops-metric span { color:var(--muted); display:block; font-size:11px; font-weight:600; }.ops-metric strong { display:block; font-family:Geist,Arial,sans-serif; font-size:20px; margin-top:4px; }.ops-row { align-items:center; border-top:1px solid var(--line); display:flex; gap:10px; justify-content:space-between; padding:9px 0; }.ops-row strong { display:block; font-size:12px; }.ops-row span { color:var(--muted); font-size:11px; }.ops-row .pill { flex:none; }.ops-card details { margin-top:6px; }.ops-card summary { color:var(--blue); cursor:pointer; font-size:12px; font-weight:700; }
     .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
     .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
     .table-head h2 { font-size:20px; margin:0; }
@@ -48,8 +49,8 @@
     .notes { max-width:360px; color:var(--muted); }
     footer { color:var(--muted); font-size:12px; margin-top:14px; }
     a { color:var(--blue); }
-    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } }
-    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
+    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } .operations-grid { grid-template-columns:1fr; } }
+    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .ops-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
   </style>
 </head>
 <body>
@@ -70,7 +71,7 @@
     <section class="page-head">
       <h1>Azure VM Updates</h1>
       <p>Read-only daily patch assessment report. No installs, no reboots.</p>
-      <p class="generated">Generated: 2026-07-20 13:52:50 UTC</p>
+      <p class="generated">Generated: 2026-07-20 14:36:59 UTC</p>
     </section>
     <section class="metrics">
       <article class="metric"><span>VMs assessed</span><strong>21</strong></article>
@@ -78,19 +79,68 @@
       <article class="metric"><span>Updates pending</span><strong>1</strong></article>
       <article class="metric"><span>Security</span><strong>883</strong></article>
       <article class="metric"><span>ESM required VMs</span><strong>10</strong></article>
-      <article class="metric"><span>Costo mensual AZ</span><strong>USD 1,120.79</strong></article>
+      <article class="metric"><span>Costo mensual AZ</span><strong>USD 1,123.21</strong></article>
       <article class="metric"><span>Warnings</span><strong>9</strong></article>
     </section>
     <section class="action1">
       <div class="action1-head">
         <h2>Action1 endpoint security</h2>
-        <p>82 Windows, 5 macOS. Data: 07/20/2026 13:52:42 · <span id="next-update">Actualizacion diaria, 09:00 ART. Calculando proxima...</span></p>
+        <p>82 Windows, 5 macOS. Data: 07/20/2026 14:36:46 · <span id="next-update">Actualizacion diaria, 09:00 ART. Calculando proxima...</span></p>
       </div>
       <div class="metrics">
         <article class="metric"><span>Managed endpoints</span><strong>87</strong></article>
-        <article class="metric"><span>Connected now</span><strong>28</strong></article>
-        <article class="metric"><span>Critical patches pending</span><strong>95</strong></article>
-        <article class="metric"><span>Reboots pending</span><strong>12</strong></article>
+        <article class="metric"><span>Connected now</span><strong>49</strong></article>
+        <article class="metric"><span>Critical patches pending</span><strong>89</strong></article>
+        <article class="metric"><span>Reboots pending</span><strong>13</strong></article>
+      </div>
+    </section>
+    <section class="operations">
+      <div class="action1-head">
+        <h2>Automatizaciones y backups</h2>
+        <p>Datos: 07/20/2026 14:36:46</p>
+      </div>
+      <div class="operations-grid">
+        <article class="ops-card">
+          <h3>Azure Automation</h3>
+          <p>Ultimo job registrado por cada runbook publicado.</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>Runbooks</span><strong>9</strong></div>
+            <div class="ops-metric"><span>Ultimo OK</span><strong>5</strong></div>
+            <div class="ops-metric"><span>Ultimo fallo</span><strong>3</strong></div>
+          </div>
+          <div class="ops-row"><div><strong>Patch-GP-Middleware-Monthly</strong><span>07/20/2026 06:13:19</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs</strong><span>07/14/2026 05:52:23</span></div><span class="pill warn">Stopped</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch1</strong><span>07/17/2026 03:55:37</span></div><span class="pill bad">Failed</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch2</strong><span>07/20/2026 04:20:20</span></div><span class="pill bad">Failed</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch3</strong><span>07/20/2026 05:41:28</span></div><span class="pill bad">Failed</span></div>
+          <div class="ops-row"><div><strong>Start-OpenVPN-VM</strong><span>07/20/2026 12:02:07</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Start-VM</strong><span>07/20/2026 12:02:30</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Stop-OpenVPN-VM</strong><span>07/17/2026 23:03:08</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Stop-VM</strong><span>07/17/2026 23:02:45</span></div><span class="pill ok">Completed</span></div>
+        </article>
+        <article class="ops-card">
+          <h3>Azure Backup</h3>
+          <p>Politicas: Diario, Cada 7 dias. Retencion configurada: 7-93 dias.</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>VMs protegidas</span><strong>28</strong></div>
+            <div class="ops-metric"><span>Azure saludable</span><strong>28</strong></div>
+            <div class="ops-metric"><span>Fuera de RPO</span><strong>11</strong></div>
+          </div>
+          <details>
+            <summary>Ver VMs fuera de su umbral de recuperacion</summary>
+          <div class="ops-row"><div><strong>Piryp-admin-srv</strong><span>06/05/2024 05:00:07 · BackupPolicy-piryp-srv</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>subamoslavoz-fest-srv</strong><span>09/02/2024 04:40:10 · EnhancedPolicy-subamoslavoz</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>integracion-transbank-cl</strong><span>01/24/2025 04:24:44 · BkpPolicy-integraciontbkchile</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Snipe-WH-srv</strong><span>06/06/2025 01:08:25 · BkpPolicy-snipewh</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Dominga-VM</strong><span>07/25/2025 04:03:30 · DailyPolicy-Dominga</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Salmoneras-vm</strong><span>02/11/2026 04:10:09 · DailyPolicy-Salmoneras</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>sueltaelagua-wp-srv</strong><span>02/11/2026 11:11:42 · DailyPolicy-sueltaelagua</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>FGCOL-v2-2024</strong><span>05/18/2026 11:03:23 · EnhancedPolicy-Formacolombiav2</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Votaxlosbosques-srv</strong><span>05/19/2026 04:37:47 · BkpPolicy-votaxlosbosques</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>regresion-ambiental-srv</strong><span>05/26/2026 04:09:06 · Backuppolicy-salvalasleyes</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Unifi-controller-srv</strong><span>06/01/2026 04:31:18 · backuppolicy-unifi</span></div><span class="pill warn">Outside RPO</span></div>
+          </details>
+        </article>
       </div>
     </section>
     <section class="table">
@@ -342,7 +392,7 @@
           <td class="num">0</td>
           <td class="num">0</td>
           <td>False</td>
-          <td>2026-07-19T16:09:55Z</td>
+          <td>2026-07-20T14:14:20Z</td>
           <td class="notes"></td>
         </tr>
         <tr>
