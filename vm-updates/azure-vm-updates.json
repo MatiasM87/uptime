@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T13:41:16Z",
+  "generatedAt": "2026-07-20T13:52:50Z",
   "source": "Azure Resource Graph patchassessmentresources",
   "totalVMsWithAssessment": 21,
   "ok": 10,
@@ -47,12 +47,12 @@
       "pendingPatches": 300,
       "esmRequired": 186,
       "samplePatches": [
-        "libblockdev-loop2",
-        "libasan5",
-        "locales",
-        "udev",
-        "libblockdev-crypto2",
-        "gpg"
+        "node-ip",
+        "libblockdev-part-err2",
+        "cloud-init",
+        "linux-cloud-tools-azure",
+        "libgcc-s1",
+        "ncurses-base"
       ],
       "sampleClassifications": [
         "[\"Security-ESM\"]",
@@ -82,12 +82,12 @@
       "pendingPatches": 186,
       "esmRequired": 186,
       "samplePatches": [
-        "kmod",
-        "open-vm-tools",
-        "git",
-        "gpg",
-        "libblockdev-crypto2",
-        "udev"
+        "libc6-dev",
+        "bsdutils",
+        "binutils-common",
+        "libasound2",
+        "libblockdev-part-err2",
+        "linux-cloud-tools-azure"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/28.core.log",
@@ -113,12 +113,12 @@
       "pendingPatches": 154,
       "esmRequired": 154,
       "samplePatches": [
+        "vim-tiny",
+        "apparmor",
         "wget",
         "php7.4-common",
         "linux-tools-common",
-        "libssl1.1",
-        "libtasn1-6",
-        "php7.4-bcmath"
+        "libtasn1-6"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/24.core.log",
@@ -144,12 +144,12 @@
       "pendingPatches": 141,
       "esmRequired": 141,
       "samplePatches": [
-        "sed",
-        "libcap2",
-        "python3.8-minimal",
-        "tar",
-        "systemd-sysv",
-        "libcap2-bin"
+        "libperl5.30",
+        "libsystemd0",
+        "nodejs-doc",
+        "nodejs",
+        "libpng16-16",
+        "python3-pyasn1"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/27.core.log",
@@ -175,12 +175,12 @@
       "pendingPatches": 138,
       "esmRequired": 138,
       "samplePatches": [
-        "linux-cloud-tools-azure",
-        "libasound2",
-        "bsdutils",
-        "libnss-systemd",
-        "openssh-client",
-        "libssh-4"
+        "nano",
+        "gpg-wks-server",
+        "util-linux",
+        "libpython3.8",
+        "python3.8",
+        "gnupg"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/469.core.log",
@@ -206,12 +206,12 @@
       "pendingPatches": 9,
       "esmRequired": 9,
       "samplePatches": [
+        "node-lodash-packages",
+        "python3-pip",
+        "node-ip",
         "nodejs-doc",
         "libnode-dev",
-        "python3-pip",
-        "nodejs",
-        "node-form-data",
-        "node-ip"
+        "nodejs"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/361.core.log",
@@ -238,11 +238,11 @@
       "esmRequired": 9,
       "samplePatches": [
         "nodejs-doc",
-        "libnode-dev",
-        "python3-pip",
-        "nodejs",
-        "node-form-data",
-        "node-ip"
+        "node-lodash-packages",
+        "libnode72",
+        "python3-pip-whl",
+        "node-ip",
+        "node-form-data"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/401.core.log",
@@ -268,8 +268,8 @@
       "pendingPatches": 2,
       "esmRequired": 2,
       "samplePatches": [
-        "python3-pip",
-        "python3-pip-whl"
+        "python3-pip-whl",
+        "python3-pip"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/339.core.log",
@@ -295,8 +295,8 @@
       "pendingPatches": 2,
       "esmRequired": 2,
       "samplePatches": [
-        "opensc-pkcs11",
-        "opensc"
+        "opensc",
+        "opensc-pkcs11"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/2.core.log",
@@ -322,12 +322,12 @@
       "pendingPatches": 300,
       "esmRequired": 174,
       "samplePatches": [
-        "cryptsetup-run",
-        "ubuntu-server",
-        "docker-ce-rootless-extras",
-        "ubuntu-standard",
-        "open-iscsi",
-        "snapd"
+        "binutils-common",
+        "python-pkg-resources",
+        "libgsasl7",
+        "node-tar",
+        "nodejs",
+        "python2.7"
       ],
       "sampleClassifications": "[\"Other\"]",
       "error": "0 error/s reported.",
