@@ -28,15 +28,15 @@
     "url": "https://rt.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
-    "status": "down",
-    "uptime": "96.56%",
-    "uptimeDay": "53.29%",
+    "status": "up",
+    "uptime": "96.55%",
+    "uptimeDay": "53.35%",
     "uptimeWeek": "52.75%",
     "uptimeMonth": "52.51%",
-    "uptimeYear": "86.79%",
-    "time": 552,
-    "timeDay": 316,
-    "timeWeek": 629,
+    "uptimeYear": "86.74%",
+    "time": 553,
+    "timeDay": 421,
+    "timeWeek": 620,
     "timeMonth": 530,
     "timeYear": 608,
     "dailyMinutesDown": {
@@ -140,7 +140,7 @@
       "2026-07-21": 677,
       "2026-07-22": 668,
       "2026-07-23": 678,
-      "2026-07-24": 375
+      "2026-07-24": 629
     }
   },
   {
@@ -148,17 +148,17 @@
     "url": "https://inventario.voluntariosgreenpeace.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
-    "status": "down",
-    "uptime": "96.59%",
-    "uptimeDay": "53.63%",
-    "uptimeWeek": "53.08%",
+    "status": "up",
+    "uptime": "96.58%",
+    "uptimeDay": "53.68%",
+    "uptimeWeek": "53.09%",
     "uptimeMonth": "53.02%",
-    "uptimeYear": "86.90%",
-    "time": 808,
-    "timeDay": 314,
-    "timeWeek": 526,
-    "timeMonth": 774,
-    "timeYear": 843,
+    "uptimeYear": "86.86%",
+    "time": 809,
+    "timeDay": 799,
+    "timeWeek": 595,
+    "timeMonth": 788,
+    "timeYear": 844,
     "dailyMinutesDown": {
       "2026-04-16": 688,
       "2026-04-15": 16,
@@ -260,7 +260,7 @@
       "2026-07-21": 677,
       "2026-07-22": 659,
       "2026-07-23": 678,
-      "2026-07-24": 370
+      "2026-07-24": 625
     }
   },
   {
@@ -437,11 +437,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/monitor.infogreenpeace.org.ico",
     "slug": "monitor-info-greenpeace",
     "status": "up",
-    "uptime": "91.55%",
+    "uptime": "91.70%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "91.55%",
-    "uptimeYear": "91.55%",
+    "uptimeMonth": "91.70%",
+    "uptimeYear": "91.70%",
     "time": 341,
     "timeDay": 316,
     "timeWeek": 397,
@@ -512,18 +512,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "98.14%",
+    "uptimeDay": "82.23%",
+    "uptimeWeek": "97.46%",
+    "uptimeMonth": "98.14%",
+    "uptimeYear": "98.14%",
     "time": 561,
     "timeDay": 554,
     "timeWeek": 560,
     "timeMonth": 561,
     "timeYear": 561,
     "dailyMinutesDown": {
-      "2026-07-24": 1
+      "2026-07-24": 256
     }
   },
   {
@@ -568,18 +568,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "98.18%",
+    "uptimeDay": "82.24%",
+    "uptimeWeek": "97.46%",
+    "uptimeMonth": "98.18%",
+    "uptimeYear": "98.18%",
     "time": 579,
     "timeDay": 570,
     "timeWeek": 597,
     "timeMonth": 579,
     "timeYear": 579,
     "dailyMinutesDown": {
-      "2026-07-24": 1
+      "2026-07-24": 256
     }
   },
   {
