@@ -29,11 +29,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.58%",
+    "uptime": "96.56%",
     "uptimeDay": "53.29%",
     "uptimeWeek": "52.75%",
     "uptimeMonth": "52.51%",
-    "uptimeYear": "86.83%",
+    "uptimeYear": "86.79%",
     "time": 552,
     "timeDay": 316,
     "timeWeek": 629,
@@ -140,7 +140,7 @@
       "2026-07-21": 677,
       "2026-07-22": 668,
       "2026-07-23": 678,
-      "2026-07-24": 140
+      "2026-07-24": 375
     }
   },
   {
@@ -149,11 +149,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.61%",
+    "uptime": "96.59%",
     "uptimeDay": "53.63%",
     "uptimeWeek": "53.08%",
     "uptimeMonth": "53.02%",
-    "uptimeYear": "86.95%",
+    "uptimeYear": "86.90%",
     "time": 808,
     "timeDay": 314,
     "timeWeek": 526,
@@ -260,7 +260,7 @@
       "2026-07-21": 677,
       "2026-07-22": 659,
       "2026-07-23": 678,
-      "2026-07-24": 135
+      "2026-07-24": 370
     }
   },
   {
@@ -437,11 +437,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/monitor.infogreenpeace.org.ico",
     "slug": "monitor-info-greenpeace",
     "status": "up",
-    "uptime": "91.40%",
+    "uptime": "91.55%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "91.40%",
-    "uptimeYear": "91.40%",
+    "uptimeMonth": "91.55%",
+    "uptimeYear": "91.55%",
     "time": 341,
     "timeDay": 316,
     "timeWeek": 397,
@@ -511,18 +511,20 @@
     "url": "https://animalesenpeligro.org/",
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 560,
-    "timeDay": 536,
-    "timeWeek": 559,
-    "timeMonth": 560,
-    "timeYear": 560,
-    "dailyMinutesDown": {}
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.94%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
+    "time": 561,
+    "timeDay": 554,
+    "timeWeek": 560,
+    "timeMonth": 561,
+    "timeYear": 561,
+    "dailyMinutesDown": {
+      "2026-07-24": 1
+    }
   },
   {
     "name": "Exceso de Desmontes",
@@ -565,18 +567,20 @@
     "url": "https://respetalaamazonia.org/",
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 577,
-    "timeDay": 526,
-    "timeWeek": 595,
-    "timeMonth": 577,
-    "timeYear": 577,
-    "dailyMinutesDown": {}
+    "time": 579,
+    "timeDay": 570,
+    "timeWeek": 597,
+    "timeMonth": 579,
+    "timeYear": 579,
+    "dailyMinutesDown": {
+      "2026-07-24": 1
+    }
   },
   {
     "name": "Salvemos los Glaciares",
