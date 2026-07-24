@@ -1,18 +1,468 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/uptime/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={error:{message:"Not found",name:"PreloadError"},status:404,baseUrl:"/uptime",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/uptime/service-worker.js');(function(){try{eval("async function x(){}");var main="/uptime/client/client.bfa77346.js"}catch(e){main="/uptime/client/legacy/client.fc41821c.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/uptime/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet> <title>404</title><link href=https://MatiasM87.github.io/uptime/themes/greenpeace-monitor.css rel=stylesheet><link href=https://MatiasM87.github.io/uptime/global.css rel=stylesheet><link href=https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg rel=icon type=image/svg><link href=/logo-192.png rel=icon type=image/png> </head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://MatiasM87.github.io/uptime class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://raw.githubusercontent.com/MatiasM87/uptime/master/assets/upptime-icon.svg> <div>Estado de Servicios Greenpeace</div></a></div> <ul class=svelte-a08hsz><li><a href=/ class=svelte-a08hsz target=_self>Estado de servicios</a> <li><a href=/uptime/vm-updates/ class=svelte-a08hsz target=_self>Actualizaciones de VMs</a> <li><a href=https://github.com/MatiasM87/uptime class=svelte-a08hsz target=_self>Repositorio</a> </li> </ul></div> </nav> <main class=container> <h1 class=svelte-17w3omn>404</h1> <p class=svelte-17w3omn>Not found</p> </main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/MatiasM87/uptime>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
-        if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
-          navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-              registration.unregister();
-            }
-          });
-        }
-        if (typeof window !== "undefined" && "caches" in window) {
-          caches.keys().then(function (keyList) {
-            return Promise.all(
-              keyList.map(function (key) {
-                return caches.delete(key);
-              })
-            );
-          });
-        }
-      } catch (error) {} </script> 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azure VM Updates</title>
+  <style>
+    :root { --bg:#f8fafc; --panel:#fff; --line:#e2e8f0; --text:#152238; --muted:#526075; --ok:#07895b; --warn:#c77700; --bad:#c92d2d; --blue:#0053db; --soft-blue:#eaf1ff; --soft-green:#e8f7f0; --soft-amber:#fff4d6; --soft-red:#feecec; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 Inter, Arial, sans-serif; }
+    .wrap { width:min(1140px, calc(100vw - 40px)); margin:0 auto; }
+    .nav { background:var(--panel); border-bottom:1px solid var(--line); }
+    .nav-inner { align-items:center; display:flex; justify-content:space-between; min-height:64px; gap:20px; }
+    .brand { align-items:center; color:var(--ok); display:flex; font:700 18px/1 Geist, Arial, sans-serif; gap:9px; text-decoration:none; }
+    .brand-mark { align-items:center; background:var(--soft-green); border-radius:50%; display:inline-flex; height:30px; justify-content:center; width:30px; }
+    .brand-mark svg { height:17px; width:17px; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:8px; }
+    .nav-links a { border-radius:4px; color:var(--muted); font-size:14px; font-weight:600; padding:9px 12px; text-decoration:none; }
+    .nav-links a:hover, .nav-links a.active { background:var(--soft-blue); color:var(--blue); }
+    .page-head { padding:44px 0 30px; }
+    h1, h2 { font-family:Geist, Arial, sans-serif; letter-spacing:0; }
+    h1 { font-size:32px; line-height:1.2; margin:0; }
+    p { margin:7px 0 0; color:var(--muted); }
+    .generated { color:#718096; font-size:12px; }
+    main { padding:0 0 48px; }
+    .metrics { display:grid; grid-template-columns:repeat(7, minmax(0, 1fr)); gap:12px; margin-bottom:28px; }
+    .metric { background:var(--panel); border:1px solid var(--line); border-radius:8px; min-height:108px; padding:16px; }
+    .metric:hover { border-color:#b9c9e9; }
+    .metric span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
+    .metric strong { display:block; font-family:Geist, Arial, sans-serif; font-size:25px; margin-top:8px; }
+    .metric:nth-child(2) strong { color:var(--ok); }.metric:nth-child(3) strong { color:var(--warn); }.metric:nth-child(4) strong, .metric:nth-child(5) strong { color:var(--bad); }.metric:nth-child(6) strong { color:var(--ok); }
+    .action1 { margin-bottom:28px; }.action1-head { align-items:baseline; display:flex; gap:12px; justify-content:space-between; margin:0 0 12px; }.action1-head h2 { font-size:20px; margin:0; }.action1-head p { font-size:12px; margin:0; }.action1 .metrics { grid-template-columns:repeat(4, minmax(0, 1fr)); margin-bottom:0; }.action1 .metric { min-height:96px; }.action1 .metric:nth-child(2) strong { color:var(--blue); }.action1 .metric:nth-child(3) strong { color:var(--bad); }.action1 .metric:nth-child(4) strong { color:var(--warn); }
+    .operations { margin-bottom:28px; }.operations-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }.ops-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }.ops-card h3 { font-family:Geist,Arial,sans-serif; font-size:16px; margin:0; }.ops-card > p { font-size:12px; margin:5px 0 14px; }.ops-metrics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 12px; }.ops-metric { background:#f8fafc; border:1px solid var(--line); border-radius:6px; padding:10px; }.ops-metric span { color:var(--muted); display:block; font-size:11px; font-weight:600; }.ops-metric strong { display:block; font-family:Geist,Arial,sans-serif; font-size:20px; margin-top:4px; }.ops-row { align-items:center; border-top:1px solid var(--line); display:flex; gap:10px; justify-content:space-between; padding:9px 0; }.ops-row strong { display:block; font-size:12px; }.ops-row span { color:var(--muted); font-size:11px; }.ops-row .pill { flex:none; }.ops-card details { margin-top:6px; }.ops-card summary { color:var(--blue); cursor:pointer; font-size:12px; font-weight:700; }
+    .table { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:auto; box-shadow:0 8px 28px rgba(15,23,42,.05); }
+    .table-head { align-items:center; background:#f1f5f9; border-bottom:1px solid var(--line); display:flex; gap:18px; justify-content:space-between; padding:15px 16px; }
+    .table-head h2 { font-size:20px; margin:0; }
+    .filter { background:#fff; border:1px solid var(--line); border-radius:6px; color:var(--text); font:14px Inter,Arial,sans-serif; padding:8px 10px; width:min(100%, 270px); }
+    .filter:focus { border-color:var(--blue); outline:2px solid #c8d8ff; }
+    table { width:100%; min-width:1080px; border-collapse:collapse; }
+    th, td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { position:sticky; top:0; background:#f1f5f9; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+    tbody tr:hover { background:#f8fbff; }
+    td span { display:block; color:var(--muted); font-size:12px; }
+    .num { text-align:right; font-variant-numeric: tabular-nums; }
+    .pill { display:inline-flex; border-radius:999px; padding:3px 8px; font-size:12px; font-weight:700; }
+    .pill.ok { color:var(--ok); background:var(--soft-green); }
+    .pill.warn, .pill.reboot { color:var(--warn); background:var(--soft-amber); }
+    .pill.bad { color:var(--bad); background:var(--soft-red); }
+    .notes { max-width:360px; color:var(--muted); }
+    footer { color:var(--muted); font-size:12px; margin-top:14px; }
+    a { color:var(--blue); }
+    @media (max-width: 900px) { .metrics, .action1 .metrics { grid-template-columns:repeat(3, minmax(0, 1fr)); } .operations-grid { grid-template-columns:1fr; } }
+    @media (max-width: 620px) { .wrap { width:min(100% - 28px, 1140px); } .nav-inner { align-items:flex-start; flex-direction:column; padding:14px 0; } .page-head { padding:30px 0 24px; } h1 { font-size:26px; } .metrics, .action1 .metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); } .action1-head { align-items:flex-start; flex-direction:column; } .ops-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } .table-head { align-items:stretch; flex-direction:column; } .filter { width:100%; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/uptime/">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M12 10C7 10 4 7 4 3c5 0 8 3 8 7Z"/><path d="M12 14c4 0 7-2 8-6-4 0-7 2-8 6Z"/></svg></span>
+        Greenpeace Monitor
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/uptime/">Estado</a>
+        <a class="active" href="/uptime/vm-updates/">Actualizaciones</a>
+        <a href="https://github.com/MatiasM87/uptime">Repositorio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-head">
+      <h1>Azure VM Updates</h1>
+      <p class="generated">Generated: 2026-07-24 04:00:21 UTC</p>
+    </section>
+    <section class="metrics">
+      <article class="metric"><span>VMs assessed</span><strong>20</strong></article>
+      <article class="metric"><span>OK</span><strong>7</strong></article>
+      <article class="metric"><span>Updates pending</span><strong>4</strong></article>
+      <article class="metric"><span>Security</span><strong>1169</strong></article>
+      <article class="metric"><span>ESM required VMs</span><strong>9</strong></article>
+      <article class="metric"><span>Costo mensual AZ</span><strong>USD 1,253.73</strong></article>
+      <article class="metric"><span>Warnings</span><strong>9</strong></article>
+    </section>
+    <section class="action1">
+      <div class="action1-head">
+        <h2>Action1 endpoint security</h2>
+        <p>82 Windows, 5 macOS. Data: 07/24/2026 03:59:51 · <span id="next-update">Actualizacion diaria, 09:00 ART. Calculando proxima...</span></p>
+      </div>
+      <div class="metrics">
+        <article class="metric"><span>Managed endpoints</span><strong>87</strong></article>
+        <article class="metric"><span>Connected now</span><strong>13</strong></article>
+        <article class="metric"><span>Critical patches pending</span><strong>62</strong></article>
+        <article class="metric"><span>Reboots pending</span><strong>9</strong></article>
+      </div>
+    </section>
+    <section class="operations">
+      <div class="action1-head">
+        <h2>Automatizaciones y backups</h2>
+        <p>Datos: 07/24/2026 03:59:51</p>
+      </div>
+      <div class="operations-grid">
+        <article class="ops-card">
+          <h3>Azure Automation</h3>
+          <p>Ultimo job registrado por cada runbook publicado.</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>Runbooks</span><strong>9</strong></div>
+            <div class="ops-metric"><span>Ultimo OK</span><strong>5</strong></div>
+            <div class="ops-metric"><span>Ultimo fallo</span><strong>2</strong></div>
+          </div>
+          <details>
+            <summary>Ver runbooks (9)</summary>
+          <div class="ops-row"><div><strong>Patch-GP-Middleware-Monthly</strong><span>07/20/2026 06:13:19</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs</strong><span>07/14/2026 05:52:23</span></div><span class="pill warn">Stopped</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch1</strong><span></span></div><span class="pill warn">Running</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch2</strong><span>07/23/2026 04:11:51</span></div><span class="pill bad">Failed</span></div>
+          <div class="ops-row"><div><strong>Patch-GP-VMs-Batch3</strong><span>07/23/2026 05:43:05</span></div><span class="pill bad">Failed</span></div>
+          <div class="ops-row"><div><strong>Start-OpenVPN-VM</strong><span>07/23/2026 12:02:22</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Start-VM</strong><span>07/23/2026 12:03:01</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Stop-OpenVPN-VM</strong><span>07/23/2026 23:02:52</span></div><span class="pill ok">Completed</span></div>
+          <div class="ops-row"><div><strong>Stop-VM</strong><span>07/23/2026 23:02:40</span></div><span class="pill ok">Completed</span></div>
+          </details>
+        </article>
+        <article class="ops-card">
+          <h3>Azure Backup</h3>
+          <p>Politicas: Diario, Cada 7 dias. Retencion configurada: 7-93 dias.</p>
+          <div class="ops-metrics">
+            <div class="ops-metric"><span>VMs protegidas</span><strong>28</strong></div>
+            <div class="ops-metric"><span>Azure saludable</span><strong>28</strong></div>
+            <div class="ops-metric"><span>Fuera de RPO</span><strong>11</strong></div>
+          </div>
+          <details>
+            <summary>Ver VMs fuera de su umbral de recuperacion</summary>
+          <div class="ops-row"><div><strong>Piryp-admin-srv</strong><span>06/05/2024 05:00:07 · BackupPolicy-piryp-srv</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>subamoslavoz-fest-srv</strong><span>09/02/2024 04:40:10 · EnhancedPolicy-subamoslavoz</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>integracion-transbank-cl</strong><span>01/24/2025 04:24:44 · BkpPolicy-integraciontbkchile</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Snipe-WH-srv</strong><span>06/06/2025 01:08:25 · BkpPolicy-snipewh</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Dominga-VM</strong><span>07/25/2025 04:03:30 · DailyPolicy-Dominga</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Salmoneras-vm</strong><span>02/11/2026 04:10:09 · DailyPolicy-Salmoneras</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>sueltaelagua-wp-srv</strong><span>02/11/2026 11:11:42 · DailyPolicy-sueltaelagua</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>FGCOL-v2-2024</strong><span>05/18/2026 11:03:23 · EnhancedPolicy-Formacolombiav2</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Votaxlosbosques-srv</strong><span>05/19/2026 04:37:47 · BkpPolicy-votaxlosbosques</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>regresion-ambiental-srv</strong><span>05/26/2026 04:09:06 · Backuppolicy-salvalasleyes</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Unifi-controller-srv</strong><span>06/01/2026 04:31:18 · backuppolicy-unifi</span></div><span class="pill warn">Outside RPO</span></div>
+          </details>
+          <details>
+            <summary>Ver VMs protegidas (28)</summary>
+          <div class="ops-row"><div><strong>Piryp-admin-srv</strong><span>06/05/2024 05:00:07 · BackupPolicy-piryp-srv · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>subamoslavoz-fest-srv</strong><span>09/02/2024 04:40:10 · EnhancedPolicy-subamoslavoz · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>integracion-transbank-cl</strong><span>01/24/2025 04:24:44 · BkpPolicy-integraciontbkchile · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Snipe-WH-srv</strong><span>06/06/2025 01:08:25 · BkpPolicy-snipewh · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Dominga-VM</strong><span>07/25/2025 04:03:30 · DailyPolicy-Dominga · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Salmoneras-vm</strong><span>02/11/2026 04:10:09 · DailyPolicy-Salmoneras · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>sueltaelagua-wp-srv</strong><span>02/11/2026 11:11:42 · DailyPolicy-sueltaelagua · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>FGCOL-v2-2024</strong><span>05/18/2026 11:03:23 · EnhancedPolicy-Formacolombiav2 · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Votaxlosbosques-srv</strong><span>05/19/2026 04:37:47 · BkpPolicy-votaxlosbosques · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>regresion-ambiental-srv</strong><span>05/26/2026 04:09:06 · Backuppolicy-salvalasleyes · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Unifi-controller-srv</strong><span>06/01/2026 04:31:18 · backuppolicy-unifi · Diario</span></div><span class="pill warn">Outside RPO</span></div>
+          <div class="ops-row"><div><strong>Webserver-Ar-Dev</strong><span>07/20/2026 04:24:59 · BkpPolicy-lwaxtjjf · Cada 7 dias</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>ADDI-2024-srv</strong><span>07/23/2026 04:10:38 · BackupPolicy-addi-srv · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>snipe-inventario-srv</strong><span>07/23/2026 04:16:37 · backuppolicy-snipe-inventario · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>FGARG-v2-2024</strong><span>07/23/2026 04:21:01 · EnhancedPolicy-forma2 · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>FGARGv2</strong><span>07/23/2026 04:21:40 · BackupPolicy-FormaArg · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>Monitores-Grafana-srv</strong><span>07/23/2026 04:27:53 · EnhancedPolicy-Monitores-Grafana · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>greenpos-colombia-srv</strong><span>07/23/2026 04:29:15 · BkpPolicy-gpos-col · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>middleware-integracion-prod-srv</strong><span>07/23/2026 04:35:30 · EnhancedPolicy-Middleware · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>middleware-integracion-srv</strong><span>07/23/2026 04:36:17 · EnhancedPolicy-Middleware · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>salvemoslosglaciares-srv</strong><span>07/23/2026 04:36:37 · EnhancedPolicy-glaciares · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>migracion-hubspotmagma-srv</strong><span>07/23/2026 04:38:33 · EnhancedPolicy-hubspotmagma · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>Greenpos-Chile-srv</strong><span>07/23/2026 04:39:32 · BackupPolicy-gposchile · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>Redmine-rt-srv</strong><span>07/23/2026 04:43:45 · Backupolicy-redmine · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>Piryp-admin-2024-srv</strong><span>07/23/2026 04:48:44 · EnhancedPolicy-piryp2024 · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>WebSrv-AppCoupon-srv</strong><span>07/23/2026 04:51:24 · BkpPolicy-webappcupon · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>bronces-integrado-wp-srv</strong><span>07/23/2026 05:56:45 · BKPPolicy-losbroncesintegrado · Diario</span></div><span class="pill ok">Healthy</span></div>
+          <div class="ops-row"><div><strong>integracion-payu-colombia-srv</strong><span>07/23/2026 11:08:22 · BkpPolicy-colombiapayu · Diario</span></div><span class="pill ok">Healthy</span></div>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="table">
+      <div class="table-head">
+        <h2>Inventory Details</h2>
+        <input class="filter" id="vm-filter" type="search" placeholder="Filter VMs, resource groups or status" aria-label="Filter VM inventory">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>VM</th><th>OS</th><th>Status</th><th>Security</th><th>Critical</th><th>Other</th><th>ESM</th><th>Reboot</th><th>Last assessment</th><th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>devapp-greenpeace-cl-srv</strong><span>websrv-dev-app-greenpeace-cl</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">245</td>
+          <td class="num">0</td>
+          <td class="num">59</td>
+          <td class="num">189</td>
+          <td>False</td>
+          <td>2026-07-23T05:41:51Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/30.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>WebSrv-AppCoupon-srv</strong><span>websrv-app-coupon</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">244</td>
+          <td class="num">0</td>
+          <td class="num">75</td>
+          <td class="num">185</td>
+          <td>False</td>
+          <td>2026-07-24T03:53:15Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/19.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>Webserver-Ar-Dev</strong><span>websrv-dev-app-greenpeace-arg</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">189</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">189</td>
+          <td>False</td>
+          <td>2026-07-23T15:07:25Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/31.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>snipe-inventario-srv</strong><span>snipe-inventario-rg</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">157</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">157</td>
+          <td>False</td>
+          <td>2026-07-23T10:32:58Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/24.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>Greenpos-Chile-srv</strong><span>greenpos_chile</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">144</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">144</td>
+          <td>False</td>
+          <td>2026-07-24T02:55:34Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/31.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>FGARGv2</strong><span>greenpos_forma_arg</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">141</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">141</td>
+          <td>False</td>
+          <td>2026-07-24T02:58:38Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/474.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>forms-magma-api-srv</strong><span>formularios_magma_api</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">13</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">2</td>
+          <td>False</td>
+          <td>2026-07-24T02:57:23Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/345.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>middleware-integracion-prod-srv</strong><span>middleware_integracion</span></td>
+          <td>Linux</td>
+          <td><span class="pill warn">updates_pending</span></td>
+          <td class="num">10</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T00:30:30Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>migracion-hubspotmagma-srv</strong><span>hubspottomagma</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">9</td>
+          <td class="num">0</td>
+          <td class="num">5</td>
+          <td class="num">9</td>
+          <td>False</td>
+          <td>2026-07-23T15:13:14Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/365.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>salvemoslosglaciares-srv</strong><span>salvemoslosglaciares.org_camp</span></td>
+          <td>Linux</td>
+          <td><span class="pill bad">assessment_warning</span></td>
+          <td class="num">9</td>
+          <td class="num">0</td>
+          <td class="num">5</td>
+          <td class="num">9</td>
+          <td>False</td>
+          <td>2026-07-23T16:02:57Z</td>
+          <td class="notes">1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/405.core.log</td>
+        </tr>
+        <tr>
+          <td><strong>middleware-integracion-srv</strong><span>middleware_integracion</span></td>
+          <td>Linux</td>
+          <td><span class="pill warn">updates_pending</span></td>
+          <td class="num">8</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T02:50:35Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>Dominga-HDD-VM</strong><span>camp-dominga</span></td>
+          <td>Linux</td>
+          <td><span class="pill warn">updates_pending</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">5</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T15:46:57Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>greenpos-colombia-srv</strong><span>greenpos_colombia</span></td>
+          <td>Linux</td>
+          <td><span class="pill warn">updates_pending</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">5</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T14:58:23Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>ADDI-2024-srv</strong><span>addi-server</span></td>
+          <td>Windows</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-24T02:52:16Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>datagpfr</strong><span>datagpfr_group</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T03:53:35Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>FGARG-v2-2024</strong><span>greenpos_forma_2.0_arg</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-24T03:37:51Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>middleware-gui-srv</strong><span>middleware_integracion</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T03:59:03Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>middleware-staging</strong><span>middleware_integracion</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T05:01:47Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>Monitores-Grafana-srv</strong><span>monitores-grafana-andino</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-24T03:12:08Z</td>
+          <td class="notes"></td>
+        </tr>
+        <tr>
+          <td><strong>UniFi-Controller-VM</strong><span>unifi-controller-vm</span></td>
+          <td>Linux</td>
+          <td><span class="pill ok">ok</span></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td>False</td>
+          <td>2026-07-23T05:05:34Z</td>
+          <td class="notes"></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      Source: Azure Resource Graph <code>patchassessmentresources</code>. JSON: <a href="./azure-vm-updates.json">azure-vm-updates.json</a>.
+    </footer>
+  </main>
+  <script>
+    (function () {
+      const target = document.getElementById("next-update");
+      if (!target) return;
+
+      function updateNextRun() {
+        const nowInBuenosAires = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Buenos_Aires" }));
+        const nextRun = new Date(nowInBuenosAires);
+        nextRun.setHours(9, 0, 0, 0);
+        if (nextRun <= nowInBuenosAires) nextRun.setDate(nextRun.getDate() + 1);
+
+        const remainingMinutes = Math.max(0, Math.ceil((nextRun - nowInBuenosAires) / 60000));
+        const hours = Math.floor(remainingMinutes / 60);
+        const minutes = remainingMinutes % 60;
+        const when = hours === 0 ? "en " + minutes + " min" : "en " + hours + " h " + minutes + " min";
+        target.textContent = "Actualizacion diaria, 09:00 ART. Proxima: " + when + ".";
+      }
+
+      updateNextRun();
+      setInterval(updateNextRun, 60000);
+    })();
+
+    const filter = document.getElementById("vm-filter");
+    const rows = Array.from(document.querySelectorAll("tbody tr"));
+    filter.addEventListener("input", () => {
+      const query = filter.value.trim().toLowerCase();
+      rows.forEach((row) => { row.hidden = query && !row.textContent.toLowerCase().includes(query); });
+    });
+  </script>
+</body>
+</html>

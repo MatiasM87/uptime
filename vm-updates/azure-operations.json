@@ -1,0 +1,677 @@
+{
+  "generatedAt": "2026-07-24T03:59:51Z",
+  "automation": {
+    "accounts": 1,
+    "publishedRunbooks": 9,
+    "completed": 5,
+    "failed": 2,
+    "notRun": 0,
+    "runbooks": [
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Patch-GP-Middleware-Monthly",
+        "state": "Published",
+        "lastStatus": "Completed",
+        "lastStarted": "2026-07-20T06:00:55Z",
+        "lastEnded": "2026-07-20T06:13:19Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Patch-GP-VMs",
+        "state": "Published",
+        "lastStatus": "Stopped",
+        "lastStarted": "2026-07-14T02:50:40Z",
+        "lastEnded": "2026-07-14T05:52:23Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Patch-GP-VMs-Batch1",
+        "state": "Published",
+        "lastStatus": "Running",
+        "lastStarted": "2026-07-24T02:50:32Z",
+        "lastEnded": ""
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Patch-GP-VMs-Batch2",
+        "state": "Published",
+        "lastStatus": "Failed",
+        "lastStarted": "2026-07-23T04:11:51Z",
+        "lastEnded": "2026-07-23T04:11:51Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Patch-GP-VMs-Batch3",
+        "state": "Published",
+        "lastStatus": "Failed",
+        "lastStarted": "2026-07-23T05:43:05Z",
+        "lastEnded": "2026-07-23T05:43:05Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Start-OpenVPN-VM",
+        "state": "Published",
+        "lastStatus": "Completed",
+        "lastStarted": "2026-07-23T12:00:40Z",
+        "lastEnded": "2026-07-23T12:02:22Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Start-VM",
+        "state": "Published",
+        "lastStatus": "Completed",
+        "lastStarted": "2026-07-23T12:00:47Z",
+        "lastEnded": "2026-07-23T12:03:01Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Stop-OpenVPN-VM",
+        "state": "Published",
+        "lastStatus": "Completed",
+        "lastStarted": "2026-07-23T23:01:42Z",
+        "lastEnded": "2026-07-23T23:02:52Z"
+      },
+      {
+        "account": "FR-MAIA-Automation",
+        "name": "Stop-VM",
+        "state": "Published",
+        "lastStatus": "Completed",
+        "lastStarted": "2026-07-23T23:01:24Z",
+        "lastEnded": "2026-07-23T23:02:40Z"
+      }
+    ]
+  },
+  "backups": {
+    "protectedVMs": 28,
+    "healthy": 28,
+    "failed": 0,
+    "outsideRpo": 11,
+    "policies": [
+      {
+        "name": "Backupolicy-redmine",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "BackupPolicy-addi-srv",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "BackupPolicy-FormaArg",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 93.0
+      },
+      {
+        "name": "BackupPolicy-gposchile",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "BackupPolicy-piryp-srv",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "Backuppolicy-salvalasleyes",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "backuppolicy-snipe-inventario",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "backuppolicy-unifi",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "BkpPolicy-colombiapayu",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "BkpPolicy-gpos-col",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "BkpPolicy-integraciontbkchile",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "BKPPolicy-losbroncesintegrado",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "BkpPolicy-lwaxtjjf",
+        "protectedVMs": 1,
+        "frequency": "Cada 7 dias",
+        "retentionDays": 28.0
+      },
+      {
+        "name": "BkpPolicy-snipewh",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 7.0
+      },
+      {
+        "name": "BkpPolicy-votaxlosbosques",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 7.0
+      },
+      {
+        "name": "BkpPolicy-webappcupon",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "DailyPolicy-Dominga",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "DailyPolicy-Salmoneras",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "DailyPolicy-sueltaelagua",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 7.0
+      },
+      {
+        "name": "EnhancedPolicy-forma2",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 10.0
+      },
+      {
+        "name": "EnhancedPolicy-Formacolombiav2",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 7.0
+      },
+      {
+        "name": "EnhancedPolicy-glaciares",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 62.0
+      },
+      {
+        "name": "EnhancedPolicy-hubspotmagma",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 7.0
+      },
+      {
+        "name": "EnhancedPolicy-Middleware",
+        "protectedVMs": 2,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "EnhancedPolicy-Monitores-Grafana",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "EnhancedPolicy-piryp2024",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      },
+      {
+        "name": "EnhancedPolicy-subamoslavoz",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 31.0
+      }
+    ],
+    "items": [
+      {
+        "vm": "Piryp-admin-srv",
+        "resourceGroup": "piryp-server",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2024-06-05T05:00:07Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-piryp-srv",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "subamoslavoz-fest-srv",
+        "resourceGroup": "subamoslavoz_fest_srv",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2024-09-02T04:40:10Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-subamoslavoz",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-transbank-cl",
+        "resourceGroup": "integracion_tbk_chile",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2025-01-24T04:24:44Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-integraciontbkchile",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Snipe-WH-srv",
+        "resourceGroup": "snipe-wh",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2025-06-06T01:08:25Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-snipewh",
+        "frequency": "Diario",
+        "retentionDays": 7.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Dominga-VM",
+        "resourceGroup": "camp-dominga",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2025-07-25T04:03:30Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DailyPolicy-Dominga",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Salmoneras-vm",
+        "resourceGroup": "nomassalmoneras",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-02-11T04:10:09Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DailyPolicy-Salmoneras",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "sueltaelagua-wp-srv",
+        "resourceGroup": "wp-sueltaelagua-srv",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-02-11T11:11:42Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DailyPolicy-sueltaelagua",
+        "frequency": "Diario",
+        "retentionDays": 7.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "FGCOL-v2-2024",
+        "resourceGroup": "greenpos_colombia_v2",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-05-18T11:03:23Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Formacolombiav2",
+        "frequency": "Diario",
+        "retentionDays": 7.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Votaxlosbosques-srv",
+        "resourceGroup": "votaxlosbosques-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-05-19T04:37:47Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-votaxlosbosques",
+        "frequency": "Diario",
+        "retentionDays": 7.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "regresion-ambiental-srv",
+        "resourceGroup": "regresion_ambiental",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-05-26T04:09:06Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "Backuppolicy-salvalasleyes",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Unifi-controller-srv",
+        "resourceGroup": "unifi-controller-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-06-01T04:31:18Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "backuppolicy-unifi",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Webserver-Ar-Dev",
+        "resourceGroup": "websrv-dev-app-greenpeace-arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-20T04:24:59Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-lwaxtjjf",
+        "frequency": "Cada 7 dias",
+        "retentionDays": 28.0,
+        "rpoThresholdDays": 10.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "ADDI-2024-srv",
+        "resourceGroup": "addi-server",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:10:38Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-addi-srv",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipe-inventario-srv",
+        "resourceGroup": "snipe-inventario-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:16:37Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "backuppolicy-snipe-inventario",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARG-v2-2024",
+        "resourceGroup": "greenpos_forma_2.0_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:21:01Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-forma2",
+        "frequency": "Diario",
+        "retentionDays": 10.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARGv2",
+        "resourceGroup": "greenpos_forma_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:21:40Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-FormaArg",
+        "frequency": "Diario",
+        "retentionDays": 93.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Monitores-Grafana-srv",
+        "resourceGroup": "monitores-grafana-andino",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:27:53Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Monitores-Grafana",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "greenpos-colombia-srv",
+        "resourceGroup": "greenpos_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:29:15Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-gpos-col",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-prod-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:35:30Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:36:17Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "salvemoslosglaciares-srv",
+        "resourceGroup": "salvemoslosglaciares.org_camp",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:36:37Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-glaciares",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "migracion-hubspotmagma-srv",
+        "resourceGroup": "hubspottomagma",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:38:33Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-hubspotmagma",
+        "frequency": "Diario",
+        "retentionDays": 7.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Greenpos-Chile-srv",
+        "resourceGroup": "greenpos_chile",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:39:32Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-gposchile",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Redmine-rt-srv",
+        "resourceGroup": "redmine-rt-andino-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:43:45Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "Backupolicy-redmine",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Piryp-admin-2024-srv",
+        "resourceGroup": "piryp-server",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:48:44Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-piryp2024",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "WebSrv-AppCoupon-srv",
+        "resourceGroup": "websrv-app-coupon",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T04:51:24Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-webappcupon",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T05:56:45Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-23T11:08:22Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      }
+    ]
+  },
+  "errors": []
+}
