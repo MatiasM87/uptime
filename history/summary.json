@@ -33,7 +33,7 @@
     "uptimeDay": "51.85%",
     "uptimeWeek": "53.02%",
     "uptimeMonth": "52.58%",
-    "uptimeYear": "86.87%",
+    "uptimeYear": "86.84%",
     "time": 556,
     "timeDay": 562,
     "timeWeek": 650,
@@ -140,7 +140,7 @@
       "2026-07-24": 629,
       "2026-07-25": 653,
       "2026-07-26": 693,
-      "2026-07-27": 6
+      "2026-07-27": 153
     }
   },
   {
@@ -153,7 +153,7 @@
     "uptimeDay": "52.18%",
     "uptimeWeek": "53.35%",
     "uptimeMonth": "53.08%",
-    "uptimeYear": "86.99%",
+    "uptimeYear": "86.96%",
     "time": 809,
     "timeDay": 522,
     "timeWeek": 619,
@@ -260,7 +260,7 @@
       "2026-07-24": 625,
       "2026-07-25": 649,
       "2026-07-26": 688,
-      "2026-07-27": 1
+      "2026-07-27": 148
     }
   },
   {
@@ -277,7 +277,7 @@
     "time": 309,
     "timeDay": 425,
     "timeWeek": 338,
-    "timeMonth": 297,
+    "timeMonth": 296,
     "timeYear": 320,
     "dailyMinutesDown": {
       "2025-11-18": 154,
@@ -437,11 +437,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/monitor.infogreenpeace.org.ico",
     "slug": "monitor-info-greenpeace",
     "status": "up",
-    "uptime": "93.43%",
+    "uptime": "93.49%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "93.43%",
-    "uptimeYear": "93.43%",
+    "uptimeMonth": "93.49%",
+    "uptimeYear": "93.49%",
     "time": 361,
     "timeDay": 689,
     "timeWeek": 489,
@@ -512,18 +512,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "down",
-    "uptime": "77.41%",
+    "uptime": "76.77%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "60.81%",
-    "uptimeMonth": "77.41%",
-    "uptimeYear": "77.41%",
+    "uptimeWeek": "59.35%",
+    "uptimeMonth": "76.77%",
+    "uptimeYear": "76.77%",
     "time": 555,
     "timeDay": 549,
     "timeWeek": 553,
     "timeMonth": 555,
     "timeYear": 555,
     "dailyMinutesDown": {
-      "2026-07-27": 11,
+      "2026-07-27": 158,
       "2026-07-26": 1440,
       "2026-07-25": 1440,
       "2026-07-24": 1060
@@ -571,18 +571,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "down",
-    "uptime": "77.69%",
+    "uptime": "77.05%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "60.81%",
-    "uptimeMonth": "77.69%",
-    "uptimeYear": "77.69%",
+    "uptimeWeek": "59.35%",
+    "uptimeMonth": "77.05%",
+    "uptimeYear": "77.05%",
     "time": 571,
     "timeDay": 552,
     "timeWeek": 584,
     "timeMonth": 571,
     "timeYear": 571,
     "dailyMinutesDown": {
-      "2026-07-27": 11,
+      "2026-07-27": 158,
       "2026-07-26": 1440,
       "2026-07-25": 1440,
       "2026-07-24": 1059
