@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-07-27T14:15:48Z",
+  "generatedAt": "2026-07-28T03:53:55Z",
   "source": "Azure Resource Graph patchassessmentresources",
   "totalVMsWithAssessment": 20,
-  "ok": 9,
-  "updatesPending": 2,
+  "ok": 8,
+  "updatesPending": 3,
   "rebootPending": 0,
-  "assessmentWarnings": 8,
-  "assessmentAttention": 1,
+  "assessmentWarnings": 9,
+  "assessmentAttention": 0,
   "esmRequiredVMs": 9,
-  "totalSecurity": 924.0,
+  "totalSecurity": 1192.0,
   "totalCritical": 0.0,
-  "totalPendingPatches": 1280.0,
-  "monthlyAzureCost": 1370.68,
+  "totalPendingPatches": 1303.0,
+  "monthlyAzureCost": 1393.56,
   "monthlyAzureCostCurrency": "USD",
-  "monthlyAzureCostDisplay": "USD 1,370.68",
+  "monthlyAzureCostDisplay": "USD 1,393.56",
   "monthlyAzureCostScope": "MonthToDate ActualCost PreTaxCost across configured subscriptions",
   "monthlyAzureCostSubscriptions": [
     {
       "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-      "cost": 76.8095940118934,
+      "cost": 78.4775601837132,
       "currency": "USD"
     },
     {
       "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "cost": 1293.8713445201,
+      "cost": 1315.07955035628,
       "currency": "USD"
     }
   ],
   "monthlyAzureCostWarnings": [],
   "operations": {
-    "generatedAt": "2026-07-27T14:15:27Z",
+    "generatedAt": "2026-07-28T03:53:35Z",
     "automation": {
       "accounts": 1,
       "publishedRunbooks": 9,
       "completed": 5,
-      "failed": 3,
+      "failed": 1,
       "notRun": 0,
       "runbooks": [
         {
@@ -57,17 +57,17 @@
           "account": "FR-MAIA-Automation",
           "name": "Patch-GP-VMs-Batch1",
           "state": "Published",
-          "lastStatus": "Failed",
-          "lastStarted": "2026-07-24T04:06:58Z",
-          "lastEnded": "2026-07-24T04:06:58Z"
+          "lastStatus": "Running",
+          "lastStarted": "2026-07-28T02:50:41Z",
+          "lastEnded": ""
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Patch-GP-VMs-Batch2",
           "state": "Published",
-          "lastStatus": "Failed",
-          "lastStarted": "2026-07-27T04:24:43Z",
-          "lastEnded": "2026-07-27T04:24:43Z"
+          "lastStatus": "Running",
+          "lastStarted": "2026-07-28T03:50:34Z",
+          "lastEnded": ""
         },
         {
           "account": "FR-MAIA-Automation",
@@ -98,16 +98,16 @@
           "name": "Stop-OpenVPN-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-07-24T23:02:13Z",
-          "lastEnded": "2026-07-24T23:03:24Z"
+          "lastStarted": "2026-07-27T23:02:19Z",
+          "lastEnded": "2026-07-27T23:03:24Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Stop-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-07-24T23:02:07Z",
-          "lastEnded": "2026-07-24T23:03:12Z"
+          "lastStarted": "2026-07-27T23:01:50Z",
+          "lastEnded": "2026-07-27T23:03:00Z"
         }
       ]
     },
@@ -724,22 +724,57 @@
       "pendingPatches": 300,
       "esmRequired": 189,
       "samplePatches": [
-        "linux-azure",
-        "libblockdev2",
-        "libc-dev-bin",
+        "python3-apport",
+        "linux-tools-common",
         "libglib2.0-data",
+        "libgcc-s1",
         "linux-cloud-tools-azure",
-        "python3-pkg-resources"
+        "libblockdev-part-err2"
       ],
       "sampleClassifications": [
-        "[\"Security-ESM\"]",
         "[\"Security\"]",
+        "[\"Security-ESM\"]",
         "[\"Other\"]"
       ],
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/31.core.log",
       "hasError": true,
       "health": "assessment_warning",
       "lastModified": "2026-07-27T05:57:16Z"
+    },
+    {
+      "vm": "WebSrv-AppCoupon-srv",
+      "resourceGroup": "websrv-app-coupon",
+      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+      "location": "eastus",
+      "osType": "Linux",
+      "powerState": "VM running",
+      "assessmentStatus": "Succeeded",
+      "readiness": "UnableToDetermine",
+      "assessmentMode": "Ready",
+      "patchMode": "",
+      "rebootPending": false,
+      "critical": 0,
+      "security": 244,
+      "other": 75,
+      "pendingPatches": 300,
+      "esmRequired": 185,
+      "samplePatches": [
+        "libpam-cap",
+        "snapd",
+        "libmount1",
+        "libasound2-data",
+        "linux-azure",
+        "libkmod2"
+      ],
+      "sampleClassifications": [
+        "[\"Security-ESM\"]",
+        "[\"Security\"]",
+        "[\"Other\"]"
+      ],
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/20.core.log",
+      "hasError": true,
+      "health": "assessment_warning",
+      "lastModified": "2026-07-28T03:49:21Z"
     },
     {
       "vm": "Webserver-Ar-Dev",
@@ -751,7 +786,7 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "",
+      "patchMode": "Unknown",
       "rebootPending": false,
       "critical": 0,
       "security": 189,
@@ -759,18 +794,18 @@
       "pendingPatches": 189,
       "esmRequired": 189,
       "samplePatches": [
-        "libglib2.0-0",
-        "gpg-agent",
+        "openssl",
+        "libcurl3-gnutls",
         "klibc-utils",
-        "curl",
-        "libsqlite3-0",
-        "liblzma5"
+        "bind9-dnsutils",
+        "libtsan0",
+        "libtiff5"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/32.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-27T04:20:12Z"
+      "lastModified": "2026-07-27T15:20:23Z"
     },
     {
       "vm": "snipe-inventario-srv",
@@ -778,7 +813,7 @@
       "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
       "location": "eastus",
       "osType": "Linux",
-      "powerState": "VM running",
+      "powerState": "VM deallocated",
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
@@ -790,12 +825,12 @@
       "pendingPatches": 157,
       "esmRequired": 157,
       "samplePatches": [
-        "linux-tools-azure",
-        "libfdisk1",
-        "libpng16-16",
-        "python3-pyasn1",
-        "tzdata",
-        "gpgsm"
+        "systemd",
+        "libsmartcols1",
+        "xxd",
+        "ncurses-bin",
+        "openssh-server",
+        "libblockdev-utils2"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/24.core.log",
@@ -813,7 +848,7 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Unknown",
+      "patchMode": "",
       "rebootPending": false,
       "critical": 0,
       "security": 144,
@@ -821,18 +856,18 @@
       "pendingPatches": 144,
       "esmRequired": 144,
       "samplePatches": [
-        "libpython3.8-minimal",
-        "libssh-4",
-        "gnupg-l10n",
-        "libblockdev-swap2",
-        "openssl",
-        "gpg-wks-client"
+        "gpgv",
+        "libgcc-s1",
+        "linux-cloud-tools-azure",
+        "libblockdev-part-err2",
+        "libasound2",
+        "bsdutils"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/31.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/32.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-26T21:32:19Z"
+      "lastModified": "2026-07-28T02:55:47Z"
     },
     {
       "vm": "FGARGv2",
@@ -844,7 +879,7 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Unknown",
+      "patchMode": "",
       "rebootPending": false,
       "critical": 0,
       "security": 141,
@@ -852,18 +887,18 @@
       "pendingPatches": 141,
       "esmRequired": 141,
       "samplePatches": [
-        "libpython3.8-minimal",
-        "fdisk",
-        "libblockdev-part-err2",
-        "libwbclient0",
-        "libssh-4",
-        "gnupg-l10n"
+        "jq",
+        "uuid-runtime",
+        "libfdisk1",
+        "gnupg-utils",
+        "libpng16-16",
+        "python3-pyasn1"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/474.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/475.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-26T10:07:19Z"
+      "lastModified": "2026-07-28T02:58:48Z"
     },
     {
       "vm": "middleware-integracion-prod-srv",
@@ -883,8 +918,8 @@
       "pendingPatches": 28,
       "esmRequired": 0,
       "samplePatches": [
-        "linux-cloud-tools-6.8.0-1063-azure",
         "linux-azure-6.8-cloud-tools-6.8.0-1063",
+        "linux-cloud-tools-6.8.0-1063-azure",
         "linux-tools-6.8.0-1063-azure",
         "linux-azure-6.8-tools-6.8.0-1063",
         "linux-headers-6.8.0-1063-azure",
@@ -906,26 +941,29 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Ready",
+      "patchMode": "Pending",
       "rebootPending": false,
       "critical": 0,
-      "security": 9,
+      "security": 15,
       "other": 0,
-      "pendingPatches": 9,
+      "pendingPatches": 15,
       "esmRequired": 9,
       "samplePatches": [
-        "node-lodash-packages",
-        "node-ip",
-        "python3-pip-whl",
-        "python3-pip",
-        "libnode72",
-        "libnode-dev"
+        "libc6-dev",
+        "libc6",
+        "locales",
+        "libc-dev-bin",
+        "libc-bin",
+        "libc-devtools"
       ],
-      "sampleClassifications": "[\"Security-ESM\"]",
+      "sampleClassifications": [
+        "[\"Security\"]",
+        "[\"Security-ESM\"]"
+      ],
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/371.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-27T08:01:17Z"
+      "lastModified": "2026-07-27T19:42:37Z"
     },
     {
       "vm": "salvemoslosglaciares-srv",
@@ -940,23 +978,26 @@
       "patchMode": "Ready",
       "rebootPending": false,
       "critical": 0,
-      "security": 9,
+      "security": 15,
       "other": 0,
-      "pendingPatches": 9,
+      "pendingPatches": 15,
       "esmRequired": 9,
       "samplePatches": [
-        "libnode-dev",
-        "node-lodash-packages",
-        "libnode72",
-        "python3-pip-whl",
-        "node-ip",
-        "node-form-data"
+        "libc6",
+        "locales",
+        "libc-dev-bin",
+        "libc-bin",
+        "libc-devtools",
+        "libc6-dev"
       ],
-      "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/408.core.log",
+      "sampleClassifications": [
+        "[\"Security\"]",
+        "[\"Security-ESM\"]"
+      ],
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/409.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-27T04:15:38Z"
+      "lastModified": "2026-07-28T03:33:16Z"
     },
     {
       "vm": "forms-magma-api-srv",
@@ -968,53 +1009,85 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Pending",
+      "patchMode": "Ready",
       "rebootPending": false,
       "critical": 0,
-      "security": 2,
+      "security": 8,
       "other": 0,
-      "pendingPatches": 2,
+      "pendingPatches": 8,
       "esmRequired": 2,
       "samplePatches": [
+        "python3-pip",
         "python3-pip-whl",
-        "python3-pip"
+        "libc6-dev",
+        "libc-devtools",
+        "libc-bin",
+        "libc-dev-bin"
       ],
-      "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/349.core.log",
+      "sampleClassifications": [
+        "[\"Security-ESM\"]",
+        "[\"Security\"]"
+      ],
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/350.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-07-27T07:46:14Z"
+      "lastModified": "2026-07-28T02:06:15Z"
     },
     {
-      "vm": "WebSrv-AppCoupon-srv",
-      "resourceGroup": "websrv-app-coupon",
+      "vm": "greenpos-colombia-srv",
+      "resourceGroup": "greenpos_colombia",
       "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
       "location": "eastus",
       "osType": "Linux",
       "powerState": "VM running",
-      "assessmentStatus": "InProgress",
-      "readiness": "UnableToDetermine",
+      "assessmentStatus": "Succeeded",
+      "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Unknown",
+      "patchMode": "Pending",
       "rebootPending": false,
       "critical": 0,
-      "security": 0,
-      "other": 311,
-      "pendingPatches": 300,
-      "esmRequired": 174,
+      "security": 3,
+      "other": 0,
+      "pendingPatches": 3,
+      "esmRequired": 0,
       "samplePatches": [
-        "containerd.io",
-        "cloud-init",
-        "landscape-common",
-        "pollinate",
-        "apt",
-        "snapd"
+        "locales",
+        "libc-bin",
+        "libc6"
       ],
-      "sampleClassifications": "[\"Other\"]",
+      "sampleClassifications": "[\"Security\"]",
       "error": "0 error/s reported.",
       "hasError": false,
-      "health": "assessment_attention",
-      "lastModified": "2026-07-26T22:30:43Z"
+      "health": "updates_pending",
+      "lastModified": "2026-07-27T15:17:30Z"
+    },
+    {
+      "vm": "middleware-gui-srv",
+      "resourceGroup": "middleware_integracion",
+      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+      "location": "eastus",
+      "osType": "Linux",
+      "powerState": "VM running",
+      "assessmentStatus": "Succeeded",
+      "readiness": "Supported",
+      "assessmentMode": "Ready",
+      "patchMode": "Ready",
+      "rebootPending": false,
+      "critical": 0,
+      "security": 3,
+      "other": 0,
+      "pendingPatches": 3,
+      "esmRequired": 0,
+      "samplePatches": [
+        "libc6",
+        "locales",
+        "libc-bin"
+      ],
+      "sampleClassifications": "[\"Security\"]",
+      "error": "0 error/s reported.",
+      "hasError": false,
+      "health": "updates_pending",
+      "lastModified": "2026-07-28T03:33:32Z"
     },
     {
       "vm": "ADDI-2024-srv",
@@ -1026,19 +1099,19 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Unknown",
+      "patchMode": "",
       "rebootPending": false,
       "critical": 0,
       "security": 0,
       "other": 0,
-      "pendingPatches": 1,
+      "pendingPatches": 0,
       "esmRequired": 0,
-      "samplePatches": "Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.455.367.0) - Current Channel (Broad)",
-      "sampleClassifications": "[\"Definition\"]",
+      "samplePatches": null,
+      "sampleClassifications": null,
       "error": "0 error/s reported",
       "hasError": false,
-      "health": "updates_pending",
-      "lastModified": "2026-07-27T02:51:16Z"
+      "health": "ok",
+      "lastModified": "2026-07-28T02:52:37Z"
     },
     {
       "vm": "datagpfr",
@@ -1086,7 +1159,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-07-26T14:03:15Z"
+      "lastModified": "2026-07-27T12:03:24Z"
     },
     {
       "vm": "FGARG-v2-2024",
@@ -1110,55 +1183,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-07-27T07:15:54Z"
-    },
-    {
-      "vm": "greenpos-colombia-srv",
-      "resourceGroup": "greenpos_colombia",
-      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "location": "eastus",
-      "osType": "Linux",
-      "powerState": "VM running",
-      "assessmentStatus": "Succeeded",
-      "readiness": "Supported",
-      "assessmentMode": "Ready",
-      "patchMode": "Ready",
-      "rebootPending": false,
-      "critical": 0,
-      "security": 0,
-      "other": 0,
-      "pendingPatches": 0,
-      "esmRequired": 0,
-      "samplePatches": null,
-      "sampleClassifications": null,
-      "error": "0 error/s reported.",
-      "hasError": false,
-      "health": "ok",
-      "lastModified": "2026-07-27T04:02:12Z"
-    },
-    {
-      "vm": "middleware-gui-srv",
-      "resourceGroup": "middleware_integracion",
-      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "location": "eastus",
-      "osType": "Linux",
-      "powerState": "VM running",
-      "assessmentStatus": "Succeeded",
-      "readiness": "Supported",
-      "assessmentMode": "Ready",
-      "patchMode": "Ready",
-      "rebootPending": false,
-      "critical": 0,
-      "security": 0,
-      "other": 0,
-      "pendingPatches": 0,
-      "esmRequired": 0,
-      "samplePatches": null,
-      "sampleClassifications": null,
-      "error": "0 error/s reported.",
-      "hasError": false,
-      "health": "ok",
-      "lastModified": "2026-07-27T04:04:21Z"
+      "lastModified": "2026-07-28T02:45:34Z"
     },
     {
       "vm": "middleware-integracion-srv",
@@ -1170,7 +1195,7 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Pending",
+      "patchMode": "Ready",
       "rebootPending": false,
       "critical": 0,
       "security": 0,
@@ -1182,7 +1207,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-07-27T09:53:34Z"
+      "lastModified": "2026-07-28T03:15:58Z"
     },
     {
       "vm": "middleware-staging",
@@ -1218,7 +1243,7 @@
       "assessmentStatus": "Succeeded",
       "readiness": "Supported",
       "assessmentMode": "Ready",
-      "patchMode": "Pending",
+      "patchMode": "Ready",
       "rebootPending": false,
       "critical": 0,
       "security": 0,
@@ -1230,7 +1255,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-07-27T00:29:11Z"
+      "lastModified": "2026-07-28T03:33:05Z"
     },
     {
       "vm": "UniFi-Controller-VM",
