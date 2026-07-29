@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-28T13:47:25Z",
+  "generatedAt": "2026-07-29T03:58:35Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 3,
+    "failed": 2,
     "notRun": 0,
     "runbooks": [
       {
@@ -28,16 +28,16 @@
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-07-28T04:01:29Z",
-        "lastEnded": "2026-07-28T04:01:29Z"
+        "lastStarted": "2026-07-29T03:49:16Z",
+        "lastEnded": "2026-07-29T03:49:16Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
-        "lastStatus": "Failed",
-        "lastStarted": "2026-07-28T04:44:54Z",
-        "lastEnded": "2026-07-28T04:44:54Z"
+        "lastStatus": "Running",
+        "lastStarted": "2026-07-29T03:50:34Z",
+        "lastEnded": ""
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-07-27T23:02:19Z",
-        "lastEnded": "2026-07-27T23:03:24Z"
+        "lastStarted": "2026-07-28T23:01:53Z",
+        "lastEnded": "2026-07-28T23:03:00Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-07-27T23:01:50Z",
-        "lastEnded": "2026-07-27T23:03:00Z"
+        "lastStarted": "2026-07-28T23:02:15Z",
+        "lastEnded": "2026-07-28T23:03:22Z"
       }
     ]
   },
