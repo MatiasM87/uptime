@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T13:02:58Z",
+  "generatedAt": "2026-08-02T04:18:02Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -85,7 +85,7 @@
     "protectedVMs": 28,
     "healthy": 28,
     "failed": 0,
-    "outsideRpo": 11,
+    "outsideRpo": 12,
     "policies": [
       {
         "name": "Backupolicy-redmine",
@@ -417,21 +417,6 @@
         "healthy": true
       },
       {
-        "vm": "Webserver-Ar-Dev",
-        "resourceGroup": "websrv-dev-app-greenpeace-arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-07-27T04:23:24Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-lwaxtjjf",
-        "frequency": "Cada 7 dias",
-        "retentionDays": 28.0,
-        "rpoThresholdDays": 10.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "Redmine-rt-srv",
         "resourceGroup": "redmine-rt-andino-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -443,6 +428,21 @@
         "frequency": "Diario",
         "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Webserver-Ar-Dev",
+        "resourceGroup": "websrv-dev-app-greenpeace-arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-07-27T04:23:24Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-lwaxtjjf",
+        "frequency": "Cada 7 dias",
+        "retentionDays": 28.0,
+        "rpoThresholdDays": 10.5,
         "stale": false,
         "healthy": true
       },
