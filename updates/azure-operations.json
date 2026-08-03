@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T13:05:12Z",
+  "generatedAt": "2026-08-03T04:22:36Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -36,8 +36,8 @@
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-07-30T04:13:02Z",
-        "lastEnded": "2026-07-30T04:13:02Z"
+        "lastStarted": "2026-08-03T04:14:55Z",
+        "lastEnded": "2026-08-03T04:14:55Z"
       },
       {
         "account": "FR-MAIA-Automation",
