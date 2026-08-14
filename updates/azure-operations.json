@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-13T12:53:35Z",
+  "generatedAt": "2026-08-14T03:17:51Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 3,
+    "failed": 2,
     "notRun": 1,
     "runbooks": [
       {
@@ -27,9 +27,9 @@
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
-        "lastStatus": "Failed",
-        "lastStarted": "2026-08-13T03:54:37Z",
-        "lastEnded": "2026-08-13T03:54:37Z"
+        "lastStatus": "Running",
+        "lastStarted": "2026-08-14T02:50:32Z",
+        "lastEnded": ""
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,22 +68,22 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-12T23:01:25Z",
-        "lastEnded": "2026-08-12T23:02:02Z"
+        "lastStarted": "2026-08-13T23:01:30Z",
+        "lastEnded": "2026-08-13T23:02:55Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-12T23:01:19Z",
-        "lastEnded": "2026-08-12T23:02:28Z"
+        "lastStarted": "2026-08-13T23:02:01Z",
+        "lastEnded": "2026-08-13T23:03:06Z"
       }
     ]
   },
   "backups": {
-    "protectedVMs": 28,
-    "healthy": 28,
+    "protectedVMs": 29,
+    "healthy": 29,
     "failed": 0,
     "outsideRpo": 11,
     "policies": [
@@ -200,6 +200,12 @@
         "protectedVMs": 1,
         "frequency": "Diario",
         "retentionDays": 7.0
+      },
+      {
+        "name": "DefaultPolicy",
+        "protectedVMs": 1,
+        "frequency": "Diario",
+        "retentionDays": 30.0
       },
       {
         "name": "EnhancedPolicy-forma2",
@@ -667,6 +673,21 @@
         "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-08-13T20:11:16Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
