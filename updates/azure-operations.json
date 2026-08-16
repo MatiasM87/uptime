@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T12:22:10Z",
+  "generatedAt": "2026-08-16T02:13:45Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,8 +68,8 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-15T01:00:44Z",
-        "lastEnded": "2026-08-15T01:01:46Z"
+        "lastStarted": "2026-08-16T01:00:48Z",
+        "lastEnded": "2026-08-16T01:01:56Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -85,7 +85,7 @@
     "protectedVMs": 29,
     "healthy": 29,
     "failed": 0,
-    "outsideRpo": 11,
+    "outsideRpo": 12,
     "policies": [
       {
         "name": "Backupolicy-redmine",
@@ -423,21 +423,6 @@
         "healthy": true
       },
       {
-        "vm": "Webserver-Ar-Dev",
-        "resourceGroup": "websrv-dev-app-greenpeace-arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-08-10T04:23:01Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-lwaxtjjf",
-        "frequency": "Cada 7 dias",
-        "retentionDays": 28.0,
-        "rpoThresholdDays": 10.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipe-inventario-srv",
         "resourceGroup": "snipe-inventario-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -449,6 +434,21 @@
         "frequency": "Diario",
         "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
+        "stale": true,
+        "healthy": true
+      },
+      {
+        "vm": "Webserver-Ar-Dev",
+        "resourceGroup": "websrv-dev-app-greenpeace-arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-08-10T04:23:01Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-lwaxtjjf",
+        "frequency": "Cada 7 dias",
+        "retentionDays": 28.0,
+        "rpoThresholdDays": 10.5,
         "stale": false,
         "healthy": true
       },
