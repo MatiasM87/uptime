@@ -13,7 +13,7 @@
     "time": 290,
     "timeDay": 396,
     "timeWeek": 322,
-    "timeMonth": 288,
+    "timeMonth": 285,
     "timeYear": 299,
     "dailyMinutesDown": {
       "2025-08-29": 90,
@@ -29,11 +29,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.64%",
+    "uptime": "96.63%",
     "uptimeDay": "54.82%",
-    "uptimeWeek": "53.92%",
-    "uptimeMonth": "51.66%",
-    "uptimeYear": "86.85%",
+    "uptimeWeek": "53.89%",
+    "uptimeMonth": "51.62%",
+    "uptimeYear": "86.83%",
     "time": 631,
     "timeDay": 22013,
     "timeWeek": 4966,
@@ -139,7 +139,8 @@
       "2026-08-13": 657,
       "2026-08-14": 675,
       "2026-08-15": 661,
-      "2026-08-16": 637
+      "2026-08-16": 651,
+      "2026-08-17": 68
     }
   },
   {
@@ -149,10 +150,10 @@
     "slug": "inventario-app",
     "status": "down",
     "uptime": "96.68%",
-    "uptimeDay": "55.21%",
-    "uptimeWeek": "54.79%",
-    "uptimeMonth": "52.61%",
-    "uptimeYear": "87.03%",
+    "uptimeDay": "55.15%",
+    "uptimeWeek": "54.72%",
+    "uptimeMonth": "52.56%",
+    "uptimeYear": "87.01%",
     "time": 866,
     "timeDay": 2428,
     "timeWeek": 3020,
@@ -258,7 +259,8 @@
       "2026-08-13": 652,
       "2026-08-14": 670,
       "2026-08-15": 645,
-      "2026-08-16": 632
+      "2026-08-16": 646,
+      "2026-08-17": 68
     }
   },
   {
@@ -275,7 +277,7 @@
     "time": 309,
     "timeDay": 240,
     "timeWeek": 350,
-    "timeMonth": 325,
+    "timeMonth": 321,
     "timeYear": 324,
     "dailyMinutesDown": {
       "2025-11-18": 154,
@@ -296,7 +298,7 @@
     "time": 202,
     "timeDay": 752,
     "timeWeek": 340,
-    "timeMonth": 216,
+    "timeMonth": 215,
     "timeYear": 203,
     "dailyMinutesDown": {
       "2026-02-26": 882,
@@ -317,7 +319,7 @@
     "time": 227,
     "timeDay": 213,
     "timeWeek": 233,
-    "timeMonth": 244,
+    "timeMonth": 241,
     "timeYear": 227,
     "dailyMinutesDown": {}
   },
@@ -335,7 +337,7 @@
     "time": 867,
     "timeDay": 1013,
     "timeWeek": 959,
-    "timeMonth": 894,
+    "timeMonth": 892,
     "timeYear": 867,
     "dailyMinutesDown": {}
   },
@@ -345,11 +347,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/salvalasleyesambientales.org.ico",
     "slug": "salva-las-leyes-ambientales",
     "status": "up",
-    "uptime": "97.07%",
+    "uptime": "97.08%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "96.81%",
-    "uptimeYear": "97.07%",
+    "uptimeYear": "97.08%",
     "time": 361,
     "timeDay": 431,
     "timeWeek": 458,
@@ -374,7 +376,7 @@
     "time": 250,
     "timeDay": 382,
     "timeWeek": 287,
-    "timeMonth": 266,
+    "timeMonth": 263,
     "timeYear": 250,
     "dailyMinutesDown": {}
   },
@@ -392,7 +394,7 @@
     "time": 377,
     "timeDay": 470,
     "timeWeek": 440,
-    "timeMonth": 395,
+    "timeMonth": 393,
     "timeYear": 377,
     "dailyMinutesDown": {
       "2026-07-27": 1000,
@@ -413,7 +415,7 @@
     "time": 198,
     "timeDay": 226,
     "timeWeek": 236,
-    "timeMonth": 213,
+    "timeMonth": 209,
     "timeYear": 198,
     "dailyMinutesDown": {}
   },
@@ -441,15 +443,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/monitor.infogreenpeace.org.ico",
     "slug": "monitor-info-greenpeace",
     "status": "up",
-    "uptime": "97.57%",
+    "uptime": "97.58%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "97.57%",
+    "uptimeYear": "97.58%",
     "time": 436,
     "timeDay": 824,
     "timeWeek": 573,
-    "timeMonth": 471,
+    "timeMonth": 466,
     "timeYear": 436,
     "dailyMinutesDown": {
       "2026-07-15": 946,
@@ -470,7 +472,7 @@
     "time": 1422,
     "timeDay": 1655,
     "timeWeek": 1488,
-    "timeMonth": 1439,
+    "timeMonth": 1435,
     "timeYear": 1422,
     "dailyMinutesDown": {}
   },
@@ -488,7 +490,7 @@
     "time": 258,
     "timeDay": 329,
     "timeWeek": 298,
-    "timeMonth": 271,
+    "timeMonth": 269,
     "timeYear": 258,
     "dailyMinutesDown": {}
   },
@@ -506,7 +508,7 @@
     "time": 3385,
     "timeDay": 2872,
     "timeWeek": 5765,
-    "timeMonth": 3486,
+    "timeMonth": 3501,
     "timeYear": 3385,
     "dailyMinutesDown": {
       "2026-08-01": 64,
@@ -520,15 +522,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "up",
-    "uptime": "77.27%",
+    "uptime": "77.31%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "68.42%",
     "uptimeMonth": "75.25%",
-    "uptimeYear": "77.27%",
+    "uptimeYear": "77.31%",
     "time": 577,
     "timeDay": 585,
     "timeWeek": 575,
-    "timeMonth": 583,
+    "timeMonth": 579,
     "timeYear": 577,
     "dailyMinutesDown": {
       "2026-07-27": 1292,
@@ -557,7 +559,7 @@
     "time": 317,
     "timeDay": 133,
     "timeWeek": 236,
-    "timeMonth": 323,
+    "timeMonth": 317,
     "timeYear": 317,
     "dailyMinutesDown": {}
   },
@@ -575,7 +577,7 @@
     "time": 290,
     "timeDay": 254,
     "timeWeek": 273,
-    "timeMonth": 298,
+    "timeMonth": 295,
     "timeYear": 290,
     "dailyMinutesDown": {}
   },
@@ -585,11 +587,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "up",
-    "uptime": "87.96%",
+    "uptime": "87.98%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "86.83%",
-    "uptimeYear": "87.96%",
+    "uptimeYear": "87.98%",
     "time": 600,
     "timeDay": 592,
     "timeWeek": 617,
@@ -653,7 +655,7 @@
     "time": 508,
     "timeDay": 969,
     "timeWeek": 695,
-    "timeMonth": 547,
+    "timeMonth": 543,
     "timeYear": 508,
     "dailyMinutesDown": {}
   },
@@ -671,7 +673,7 @@
     "time": 334,
     "timeDay": 501,
     "timeWeek": 393,
-    "timeMonth": 359,
+    "timeMonth": 351,
     "timeYear": 334,
     "dailyMinutesDown": {}
   },
@@ -707,7 +709,7 @@
     "time": 195,
     "timeDay": 237,
     "timeWeek": 228,
-    "timeMonth": 213,
+    "timeMonth": 212,
     "timeYear": 195,
     "dailyMinutesDown": {}
   },
@@ -725,7 +727,7 @@
     "time": 141,
     "timeDay": 218,
     "timeWeek": 195,
-    "timeMonth": 155,
+    "timeMonth": 153,
     "timeYear": 141,
     "dailyMinutesDown": {}
   },
@@ -743,7 +745,7 @@
     "time": 338,
     "timeDay": 216,
     "timeWeek": 839,
-    "timeMonth": 370,
+    "timeMonth": 366,
     "timeYear": 338,
     "dailyMinutesDown": {}
   }
