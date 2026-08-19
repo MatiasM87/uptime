@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T12:30:10Z",
+  "generatedAt": "2026-08-19T02:10:14Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-18T01:01:01Z",
-        "lastEnded": "2026-08-18T01:02:38Z"
+        "lastStarted": "2026-08-19T01:01:04Z",
+        "lastEnded": "2026-08-19T01:02:20Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-17T23:00:43Z",
-        "lastEnded": "2026-08-17T23:01:50Z"
+        "lastStarted": "2026-08-18T23:01:19Z",
+        "lastEnded": "2026-08-18T23:02:29Z"
       }
     ]
   },
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-08-17T11:02:50Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -686,6 +671,21 @@
         "healthStatus": "Passed",
         "protectionStatus": "Healthy",
         "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-08-18T11:06:14Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
