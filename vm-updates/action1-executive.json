@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-19T02:10:14Z",
+  "generatedAt": "2026-08-19T12:31:08Z",
   "totalEndpoints": 92,
-  "connectedEndpoints": 14,
-  "disconnectedEndpoints": 78,
+  "connectedEndpoints": 16,
+  "disconnectedEndpoints": 76,
   "rebootPending": 9,
   "endpointsWithCriticalUpdates": 19,
   "criticalMissingUpdates": 54,
