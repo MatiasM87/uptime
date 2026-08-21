@@ -1,6 +1,6 @@
 # Azure VM Updates
 
-Generated: 2026-08-20 12:33:15 UTC
+Generated: 2026-08-21 02:16:02 UTC
 
 Source: Azure Resource Graph patchassessmentresources. This report is read-only: it does not install patches and does not reboot VMs.
 
@@ -9,16 +9,16 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | Metric | Value |
 | --- | ---: |
 | VMs with patch assessment | 22 |
-| OK | 9 |
-| Updates pending | 0 |
+| OK | 6 |
+| Updates pending | 3 |
 | Reboot pending | 0 |
-| Assessment warnings/errors | 13 |
-| Assessment not succeeded | 1 |
+| Assessment warnings/errors | 12 |
+| Assessment not succeeded | 2 |
 | VMs with Ubuntu ESM required patches | 12 |
-| Costo mensual AZ acumulado | USD 1,006.26 |
-| Total security updates | 1144 |
+| Costo mensual AZ acumulado | USD 1,094.41 |
+| Total security updates | 905 |
 | Total critical updates | 0 |
-| Total pending patches listed | 1259 |
+| Total pending patches listed | 1264 |
 
 ## Automation and backups
 
@@ -35,27 +35,27 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 
 | VM | OS | Status | Security | Critical | Other | ESM | Reboot | Last assessment | Notes |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
-| devapp-greenpeace-cl-srv | Linux | assessment_warning | 245 | 0 | 61 | 189 | False | 2026-08-20T03:42:05Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | WebSrv-AppCoupon-srv | Linux | assessment_warning | 244 | 0 | 77 | 185 | False | 2026-08-20T04:46:54Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Webserver-Ar-Dev | Linux | assessment_warning | 189 | 0 | 0 | 189 | False | 2026-08-20T05:05:24Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| snipe-inventario-srv | Linux | assessment_warning | 157 | 0 | 2 | 157 | False | 2026-08-19T12:53:34Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| Greenpos-Chile-srv | Linux | assessment_warning | 144 | 0 | 0 | 144 | False | 2026-08-20T02:55:32Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| FGARGv2 | Linux | assessment_warning | 141 | 0 | 0 | 141 | False | 2026-08-20T02:58:30Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| snipe-inventario-srv | Linux | assessment_warning | 157 | 0 | 2 | 157 | False | 2026-08-20T10:33:10Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| Greenpos-Chile-srv | Linux | assessment_warning | 144 | 0 | 0 | 144 | False | 2026-08-20T14:01:55Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| FGARGv2 | Linux | assessment_warning | 141 | 0 | 0 | 141 | False | 2026-08-20T14:00:19Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | migracion-hubspotmagma-srv | Linux | assessment_warning | 9 | 0 | 0 | 9 | False | 2026-08-20T05:11:35Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | salvemoslosglaciares-srv | Linux | assessment_warning | 9 | 0 | 0 | 9 | False | 2026-08-20T04:20:40Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| middleware-integracion-prod-srv | Linux | updates_pending | 3 | 0 | 0 | 0 | False | 2026-08-20T17:30:34Z |  |
+| middleware-integracion-srv | Linux | updates_pending | 3 | 0 | 0 | 0 | False | 2026-08-20T17:23:18Z |  |
 | openvpn-gpandino | Linux | assessment_warning | 2 | 0 | 2 | 2 | False | 2026-08-19T12:50:59Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| forms-magma-api-srv | Linux | assessment_warning | 2 | 0 | 0 | 2 | False | 2026-08-20T04:54:36Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| forms-magma-api-srv | Linux | assessment_warning | 2 | 0 | 0 | 2 | False | 2026-08-20T16:53:58Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Monitores-Grafana-srv | Linux | assessment_warning | 1 | 0 | 0 | 1 | False | 2026-08-20T03:23:12Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | snipeit-prod-srv | Linux | assessment_warning | 1 | 0 | 0 | 1 | False | 2026-08-20T05:01:52Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| devapp-greenpeace-cl-srv | Linux | assessment_attention | 0 | 0 | 298 | 189 | False | 2026-08-20T15:16:03Z | Ubuntu Pro/ESM likely required |
+| ADDI-2024-srv | Windows | updates_pending | 0 | 0 | 0 | 0 | False | 2026-08-20T14:51:18Z |  |
 | UniFi-Controller-VM | Linux | assessment_attention | 0 | 0 | 0 | 0 | False | 2026-08-20T03:05:48Z | 2 error/s reported. The latest 2 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| ADDI-2024-srv | Windows | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T02:52:41Z |  |
 | datagpfr | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T03:53:44Z |  |
-| Dominga-HDD-VM | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T04:51:01Z |  |
-| FGARG-v2-2024 | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T04:58:23Z |  |
+| Dominga-HDD-VM | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T16:49:52Z |  |
+| FGARG-v2-2024 | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T16:03:56Z |  |
 | greenpos-colombia-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T03:57:17Z |  |
 | middleware-gui-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T03:59:21Z |  |
-| middleware-integracion-prod-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T06:13:34Z |  |
-| middleware-integracion-srv | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T06:19:22Z |  |
 | middleware-staging | Linux | ok | 0 | 0 | 0 | 0 | False | 2026-08-20T05:00:22Z |  |
 
 ## Notes
