@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T12:23:48Z",
+  "generatedAt": "2026-08-23T02:23:34Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,8 +68,8 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-22T01:01:26Z",
-        "lastEnded": "2026-08-22T01:02:29Z"
+        "lastStarted": "2026-08-23T01:00:43Z",
+        "lastEnded": "2026-08-23T01:01:46Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-08-21T11:06:17Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -686,6 +671,21 @@
         "healthStatus": "Passed",
         "protectionStatus": "Healthy",
         "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-08-22T11:10:11Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
