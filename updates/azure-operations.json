@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T12:24:21Z",
+  "generatedAt": "2026-08-24T02:14:45Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,8 +68,8 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-08-23T01:00:43Z",
-        "lastEnded": "2026-08-23T01:01:46Z"
+        "lastStarted": "2026-08-24T01:00:40Z",
+        "lastEnded": "2026-08-24T01:01:43Z"
       },
       {
         "account": "FR-MAIA-Automation",
