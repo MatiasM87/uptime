@@ -13,7 +13,7 @@
     "time": 290,
     "timeDay": 198,
     "timeWeek": 241,
-    "timeMonth": 280,
+    "timeMonth": 284,
     "timeYear": 299,
     "dailyMinutesDown": {
       "2025-08-29": 90,
@@ -32,8 +32,8 @@
     "uptime": "96.66%",
     "uptimeDay": "54.81%",
     "uptimeWeek": "54.31%",
-    "uptimeMonth": "52.02%",
-    "uptimeYear": "86.89%",
+    "uptimeMonth": "51.98%",
+    "uptimeYear": "86.88%",
     "time": 637,
     "timeDay": 492,
     "timeWeek": 485,
@@ -139,7 +139,8 @@
       "2026-08-20": 662,
       "2026-08-21": 665,
       "2026-08-22": 654,
-      "2026-08-23": 641
+      "2026-08-23": 651,
+      "2026-08-24": 65
     }
   },
   {
@@ -149,10 +150,10 @@
     "slug": "inventario-app",
     "status": "down",
     "uptime": "96.71%",
-    "uptimeDay": "55.42%",
+    "uptimeDay": "55.14%",
     "uptimeWeek": "54.65%",
-    "uptimeMonth": "52.96%",
-    "uptimeYear": "87.07%",
+    "uptimeMonth": "52.92%",
+    "uptimeYear": "87.06%",
     "time": 867,
     "timeDay": 1013,
     "timeWeek": 693,
@@ -257,7 +258,8 @@
       "2026-08-20": 657,
       "2026-08-21": 660,
       "2026-08-22": 649,
-      "2026-08-23": 637
+      "2026-08-23": 646,
+      "2026-08-24": 65
     }
   },
   {
@@ -274,7 +276,7 @@
     "time": 309,
     "timeDay": 267,
     "timeWeek": 261,
-    "timeMonth": 314,
+    "timeMonth": 318,
     "timeYear": 322,
     "dailyMinutesDown": {
       "2025-11-18": 154,
@@ -295,7 +297,7 @@
     "time": 202,
     "timeDay": 199,
     "timeWeek": 178,
-    "timeMonth": 213,
+    "timeMonth": 216,
     "timeYear": 203,
     "dailyMinutesDown": {
       "2026-02-26": 882,
@@ -316,7 +318,7 @@
     "time": 261,
     "timeDay": 118,
     "timeWeek": 459,
-    "timeMonth": 287,
+    "timeMonth": 292,
     "timeYear": 261,
     "dailyMinutesDown": {}
   },
@@ -334,7 +336,7 @@
     "time": 864,
     "timeDay": 832,
     "timeWeek": 846,
-    "timeMonth": 895,
+    "timeMonth": 902,
     "timeYear": 864,
     "dailyMinutesDown": {}
   },
@@ -344,15 +346,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/salvalasleyesambientales.org.ico",
     "slug": "salva-las-leyes-ambientales",
     "status": "up",
-    "uptime": "97.58%",
+    "uptime": "97.59%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "96.81%",
-    "uptimeYear": "97.58%",
+    "uptimeYear": "97.59%",
     "time": 362,
     "timeDay": 460,
     "timeWeek": 362,
-    "timeMonth": 371,
+    "timeMonth": 374,
     "timeYear": 362,
     "dailyMinutesDown": {
       "2026-07-27": 1000,
@@ -373,7 +375,7 @@
     "time": 248,
     "timeDay": 187,
     "timeWeek": 235,
-    "timeMonth": 262,
+    "timeMonth": 265,
     "timeYear": 248,
     "dailyMinutesDown": {}
   },
@@ -383,15 +385,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/greenpeaceenlasescuelas.org.ico",
     "slug": "greenpeace-en-las-escuelas",
     "status": "up",
-    "uptime": "97.59%",
+    "uptime": "97.60%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "96.81%",
-    "uptimeYear": "97.59%",
+    "uptimeYear": "97.60%",
     "time": 377,
     "timeDay": 508,
     "timeWeek": 374,
-    "timeMonth": 394,
+    "timeMonth": 397,
     "timeYear": 377,
     "dailyMinutesDown": {
       "2026-07-27": 1000,
@@ -412,7 +414,7 @@
     "time": 194,
     "timeDay": 304,
     "timeWeek": 172,
-    "timeMonth": 208,
+    "timeMonth": 210,
     "timeYear": 194,
     "dailyMinutesDown": {}
   },
@@ -430,7 +432,7 @@
     "time": 183,
     "timeDay": 228,
     "timeWeek": 187,
-    "timeMonth": 187,
+    "timeMonth": 188,
     "timeYear": 183,
     "dailyMinutesDown": {}
   },
@@ -448,7 +450,7 @@
     "time": 437,
     "timeDay": 509,
     "timeWeek": 440,
-    "timeMonth": 477,
+    "timeMonth": 483,
     "timeYear": 437,
     "dailyMinutesDown": {
       "2026-07-15": 946,
@@ -469,7 +471,7 @@
     "time": 1412,
     "timeDay": 1476,
     "timeWeek": 1360,
-    "timeMonth": 1426,
+    "timeMonth": 1432,
     "timeYear": 1412,
     "dailyMinutesDown": {}
   },
@@ -487,7 +489,7 @@
     "time": 265,
     "timeDay": 373,
     "timeWeek": 305,
-    "timeMonth": 297,
+    "timeMonth": 305,
     "timeYear": 265,
     "dailyMinutesDown": {}
   },
@@ -505,7 +507,7 @@
     "time": 3311,
     "timeDay": 2718,
     "timeWeek": 2810,
-    "timeMonth": 3545,
+    "timeMonth": 3570,
     "timeYear": 3311,
     "dailyMinutesDown": {
       "2026-08-01": 64,
@@ -519,15 +521,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "up",
-    "uptime": "81.24%",
+    "uptime": "81.26%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "75.25%",
-    "uptimeYear": "81.24%",
+    "uptimeYear": "81.26%",
     "time": 574,
     "timeDay": 538,
     "timeWeek": 554,
-    "timeMonth": 579,
+    "timeMonth": 580,
     "timeYear": 574,
     "dailyMinutesDown": {
       "2026-07-27": 1292,
@@ -556,7 +558,7 @@
     "time": 321,
     "timeDay": 454,
     "timeWeek": 343,
-    "timeMonth": 328,
+    "timeMonth": 331,
     "timeYear": 321,
     "dailyMinutesDown": {}
   },
@@ -574,7 +576,7 @@
     "time": 280,
     "timeDay": 231,
     "timeWeek": 225,
-    "timeMonth": 284,
+    "timeMonth": 283,
     "timeYear": 280,
     "dailyMinutesDown": {}
   },
@@ -584,15 +586,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "up",
-    "uptime": "90.05%",
+    "uptime": "90.07%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "86.83%",
-    "uptimeYear": "90.05%",
+    "uptimeYear": "90.07%",
     "time": 600,
     "timeDay": 630,
     "timeWeek": 601,
-    "timeMonth": 609,
+    "timeMonth": 611,
     "timeYear": 600,
     "dailyMinutesDown": {
       "2026-07-27": 1292,
@@ -616,7 +618,7 @@
     "time": 281,
     "timeDay": 311,
     "timeWeek": 210,
-    "timeMonth": 276,
+    "timeMonth": 274,
     "timeYear": 281,
     "dailyMinutesDown": {}
   },
@@ -634,7 +636,7 @@
     "time": 257,
     "timeDay": 263,
     "timeWeek": 181,
-    "timeMonth": 313,
+    "timeMonth": 318,
     "timeYear": 257,
     "dailyMinutesDown": {}
   },
@@ -652,7 +654,7 @@
     "time": 507,
     "timeDay": 521,
     "timeWeek": 499,
-    "timeMonth": 557,
+    "timeMonth": 571,
     "timeYear": 507,
     "dailyMinutesDown": {}
   },
@@ -670,7 +672,7 @@
     "time": 334,
     "timeDay": 360,
     "timeWeek": 332,
-    "timeMonth": 355,
+    "timeMonth": 361,
     "timeYear": 334,
     "dailyMinutesDown": {}
   },
@@ -688,7 +690,7 @@
     "time": 276,
     "timeDay": 254,
     "timeWeek": 242,
-    "timeMonth": 303,
+    "timeMonth": 309,
     "timeYear": 276,
     "dailyMinutesDown": {}
   },
@@ -706,7 +708,7 @@
     "time": 194,
     "timeDay": 223,
     "timeWeek": 189,
-    "timeMonth": 213,
+    "timeMonth": 216,
     "timeYear": 194,
     "dailyMinutesDown": {}
   },
@@ -724,7 +726,7 @@
     "time": 141,
     "timeDay": 142,
     "timeWeek": 139,
-    "timeMonth": 157,
+    "timeMonth": 161,
     "timeYear": 141,
     "dailyMinutesDown": {}
   },
@@ -742,7 +744,7 @@
     "time": 323,
     "timeDay": 215,
     "timeWeek": 232,
-    "timeMonth": 371,
+    "timeMonth": 378,
     "timeYear": 323,
     "dailyMinutesDown": {}
   }
