@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T15:33:04Z",
+  "generatedAt": "2026-09-05T05:00:52Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-03T23:02:06Z",
-        "lastEnded": "2026-09-03T23:03:29Z"
+        "lastStarted": "2026-09-04T23:00:49Z",
+        "lastEnded": "2026-09-04T23:02:08Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-03T23:01:17Z",
-        "lastEnded": "2026-09-03T23:02:52Z"
+        "lastStarted": "2026-09-04T23:01:03Z",
+        "lastEnded": "2026-09-04T23:01:47Z"
       }
     ]
   },
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "FGARG-v2-2024",
-        "resourceGroup": "greenpos_forma_2.0_arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-03T04:27:07Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-forma2",
-        "frequency": "Diario",
-        "retentionDays": 10.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -538,6 +523,21 @@
         "policy": "EnhancedPolicy-Middleware",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARG-v2-2024",
+        "resourceGroup": "greenpos_forma_2.0_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-04T04:28:21Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-forma2",
+        "frequency": "Diario",
+        "retentionDays": 10.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
