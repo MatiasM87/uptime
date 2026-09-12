@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T15:39:01Z",
+  "generatedAt": "2026-09-12T05:12:42Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-10T23:01:37Z",
-        "lastEnded": "2026-09-10T23:02:57Z"
+        "lastStarted": "2026-09-11T23:01:37Z",
+        "lastEnded": "2026-09-11T23:02:36Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-10T23:02:06Z",
-        "lastEnded": "2026-09-10T23:03:12Z"
+        "lastStarted": "2026-09-11T23:01:24Z",
+        "lastEnded": "2026-09-11T23:02:30Z"
       }
     ]
   },
