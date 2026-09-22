@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T17:35:18Z",
+  "generatedAt": "2026-09-22T05:39:59Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -28,24 +28,24 @@
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-09-18T03:16:53Z",
-        "lastEnded": "2026-09-18T03:16:53Z"
+        "lastStarted": "2026-09-22T03:08:20Z",
+        "lastEnded": "2026-09-22T03:08:20Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-09-21T05:15:12Z",
-        "lastEnded": "2026-09-21T05:15:12Z"
+        "lastStarted": "2026-09-22T04:50:47Z",
+        "lastEnded": "2026-09-22T04:50:47Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-09-21T05:33:29Z",
-        "lastEnded": "2026-09-21T05:33:29Z"
+        "lastStarted": "2026-09-22T05:23:16Z",
+        "lastEnded": "2026-09-22T05:23:16Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-18T23:01:10Z",
-        "lastEnded": "2026-09-18T23:03:00Z"
+        "lastStarted": "2026-09-21T23:01:13Z",
+        "lastEnded": "2026-09-21T23:02:26Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-18T23:02:48Z",
-        "lastEnded": "2026-09-18T23:03:54Z"
+        "lastStarted": "2026-09-21T23:01:01Z",
+        "lastEnded": "2026-09-21T23:02:20Z"
       }
     ]
   },
@@ -423,21 +423,6 @@
         "healthy": true
       },
       {
-        "vm": "snipeit-prod-srv",
-        "resourceGroup": "snipeit-prod-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-21T03:39:48Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "DefaultPolicy",
-        "frequency": "Diario",
-        "retentionDays": 30.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "ADDI-2024-srv",
         "resourceGroup": "addi-server",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -463,21 +448,6 @@
         "policy": "backuppolicy-snipe-inventario",
         "frequency": "Diario",
         "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "FGARG-v2-2024",
-        "resourceGroup": "greenpos_forma_2.0_arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-21T04:22:41Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-forma2",
-        "frequency": "Diario",
-        "retentionDays": 10.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
@@ -536,51 +506,6 @@
         "healthStatus": "Passed",
         "protectionStatus": "Healthy",
         "policy": "BkpPolicy-gpos-col",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "middleware-integracion-srv",
-        "resourceGroup": "middleware_integracion",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-21T04:35:18Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-Middleware",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "salvemoslosglaciares-srv",
-        "resourceGroup": "salvemoslosglaciares.org_camp",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-21T04:37:27Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-glaciares",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "middleware-integracion-prod-srv",
-        "resourceGroup": "middleware_integracion",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-21T04:39:09Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-Middleware",
         "frequency": "Diario",
         "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
@@ -686,6 +611,81 @@
         "healthStatus": "Passed",
         "protectionStatus": "Healthy",
         "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-22T03:37:40Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARG-v2-2024",
+        "resourceGroup": "greenpos_forma_2.0_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-22T04:27:06Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-forma2",
+        "frequency": "Diario",
+        "retentionDays": 10.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-22T04:34:28Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-prod-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-22T04:35:22Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "salvemoslosglaciares-srv",
+        "resourceGroup": "salvemoslosglaciares.org_camp",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-22T04:35:54Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-glaciares",
         "frequency": "Diario",
         "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
