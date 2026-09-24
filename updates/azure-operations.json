@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-23T15:53:21Z",
+  "generatedAt": "2026-09-24T05:34:12Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 3,
+    "failed": 2,
     "notRun": 1,
     "runbooks": [
       {
@@ -28,24 +28,24 @@
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-09-23T03:26:47Z",
-        "lastEnded": "2026-09-23T03:26:47Z"
+        "lastStarted": "2026-09-24T03:13:18Z",
+        "lastEnded": "2026-09-24T03:13:18Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-09-23T04:37:38Z",
-        "lastEnded": "2026-09-23T04:37:38Z"
+        "lastStarted": "2026-09-24T04:09:10Z",
+        "lastEnded": "2026-09-24T04:09:10Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
-        "lastStatus": "Failed",
-        "lastStarted": "2026-09-23T06:14:57Z",
-        "lastEnded": "2026-09-23T06:14:57Z"
+        "lastStatus": "Running",
+        "lastStarted": "2026-09-24T04:50:37Z",
+        "lastEnded": ""
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-22T23:01:51Z",
-        "lastEnded": "2026-09-22T23:03:41Z"
+        "lastStarted": "2026-09-23T23:01:46Z",
+        "lastEnded": "2026-09-23T23:03:18Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-09-22T23:02:19Z",
-        "lastEnded": "2026-09-22T23:03:48Z"
+        "lastStarted": "2026-09-23T23:01:48Z",
+        "lastEnded": "2026-09-23T23:02:55Z"
       }
     ]
   },
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "snipeit-prod-srv",
-        "resourceGroup": "snipeit-prod-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T03:34:21Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "DefaultPolicy",
-        "frequency": "Diario",
-        "retentionDays": 30.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "ADDI-2024-srv",
         "resourceGroup": "addi-server",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -483,36 +468,6 @@
         "healthy": true
       },
       {
-        "vm": "FGARG-v2-2024",
-        "resourceGroup": "greenpos_forma_2.0_arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:23:19Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-forma2",
-        "frequency": "Diario",
-        "retentionDays": 10.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "greenpos-colombia-srv",
-        "resourceGroup": "greenpos_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:24:04Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-gpos-col",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "FGARGv2",
         "resourceGroup": "greenpos_forma_arg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -528,51 +483,6 @@
         "healthy": true
       },
       {
-        "vm": "Monitores-Grafana-srv",
-        "resourceGroup": "monitores-grafana-andino",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:26:29Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-Monitores-Grafana",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "middleware-integracion-prod-srv",
-        "resourceGroup": "middleware_integracion",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:32:50Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-Middleware",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "salvemoslosglaciares-srv",
-        "resourceGroup": "salvemoslosglaciares.org_camp",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:33:01Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-glaciares",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "migracion-hubspotmagma-srv",
         "resourceGroup": "hubspottomagma",
         "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
@@ -583,21 +493,6 @@
         "policy": "EnhancedPolicy-hubspotmagma",
         "frequency": "Diario",
         "retentionDays": 7.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "middleware-integracion-srv",
-        "resourceGroup": "middleware_integracion",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-09-23T04:38:04Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "EnhancedPolicy-Middleware",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
@@ -688,6 +583,111 @@
         "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T03:33:56Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Monitores-Grafana-srv",
+        "resourceGroup": "monitores-grafana-andino",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:22:39Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Monitores-Grafana",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "greenpos-colombia-srv",
+        "resourceGroup": "greenpos_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:24:29Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-gpos-col",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARG-v2-2024",
+        "resourceGroup": "greenpos_forma_2.0_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:26:27Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-forma2",
+        "frequency": "Diario",
+        "retentionDays": 10.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-prod-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:29:37Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "salvemoslosglaciares-srv",
+        "resourceGroup": "salvemoslosglaciares.org_camp",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:30:41Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-glaciares",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "middleware-integracion-srv",
+        "resourceGroup": "middleware_integracion",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-09-24T04:30:49Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "EnhancedPolicy-Middleware",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
