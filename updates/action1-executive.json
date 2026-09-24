@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-24T05:34:12Z",
+  "generatedAt": "2026-09-24T16:15:31Z",
   "totalEndpoints": 91,
-  "connectedEndpoints": 5,
-  "disconnectedEndpoints": 86,
-  "rebootPending": 8,
-  "endpointsWithCriticalUpdates": 35,
-  "criticalMissingUpdates": 72,
+  "connectedEndpoints": 38,
+  "disconnectedEndpoints": 53,
+  "rebootPending": 7,
+  "endpointsWithCriticalUpdates": 31,
+  "criticalMissingUpdates": 68,
   "windowsEndpoints": 86,
   "macEndpoints": 5,
   "source": "Action1 endpoint inventory, update and vulnerability status"
