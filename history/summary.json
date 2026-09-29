@@ -13,7 +13,7 @@
     "time": 290,
     "timeDay": 337,
     "timeWeek": 272,
-    "timeMonth": 242,
+    "timeMonth": 245,
     "timeYear": 286,
     "dailyMinutesDown": {
       "2025-10-21": 16,
@@ -27,11 +27,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.70%",
+    "uptime": "96.69%",
     "uptimeDay": "65.80%",
     "uptimeWeek": "47.83%",
-    "uptimeMonth": "46.48%",
-    "uptimeYear": "86.70%",
+    "uptimeMonth": "46.39%",
+    "uptimeYear": "86.68%",
     "time": 763,
     "timeDay": 375,
     "timeWeek": 529,
@@ -137,7 +137,7 @@
       "2026-09-26": 814,
       "2026-09-27": 600,
       "2026-09-28": 642,
-      "2026-09-29": 5
+      "2026-09-29": 93
     }
   },
   {
@@ -146,11 +146,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.56%",
+    "uptime": "96.55%",
     "uptimeDay": "66.14%",
     "uptimeWeek": "48.16%",
-    "uptimeMonth": "42.78%",
-    "uptimeYear": "86.13%",
+    "uptimeMonth": "42.68%",
+    "uptimeYear": "86.12%",
     "time": 945,
     "timeDay": 368,
     "timeWeek": 616,
@@ -259,7 +259,7 @@
       "2026-09-26": 810,
       "2026-09-27": 595,
       "2026-09-28": 637,
-      "2026-09-29": 1
+      "2026-09-29": 88
     }
   },
   {
@@ -465,7 +465,7 @@
     "status": "up",
     "uptime": "99.68%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "98.24%",
+    "uptimeWeek": "99.11%",
     "uptimeMonth": "99.21%",
     "uptimeYear": "99.68%",
     "time": 1378,
