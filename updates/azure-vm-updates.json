@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-09-29T17:25:19Z",
+  "generatedAt": "2026-09-30T17:22:37Z",
   "source": "Azure Resource Graph patchassessmentresources",
   "totalVMsWithAssessment": 22,
-  "ok": 7,
-  "updatesPending": 3,
+  "ok": 8,
+  "updatesPending": 2,
   "rebootPending": 0,
   "assessmentWarnings": 12,
   "assessmentAttention": 2,
   "esmRequiredVMs": 10,
-  "totalSecurity": 1000.0,
+  "totalSecurity": 1008.0,
   "totalCritical": 0.0,
-  "totalPendingPatches": 1055.0,
-  "monthlyAzureCost": 1561.77,
+  "totalPendingPatches": 1059.0,
+  "monthlyAzureCost": 1607.92,
   "monthlyAzureCostCurrency": "USD",
-  "monthlyAzureCostDisplay": "USD 1,561.77",
+  "monthlyAzureCostDisplay": "USD 1,607.92",
   "monthlyAzureCostScope": "MonthToDate ActualCost PreTaxCost across configured subscriptions",
   "monthlyAzureCostSubscriptions": [
     {
       "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-      "cost": 86.7474470894546,
+      "cost": 90.2841665954655,
       "currency": "USD"
     },
     {
       "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "cost": 1475.02374674972,
+      "cost": 1517.63370183477,
       "currency": "USD"
     }
   ],
   "monthlyAzureCostWarnings": [],
   "operations": {
-    "generatedAt": "2026-09-29T17:24:57Z",
+    "generatedAt": "2026-09-30T17:22:18Z",
     "automation": {
       "accounts": 1,
       "publishedRunbooks": 9,
@@ -58,56 +58,56 @@
           "name": "Patch-GP-VMs-Batch1",
           "state": "Published",
           "lastStatus": "Failed",
-          "lastStarted": "2026-09-29T03:14:12Z",
-          "lastEnded": "2026-09-29T03:14:12Z"
+          "lastStarted": "2026-09-30T03:13:19Z",
+          "lastEnded": "2026-09-30T03:13:19Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Patch-GP-VMs-Batch2",
           "state": "Published",
           "lastStatus": "Failed",
-          "lastStarted": "2026-09-29T04:08:46Z",
-          "lastEnded": "2026-09-29T04:08:46Z"
+          "lastStarted": "2026-09-30T04:07:46Z",
+          "lastEnded": "2026-09-30T04:07:46Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Patch-GP-VMs-Batch3",
           "state": "Published",
           "lastStatus": "Failed",
-          "lastStarted": "2026-09-29T05:50:02Z",
-          "lastEnded": "2026-09-29T05:50:02Z"
+          "lastStarted": "2026-09-30T05:51:17Z",
+          "lastEnded": "2026-09-30T05:51:17Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Start-OpenVPN-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-09-29T12:00:53Z",
-          "lastEnded": "2026-09-29T12:02:44Z"
+          "lastStarted": "2026-09-30T12:01:04Z",
+          "lastEnded": "2026-09-30T12:02:45Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Start-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-09-29T12:00:55Z",
-          "lastEnded": "2026-09-29T12:03:11Z"
+          "lastStarted": "2026-09-30T12:00:56Z",
+          "lastEnded": "2026-09-30T12:03:19Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Stop-OpenVPN-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-09-28T23:01:07Z",
-          "lastEnded": "2026-09-28T23:02:23Z"
+          "lastStarted": "2026-09-29T23:02:02Z",
+          "lastEnded": "2026-09-29T23:03:14Z"
         },
         {
           "account": "FR-MAIA-Automation",
           "name": "Stop-VM",
           "state": "Published",
           "lastStatus": "Completed",
-          "lastStarted": "2026-09-28T23:02:29Z",
-          "lastEnded": "2026-09-28T23:03:48Z"
+          "lastStarted": "2026-09-29T23:02:09Z",
+          "lastEnded": "2026-09-29T23:03:20Z"
         }
       ]
     },
@@ -472,7 +472,7 @@
           "resourceGroup": "snipeit-prod-rg",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T03:35:34Z",
+          "lastBackupTime": "2026-09-30T03:35:12Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "DefaultPolicy",
@@ -487,7 +487,7 @@
           "resourceGroup": "addi-server",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:09:55Z",
+          "lastBackupTime": "2026-09-30T04:17:03Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BackupPolicy-addi-srv",
@@ -502,7 +502,7 @@
           "resourceGroup": "snipe-inventario-rg",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:16:52Z",
+          "lastBackupTime": "2026-09-30T04:17:15Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "backuppolicy-snipe-inventario",
@@ -513,11 +513,26 @@
           "healthy": true
         },
         {
+          "vm": "FGARGv2",
+          "resourceGroup": "greenpos_forma_arg",
+          "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+          "lastBackupStatus": "Completed",
+          "lastBackupTime": "2026-09-30T04:21:39Z",
+          "healthStatus": "Passed",
+          "protectionStatus": "Healthy",
+          "policy": "BackupPolicy-FormaArg",
+          "frequency": "Diario",
+          "retentionDays": 93.0,
+          "rpoThresholdDays": 1.5,
+          "stale": false,
+          "healthy": true
+        },
+        {
           "vm": "Monitores-Grafana-srv",
           "resourceGroup": "monitores-grafana-andino",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:19:45Z",
+          "lastBackupTime": "2026-09-30T04:24:00Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-Monitores-Grafana",
@@ -532,7 +547,7 @@
           "resourceGroup": "greenpos_forma_2.0_arg",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:21:01Z",
+          "lastBackupTime": "2026-09-30T04:26:44Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-forma2",
@@ -547,7 +562,7 @@
           "resourceGroup": "greenpos_colombia",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:22:25Z",
+          "lastBackupTime": "2026-09-30T04:31:15Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BkpPolicy-gpos-col",
@@ -558,16 +573,16 @@
           "healthy": true
         },
         {
-          "vm": "FGARGv2",
-          "resourceGroup": "greenpos_forma_arg",
-          "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+          "vm": "migracion-hubspotmagma-srv",
+          "resourceGroup": "hubspottomagma",
+          "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:25:36Z",
+          "lastBackupTime": "2026-09-30T04:31:23Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
-          "policy": "BackupPolicy-FormaArg",
+          "policy": "EnhancedPolicy-hubspotmagma",
           "frequency": "Diario",
-          "retentionDays": 93.0,
+          "retentionDays": 7.0,
           "rpoThresholdDays": 1.5,
           "stale": false,
           "healthy": true
@@ -577,7 +592,7 @@
           "resourceGroup": "middleware_integracion",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:28:42Z",
+          "lastBackupTime": "2026-09-30T04:33:00Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-Middleware",
@@ -592,7 +607,7 @@
           "resourceGroup": "salvemoslosglaciares.org_camp",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:33:10Z",
+          "lastBackupTime": "2026-09-30T04:34:11Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-glaciares",
@@ -607,7 +622,7 @@
           "resourceGroup": "middleware_integracion",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:35:28Z",
+          "lastBackupTime": "2026-09-30T04:36:30Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-Middleware",
@@ -618,26 +633,11 @@
           "healthy": true
         },
         {
-          "vm": "migracion-hubspotmagma-srv",
-          "resourceGroup": "hubspottomagma",
-          "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-          "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:40:05Z",
-          "healthStatus": "Passed",
-          "protectionStatus": "Healthy",
-          "policy": "EnhancedPolicy-hubspotmagma",
-          "frequency": "Diario",
-          "retentionDays": 7.0,
-          "rpoThresholdDays": 1.5,
-          "stale": false,
-          "healthy": true
-        },
-        {
           "vm": "Greenpos-Chile-srv",
           "resourceGroup": "greenpos_chile",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:40:46Z",
+          "lastBackupTime": "2026-09-30T04:40:47Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BackupPolicy-gposchile",
@@ -652,7 +652,7 @@
           "resourceGroup": "websrv-app-coupon",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:43:00Z",
+          "lastBackupTime": "2026-09-30T04:47:10Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BkpPolicy-webappcupon",
@@ -667,7 +667,7 @@
           "resourceGroup": "piryp-server",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:47:57Z",
+          "lastBackupTime": "2026-09-30T04:49:21Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "EnhancedPolicy-piryp2024",
@@ -682,7 +682,7 @@
           "resourceGroup": "redmine-rt-andino-rg",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T04:50:10Z",
+          "lastBackupTime": "2026-09-30T04:50:17Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "Backupolicy-redmine",
@@ -697,7 +697,7 @@
           "resourceGroup": "losbronces_camp_cl",
           "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T05:56:33Z",
+          "lastBackupTime": "2026-09-30T05:53:15Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BKPPolicy-losbroncesintegrado",
@@ -712,7 +712,7 @@
           "resourceGroup": "integracion_payu_colombia",
           "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
           "lastBackupStatus": "Completed",
-          "lastBackupTime": "2026-09-29T11:10:10Z",
+          "lastBackupTime": "2026-09-30T11:03:01Z",
           "healthStatus": "Passed",
           "protectionStatus": "Healthy",
           "policy": "BkpPolicy-colombiapayu",
@@ -745,22 +745,22 @@
       "pendingPatches": 300,
       "esmRequired": 200,
       "samplePatches": [
-        "libcryptsetup12",
-        "grub-efi-amd64-signed",
-        "sosreport",
-        "apt-utils",
-        "docker-buildx-plugin",
-        "python3-update-manager"
+        "libnode-dev",
+        "node-ip",
+        "node-qs",
+        "nodejs-doc",
+        "node-lodash",
+        "libpython2.7-minimal"
       ],
       "sampleClassifications": [
-        "[\"Other\"]",
         "[\"Security-ESM\"]",
+        "[\"Other\"]",
         "[\"Security\"]"
       ],
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/57.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/58.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T05:45:19Z"
+      "lastModified": "2026-09-30T05:46:36Z"
     },
     {
       "vm": "Webserver-Ar-Dev",
@@ -780,18 +780,18 @@
       "pendingPatches": 204,
       "esmRequired": 204,
       "samplePatches": [
-        "git",
-        "open-vm-tools",
-        "linux-headers-azure",
-        "python-apt-common",
-        "python3.8",
-        "python-pkg-resources"
+        "libisns0",
+        "libtiff5",
+        "udisks2",
+        "libtsan0",
+        "python3-cryptography",
+        "libc-bin"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/71.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/72.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T03:09:20Z"
+      "lastModified": "2026-09-30T03:08:04Z"
     },
     {
       "vm": "snipe-inventario-srv",
@@ -811,12 +811,12 @@
       "pendingPatches": 174,
       "esmRequired": 172,
       "samplePatches": [
-        "libblockdev-part2",
-        "libncursesw6",
-        "python3-requests",
-        "libexpat1",
-        "kmod",
-        "libudev1"
+        "accountsservice",
+        "gzip",
+        "libssl1.1",
+        "linux-tools-common",
+        "php7.4-common",
+        "wget"
       ],
       "sampleClassifications": [
         "[\"Security-ESM\"]",
@@ -825,7 +825,7 @@
       "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/26.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T10:32:07Z"
+      "lastModified": "2026-09-30T10:32:38Z"
     },
     {
       "vm": "Greenpos-Chile-srv",
@@ -845,18 +845,18 @@
       "pendingPatches": 159,
       "esmRequired": 159,
       "samplePatches": [
-        "libkmod2",
-        "libnode64",
-        "nodejs-doc",
-        "nodejs",
-        "libpng16-16",
-        "python3-pyasn1"
+        "libblockdev-fs2",
+        "packagekit-tools",
+        "libblockdev-part2",
+        "libncursesw6",
+        "python3-requests",
+        "libexpat1"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/70.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/71.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T02:56:41Z"
+      "lastModified": "2026-09-30T02:55:48Z"
     },
     {
       "vm": "FGARGv2",
@@ -876,18 +876,18 @@
       "pendingPatches": 156,
       "esmRequired": 156,
       "samplePatches": [
-        "python3-requests",
-        "libncursesw6",
-        "libblockdev-part2",
-        "packagekit-tools",
-        "libblockdev-fs2",
-        "libpam-runtime"
+        "openssl",
+        "libpam-modules",
+        "gpg-wks-client",
+        "libcurl4",
+        "vim-common",
+        "jq"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/513.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/514.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T02:59:37Z"
+      "lastModified": "2026-09-30T02:58:44Z"
     },
     {
       "vm": "middleware-integracion-prod-srv",
@@ -902,17 +902,17 @@
       "patchMode": "Unknown",
       "rebootPending": false,
       "critical": 0,
-      "security": 27,
-      "other": 6,
-      "pendingPatches": 33,
+      "security": 31,
+      "other": 4,
+      "pendingPatches": 35,
       "esmRequired": 0,
       "samplePatches": [
-        "linux-azure-6.8-cloud-tools-6.8.0-1068",
-        "linux-cloud-tools-6.8.0-1068-azure",
-        "containerd.io",
-        "linux-tools-common",
-        "libaudit-common",
-        "libaudit1"
+        "linux-image-6.8.0-1068-azure",
+        "python3-jwt",
+        "linux-tools-azure",
+        "linux-azure",
+        "openssl",
+        "linux-modules-6.8.0-1068-azure"
       ],
       "sampleClassifications": [
         "[\"Security\"]",
@@ -921,7 +921,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "updates_pending",
-      "lastModified": "2026-09-29T12:04:18Z"
+      "lastModified": "2026-09-30T10:15:23Z"
     },
     {
       "vm": "migracion-hubspotmagma-srv",
@@ -941,18 +941,18 @@
       "pendingPatches": 9,
       "esmRequired": 9,
       "samplePatches": [
-        "python3-pip-whl",
-        "nodejs-doc",
-        "libnode-dev",
-        "python3-pip",
         "nodejs",
-        "node-form-data"
+        "python3-pip-whl",
+        "libnode72",
+        "node-lodash-packages",
+        "nodejs-doc",
+        "node-ip"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/453.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/454.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T03:13:23Z"
+      "lastModified": "2026-09-30T03:12:29Z"
     },
     {
       "vm": "salvemoslosglaciares-srv",
@@ -980,10 +980,44 @@
         "nodejs"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/488.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/489.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T04:02:26Z"
+      "lastModified": "2026-09-30T04:01:27Z"
+    },
+    {
+      "vm": "middleware-integracion-srv",
+      "resourceGroup": "middleware_integracion",
+      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+      "location": "eastus",
+      "osType": "Linux",
+      "powerState": "VM running",
+      "assessmentStatus": "Succeeded",
+      "readiness": "Supported",
+      "assessmentMode": "Ready",
+      "patchMode": "Pending",
+      "rebootPending": false,
+      "critical": 0,
+      "security": 5,
+      "other": 4,
+      "pendingPatches": 9,
+      "esmRequired": 0,
+      "samplePatches": [
+        "linux-cloud-tools-common",
+        "libevent-core-2.1-7",
+        "openssl",
+        "containerd.io",
+        "libaudit-common",
+        "chrony"
+      ],
+      "sampleClassifications": [
+        "[\"Security\"]",
+        "[\"Other\"]"
+      ],
+      "error": "0 error/s reported.",
+      "hasError": false,
+      "health": "updates_pending",
+      "lastModified": "2026-09-30T02:21:33Z"
     },
     {
       "vm": "forms-magma-api-srv",
@@ -1003,38 +1037,14 @@
       "pendingPatches": 2,
       "esmRequired": 2,
       "samplePatches": [
-        "python3-pip",
-        "python3-pip-whl"
+        "python3-pip-whl",
+        "python3-pip"
       ],
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/431.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/432.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T04:54:41Z"
-    },
-    {
-      "vm": "FGARG-v2-2024",
-      "resourceGroup": "greenpos_forma_2.0_arg",
-      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "location": "eastus",
-      "osType": "Linux",
-      "powerState": "VM running",
-      "assessmentStatus": "Succeeded",
-      "readiness": "Supported",
-      "assessmentMode": "Ready",
-      "patchMode": "Pending",
-      "rebootPending": false,
-      "critical": 0,
-      "security": 1,
-      "other": 0,
-      "pendingPatches": 1,
-      "esmRequired": 0,
-      "samplePatches": "libevent-core-2.1-7",
-      "sampleClassifications": "[\"Security\"]",
-      "error": "0 error/s reported.",
-      "hasError": false,
-      "health": "updates_pending",
-      "lastModified": "2026-09-29T16:04:37Z"
+      "lastModified": "2026-09-30T04:55:06Z"
     },
     {
       "vm": "Monitores-Grafana-srv",
@@ -1055,10 +1065,10 @@
       "esmRequired": 1,
       "samplePatches": "prometheus-blackbox-exporter",
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/925.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/926.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T03:03:30Z"
+      "lastModified": "2026-09-30T03:02:44Z"
     },
     {
       "vm": "snipeit-prod-srv",
@@ -1079,41 +1089,10 @@
       "esmRequired": 1,
       "samplePatches": "caddy",
       "sampleClassifications": "[\"Security-ESM\"]",
-      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/26.core.log",
+      "error": "1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/27.core.log",
       "hasError": true,
       "health": "assessment_warning",
-      "lastModified": "2026-09-29T05:02:37Z"
-    },
-    {
-      "vm": "middleware-integracion-srv",
-      "resourceGroup": "middleware_integracion",
-      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-      "location": "eastus",
-      "osType": "Linux",
-      "powerState": "VM running",
-      "assessmentStatus": "Succeeded",
-      "readiness": "Supported",
-      "assessmentMode": "Ready",
-      "patchMode": "Pending",
-      "rebootPending": false,
-      "critical": 0,
-      "security": 0,
-      "other": 6,
-      "pendingPatches": 6,
-      "esmRequired": 0,
-      "samplePatches": [
-        "libaudit1",
-        "linux-cloud-tools-common",
-        "chrony",
-        "libaudit-common",
-        "linux-tools-common",
-        "containerd.io"
-      ],
-      "sampleClassifications": "[\"Other\"]",
-      "error": "0 error/s reported.",
-      "hasError": false,
-      "health": "updates_pending",
-      "lastModified": "2026-09-29T04:10:10Z"
+      "lastModified": "2026-09-30T05:03:40Z"
     },
     {
       "vm": "devapp-greenpeace-cl-srv",
@@ -1125,7 +1104,7 @@
       "assessmentStatus": "Failed",
       "readiness": "UnableToDetermine",
       "assessmentMode": "Ready",
-      "patchMode": "Unknown",
+      "patchMode": "",
       "rebootPending": false,
       "critical": 0,
       "security": 0,
@@ -1134,10 +1113,10 @@
       "esmRequired": 0,
       "samplePatches": null,
       "sampleClassifications": null,
-      "error": "2 error/s reported. The latest 2 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/70.core.log",
+      "error": "2 error/s reported. The latest 2 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/71.core.log",
       "hasError": true,
       "health": "assessment_attention",
-      "lastModified": "2026-09-29T15:15:43Z"
+      "lastModified": "2026-09-30T04:07:19Z"
     },
     {
       "vm": "UniFi-Controller-VM",
@@ -1158,10 +1137,10 @@
       "esmRequired": 0,
       "samplePatches": null,
       "sampleClassifications": null,
-      "error": "2 error/s reported. The latest 2 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/132.core.log",
+      "error": "2 error/s reported. The latest 2 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/133.core.log",
       "hasError": true,
       "health": "assessment_attention",
-      "lastModified": "2026-09-29T03:05:31Z"
+      "lastModified": "2026-09-30T03:04:37Z"
     },
     {
       "vm": "ADDI-2024-srv",
@@ -1185,7 +1164,7 @@
       "error": "0 error/s reported",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T02:53:26Z"
+      "lastModified": "2026-09-30T02:52:30Z"
     },
     {
       "vm": "datagpfr",
@@ -1209,7 +1188,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T03:51:44Z"
+      "lastModified": "2026-09-30T03:51:59Z"
     },
     {
       "vm": "Dominga-HDD-VM",
@@ -1233,11 +1212,11 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T05:49:04Z"
+      "lastModified": "2026-09-30T05:50:26Z"
     },
     {
-      "vm": "greenpos-colombia-srv",
-      "resourceGroup": "greenpos_colombia",
+      "vm": "FGARG-v2-2024",
+      "resourceGroup": "greenpos_forma_2.0_arg",
       "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
       "location": "eastus",
       "osType": "Linux",
@@ -1257,7 +1236,31 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T03:55:13Z"
+      "lastModified": "2026-09-30T04:59:04Z"
+    },
+    {
+      "vm": "greenpos-colombia-srv",
+      "resourceGroup": "greenpos_colombia",
+      "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+      "location": "eastus",
+      "osType": "Linux",
+      "powerState": "VM running",
+      "assessmentStatus": "Succeeded",
+      "readiness": "Supported",
+      "assessmentMode": "Ready",
+      "patchMode": "Pending",
+      "rebootPending": false,
+      "critical": 0,
+      "security": 0,
+      "other": 0,
+      "pendingPatches": 0,
+      "esmRequired": 0,
+      "samplePatches": null,
+      "sampleClassifications": null,
+      "error": "0 error/s reported.",
+      "hasError": false,
+      "health": "ok",
+      "lastModified": "2026-09-30T14:57:52Z"
     },
     {
       "vm": "middleware-gui-srv",
@@ -1281,7 +1284,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T03:57:39Z"
+      "lastModified": "2026-09-30T03:57:30Z"
     },
     {
       "vm": "middleware-staging",
@@ -1305,7 +1308,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T05:00:41Z"
+      "lastModified": "2026-09-30T05:01:52Z"
     },
     {
       "vm": "netskope-publisher",
@@ -1329,7 +1332,7 @@
       "error": "0 error/s reported.",
       "hasError": false,
       "health": "ok",
-      "lastModified": "2026-09-29T04:04:35Z"
+      "lastModified": "2026-09-30T04:03:51Z"
     }
   ]
 }
