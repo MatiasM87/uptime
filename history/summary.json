@@ -27,11 +27,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rt.greenpeace.org.ar.ico",
     "slug": "ticketing-app",
     "status": "down",
-    "uptime": "96.69%",
+    "uptime": "96.68%",
     "uptimeDay": "50.41%",
     "uptimeWeek": "50.36%",
     "uptimeMonth": "47.97%",
-    "uptimeYear": "86.60%",
+    "uptimeYear": "86.58%",
     "time": 766,
     "timeDay": 215,
     "timeWeek": 509,
@@ -138,7 +138,7 @@
       "2026-10-01": 827,
       "2026-10-02": 635,
       "2026-10-03": 860,
-      "2026-10-04": 5
+      "2026-10-04": 102
     }
   },
   {
@@ -147,11 +147,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.54%",
+    "uptime": "96.53%",
     "uptimeDay": "50.75%",
     "uptimeWeek": "48.74%",
     "uptimeMonth": "46.58%",
-    "uptimeYear": "86.00%",
+    "uptimeYear": "85.98%",
     "time": 948,
     "timeDay": 191,
     "timeWeek": 695,
@@ -261,7 +261,7 @@
       "2026-10-01": 822,
       "2026-10-02": 817,
       "2026-10-03": 866,
-      "2026-10-04": 0
+      "2026-10-04": 97
     }
   },
   {
@@ -527,11 +527,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "up",
-    "uptime": "90.73%",
+    "uptime": "90.74%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "90.73%",
+    "uptimeYear": "90.74%",
     "time": 597,
     "timeDay": 739,
     "timeWeek": 767,
