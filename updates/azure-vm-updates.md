@@ -1,6 +1,6 @@
 # Azure VM Updates
 
-Generated: 2026-10-06 07:07:31 UTC
+Generated: 2026-10-06 17:42:29 UTC
 
 Source: Azure Resource Graph patchassessmentresources. This report is read-only: it does not install patches and does not reboot VMs.
 
@@ -15,10 +15,10 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | Assessment warnings/errors | 13 |
 | Assessment not succeeded | 3 |
 | VMs with Ubuntu ESM required patches | 10 |
-| Costo mensual AZ acumulado | USD 388.80 |
-| Total security updates | 1020 |
+| Costo mensual AZ acumulado | USD 405.89 |
+| Total security updates | 1023 |
 | Total critical updates | 0 |
-| Total pending patches listed | 1082 |
+| Total pending patches listed | 1085 |
 
 ## Automation and backups
 
@@ -26,7 +26,7 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | --- | ---: |
 | Published runbooks | 9 |
 | Runbooks whose latest job completed | 5 |
-| Runbooks whose latest job failed | 2 |
+| Runbooks whose latest job failed | 3 |
 | Protected VMs | 29 |
 | Backups reported healthy by Azure | 29 |
 | Backups outside their RPO threshold | 11 |
@@ -37,12 +37,12 @@ Source: Azure Resource Graph patchassessmentresources. This report is read-only:
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
 | WebSrv-AppCoupon-srv | Linux | assessment_warning | 260 | 0 | 77 | 201 | False | 2026-10-06T05:47:18Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Webserver-Ar-Dev | Linux | assessment_warning | 205 | 0 | 0 | 205 | False | 2026-10-06T03:08:44Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
-| snipe-inventario-srv | Linux | assessment_warning | 172 | 0 | 2 | 172 | False | 2026-10-05T10:33:08Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| snipe-inventario-srv | Linux | assessment_warning | 172 | 0 | 2 | 172 | False | 2026-10-06T10:33:11Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Greenpos-Chile-srv | Linux | assessment_warning | 159 | 0 | 0 | 159 | False | 2026-10-06T02:57:06Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | FGARGv2 | Linux | assessment_warning | 156 | 0 | 0 | 156 | False | 2026-10-06T03:00:00Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | middleware-integracion-prod-srv | Linux | updates_pending | 31 | 0 | 11 | 0 | False | 2026-10-05T22:56:42Z |  |
 | middleware-integracion-srv | Linux | updates_pending | 15 | 0 | 9 | 0 | False | 2026-10-05T15:11:15Z |  |
-| migracion-hubspotmagma-srv | Linux | assessment_warning | 9 | 0 | 0 | 9 | False | 2026-10-06T03:12:58Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
+| migracion-hubspotmagma-srv | Linux | assessment_warning | 12 | 0 | 0 | 9 | False | 2026-10-06T14:14:38Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | salvemoslosglaciares-srv | Linux | assessment_warning | 9 | 0 | 0 | 9 | False | 2026-10-06T04:01:53Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | forms-magma-api-srv | Linux | assessment_warning | 2 | 0 | 0 | 2 | False | 2026-10-06T04:55:38Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |
 | Monitores-Grafana-srv | Linux | assessment_warning | 1 | 0 | 0 | 1 | False | 2026-10-06T03:03:56Z | 1 error/s reported. The latest 1 error/s are shared in detail. To view all errors, review this log file on the machine: /var/log/azure/Mi... |

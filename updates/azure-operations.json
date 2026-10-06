@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T07:07:00Z",
+  "generatedAt": "2026-10-06T17:42:08Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 2,
+    "failed": 3,
     "notRun": 1,
     "runbooks": [
       {
@@ -43,25 +43,25 @@
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
-        "lastStatus": "Running",
-        "lastStarted": "2026-10-06T04:50:40Z",
-        "lastEnded": ""
+        "lastStatus": "Failed",
+        "lastStarted": "2026-10-06T07:18:28Z",
+        "lastEnded": "2026-10-06T07:18:28Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-05T12:01:04Z",
-        "lastEnded": "2026-10-05T12:03:23Z"
+        "lastStarted": "2026-10-06T12:01:11Z",
+        "lastEnded": "2026-10-06T12:03:31Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-05T12:01:06Z",
-        "lastEnded": "2026-10-05T12:03:33Z"
+        "lastStarted": "2026-10-06T12:01:06Z",
+        "lastEnded": "2026-10-06T12:03:16Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -423,21 +423,6 @@
         "healthy": true
       },
       {
-        "vm": "snipe-inventario-srv",
-        "resourceGroup": "snipe-inventario-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-05T04:19:50Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "backuppolicy-snipe-inventario",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "Webserver-Ar-Dev",
         "resourceGroup": "websrv-dev-app-greenpeace-arg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -449,51 +434,6 @@
         "frequency": "Cada 7 dias",
         "retentionDays": 28.0,
         "rpoThresholdDays": 10.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "Redmine-rt-srv",
-        "resourceGroup": "redmine-rt-andino-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-05T04:53:43Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "Backupolicy-redmine",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "bronces-integrado-wp-srv",
-        "resourceGroup": "losbronces_camp_cl",
-        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-05T05:58:22Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BKPPolicy-losbroncesintegrado",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-05T11:04:00Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
       },
@@ -521,6 +461,21 @@
         "healthStatus": "Passed",
         "protectionStatus": "Healthy",
         "policy": "BackupPolicy-addi-srv",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipe-inventario-srv",
+        "resourceGroup": "snipe-inventario-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-06T04:13:37Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "backuppolicy-snipe-inventario",
         "frequency": "Diario",
         "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
@@ -688,6 +643,51 @@
         "policy": "BkpPolicy-webappcupon",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Redmine-rt-srv",
+        "resourceGroup": "redmine-rt-andino-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-06T04:52:26Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "Backupolicy-redmine",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-06T05:54:54Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-06T11:05:28Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
