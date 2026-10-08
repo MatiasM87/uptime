@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-08T06:44:31Z",
+  "generatedAt": "2026-10-08T18:15:50Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 2,
+    "failed": 3,
     "notRun": 1,
     "runbooks": [
       {
@@ -43,25 +43,25 @@
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
-        "lastStatus": "Running",
-        "lastStarted": "2026-10-08T04:51:12Z",
-        "lastEnded": ""
+        "lastStatus": "Failed",
+        "lastStarted": "2026-10-08T07:18:20Z",
+        "lastEnded": "2026-10-08T07:18:20Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-07T12:01:06Z",
-        "lastEnded": "2026-10-07T12:02:56Z"
+        "lastStarted": "2026-10-08T12:01:11Z",
+        "lastEnded": "2026-10-08T12:04:01Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-07T12:01:02Z",
-        "lastEnded": "2026-10-07T12:03:18Z"
+        "lastStarted": "2026-10-08T12:00:47Z",
+        "lastEnded": "2026-10-08T12:03:01Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -438,36 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "bronces-integrado-wp-srv",
-        "resourceGroup": "losbronces_camp_cl",
-        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-07T05:50:26Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BKPPolicy-losbroncesintegrado",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-07T11:04:08Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +658,36 @@
         "policy": "EnhancedPolicy-piryp2024",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-08T05:57:59Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-08T11:11:21Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
