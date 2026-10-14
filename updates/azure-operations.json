@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-13T18:44:00Z",
+  "generatedAt": "2026-10-14T05:33:20Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 3,
+    "failed": 2,
     "notRun": 1,
     "runbooks": [
       {
@@ -28,24 +28,24 @@
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-10-13T03:13:14Z",
-        "lastEnded": "2026-10-13T03:13:14Z"
+        "lastStarted": "2026-10-14T03:56:09Z",
+        "lastEnded": "2026-10-14T03:56:09Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-10-13T05:52:58Z",
-        "lastEnded": "2026-10-13T05:52:58Z"
+        "lastStarted": "2026-10-14T04:08:27Z",
+        "lastEnded": "2026-10-14T04:08:27Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
-        "lastStatus": "Failed",
-        "lastStarted": "2026-10-13T05:50:05Z",
-        "lastEnded": "2026-10-13T05:50:05Z"
+        "lastStatus": "Running",
+        "lastStarted": "2026-10-14T04:50:37Z",
+        "lastEnded": ""
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-12T23:00:57Z",
-        "lastEnded": "2026-10-12T23:02:09Z"
+        "lastStarted": "2026-10-13T23:00:59Z",
+        "lastEnded": "2026-10-13T23:02:29Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-12T23:01:48Z",
-        "lastEnded": "2026-10-12T23:02:59Z"
+        "lastStarted": "2026-10-13T23:01:22Z",
+        "lastEnded": "2026-10-13T23:02:56Z"
       }
     ]
   },
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "snipeit-prod-srv",
-        "resourceGroup": "snipeit-prod-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-13T03:34:45Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "DefaultPolicy",
-        "frequency": "Diario",
-        "retentionDays": 30.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipe-inventario-srv",
         "resourceGroup": "snipe-inventario-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +673,21 @@
         "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-14T03:34:25Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
