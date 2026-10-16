@@ -147,11 +147,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.51%",
-    "uptimeDay": "44.42%",
-    "uptimeWeek": "42.84%",
-    "uptimeMonth": "46.60%",
-    "uptimeYear": "85.76%",
+    "uptime": "96.50%",
+    "uptimeDay": "34.87%",
+    "uptimeWeek": "41.48%",
+    "uptimeMonth": "46.29%",
+    "uptimeYear": "85.73%",
     "time": 942,
     "timeDay": 303,
     "timeWeek": 501,
@@ -260,7 +260,7 @@
       "2026-10-13": 839,
       "2026-10-14": 794,
       "2026-10-15": 709,
-      "2026-10-16": 800
+      "2026-10-16": 937
     }
   },
   {
@@ -531,11 +531,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "up",
-    "uptime": "91.98%",
+    "uptime": "91.99%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "91.98%",
+    "uptimeYear": "91.99%",
     "time": 611,
     "timeDay": 751,
     "timeWeek": 743,
@@ -727,19 +727,19 @@
     "url": "https://www-dev.app.greenpeace.co/",
     "icon": "https://icons.duckduckgo.com/ip3/www-dev.app.greenpeace.co.ico",
     "slug": "dev-app-greenpeace-co",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.93%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 136,
-    "timeDay": 106,
-    "timeWeek": 133,
-    "timeMonth": 149,
-    "timeYear": 136,
+    "status": "up",
+    "uptime": "99.90%",
+    "uptimeDay": "90.44%",
+    "uptimeWeek": "98.63%",
+    "uptimeMonth": "99.69%",
+    "uptimeYear": "99.90%",
+    "time": 137,
+    "timeDay": 148,
+    "timeWeek": 143,
+    "timeMonth": 152,
+    "timeYear": 137,
     "dailyMinutesDown": {
-      "2026-10-16": 1
+      "2026-10-16": 138
     }
   },
   {
@@ -747,19 +747,19 @@
     "url": "https://www-dev.app.greenpeace.org.ar/",
     "icon": "https://icons.duckduckgo.com/ip3/www-dev.app.greenpeace.org.ar.ico",
     "slug": "dev-app-greenpeace-ar",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 272,
-    "timeDay": 239,
-    "timeWeek": 253,
-    "timeMonth": 257,
-    "timeYear": 272,
+    "status": "up",
+    "uptime": "99.90%",
+    "uptimeDay": "90.46%",
+    "uptimeWeek": "98.64%",
+    "uptimeMonth": "99.69%",
+    "uptimeYear": "99.90%",
+    "time": 273,
+    "timeDay": 285,
+    "timeWeek": 266,
+    "timeMonth": 260,
+    "timeYear": 273,
     "dailyMinutesDown": {
-      "2026-10-16": 1
+      "2026-10-16": 137
     }
   }
 ]
