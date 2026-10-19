@@ -31,7 +31,7 @@
     "uptimeDay": "48.96%",
     "uptimeWeek": "43.12%",
     "uptimeMonth": "46.94%",
-    "uptimeYear": "86.33%",
+    "uptimeYear": "86.31%",
     "time": 739,
     "timeDay": 572,
     "timeWeek": 426,
@@ -138,7 +138,7 @@
       "2026-10-16": 804,
       "2026-10-17": 716,
       "2026-10-18": 755,
-      "2026-10-19": 156
+      "2026-10-19": 279
     }
   },
   {
@@ -147,11 +147,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/inventario.voluntariosgreenpeace.cl.ico",
     "slug": "inventario-app",
     "status": "down",
-    "uptime": "96.52%",
+    "uptime": "96.51%",
     "uptimeDay": "49.30%",
     "uptimeWeek": "40.55%",
     "uptimeMonth": "46.15%",
-    "uptimeYear": "85.78%",
+    "uptimeYear": "85.76%",
     "time": 938,
     "timeDay": 535,
     "timeWeek": 428,
@@ -259,7 +259,7 @@
       "2026-10-16": 1091,
       "2026-10-17": 711,
       "2026-10-18": 751,
-      "2026-10-19": 151
+      "2026-10-19": 274
     }
   },
   {
@@ -502,17 +502,17 @@
     "url": "https://noadominga.cl/",
     "icon": "https://icons.duckduckgo.com/ip3/noadominga.cl.ico",
     "slug": "no-a-dominga",
-    "status": "up",
+    "status": "down",
     "uptime": "95.30%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "85.50%",
     "uptimeYear": "95.30%",
-    "time": 2762,
-    "timeDay": 2331,
-    "timeWeek": 2298,
-    "timeMonth": 2132,
-    "timeYear": 2762,
+    "time": 2742,
+    "timeDay": 1401,
+    "timeWeek": 2069,
+    "timeMonth": 2082,
+    "timeYear": 2742,
     "dailyMinutesDown": {
       "2026-08-01": 64,
       "2026-08-07": 63,
@@ -521,7 +521,8 @@
       "2026-10-07": 1440,
       "2026-10-06": 1440,
       "2026-10-05": 1440,
-      "2026-10-04": 901
+      "2026-10-04": 901,
+      "2026-10-19": 1
     }
   },
   {
@@ -530,11 +531,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/animalesenpeligro.org.ico",
     "slug": "animales-en-peligro",
     "status": "up",
-    "uptime": "92.18%",
+    "uptime": "92.19%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "92.18%",
+    "uptimeYear": "92.19%",
     "time": 613,
     "timeDay": 849,
     "timeWeek": 736,
@@ -595,11 +596,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "up",
-    "uptime": "95.84%",
+    "uptime": "95.85%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "95.84%",
+    "uptimeYear": "95.85%",
     "time": 621,
     "timeDay": 835,
     "timeWeek": 637,
