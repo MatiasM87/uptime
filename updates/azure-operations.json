@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-20T16:08:11Z",
+  "generatedAt": "2026-10-21T05:26:42Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
     "completed": 5,
-    "failed": 3,
+    "failed": 2,
     "notRun": 1,
     "runbooks": [
       {
@@ -28,24 +28,24 @@
         "name": "Patch-GP-VMs-Batch1",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-10-20T03:14:54Z",
-        "lastEnded": "2026-10-20T03:14:54Z"
+        "lastStarted": "2026-10-21T03:14:49Z",
+        "lastEnded": "2026-10-21T03:14:49Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch2",
         "state": "Published",
         "lastStatus": "Failed",
-        "lastStarted": "2026-10-20T04:51:40Z",
-        "lastEnded": "2026-10-20T04:51:40Z"
+        "lastStarted": "2026-10-21T04:54:14Z",
+        "lastEnded": "2026-10-21T04:54:14Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Patch-GP-VMs-Batch3",
         "state": "Published",
-        "lastStatus": "Failed",
-        "lastStarted": "2026-10-20T05:51:04Z",
-        "lastEnded": "2026-10-20T05:51:04Z"
+        "lastStatus": "Running",
+        "lastStarted": "2026-10-21T04:50:57Z",
+        "lastEnded": ""
       },
       {
         "account": "FR-MAIA-Automation",
@@ -68,16 +68,16 @@
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-19T23:01:00Z",
-        "lastEnded": "2026-10-19T23:02:38Z"
+        "lastStarted": "2026-10-20T23:00:53Z",
+        "lastEnded": "2026-10-20T23:02:03Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-10-19T23:00:54Z",
-        "lastEnded": "2026-10-19T23:02:06Z"
+        "lastStarted": "2026-10-20T23:02:15Z",
+        "lastEnded": "2026-10-20T23:03:30Z"
       }
     ]
   },
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "snipeit-prod-srv",
-        "resourceGroup": "snipeit-prod-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-20T03:39:24Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "DefaultPolicy",
-        "frequency": "Diario",
-        "retentionDays": 30.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "ADDI-2024-srv",
         "resourceGroup": "addi-server",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +673,21 @@
         "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-21T03:32:04Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
