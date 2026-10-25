@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:10:04Z",
+  "generatedAt": "2026-10-25T05:26:09Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -438,21 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "snipeit-prod-srv",
-        "resourceGroup": "snipeit-prod-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-10-24T03:35:15Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "DefaultPolicy",
-        "frequency": "Diario",
-        "retentionDays": 30.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipe-inventario-srv",
         "resourceGroup": "snipe-inventario-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +673,21 @@
         "policy": "BkpPolicy-colombiapayu",
         "frequency": "Diario",
         "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipeit-prod-srv",
+        "resourceGroup": "snipeit-prod-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-10-25T03:31:04Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "DefaultPolicy",
+        "frequency": "Diario",
+        "retentionDays": 30.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
