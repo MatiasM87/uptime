@@ -30,7 +30,7 @@
     "uptimeDay": "49.47%",
     "uptimeWeek": "43.52%",
     "uptimeMonth": "46.69%",
-    "uptimeYear": "86.17%",
+    "uptimeYear": "86.15%",
     "time": 717,
     "timeDay": 361,
     "timeWeek": 567,
@@ -136,7 +136,7 @@
       "2026-10-24": 729,
       "2026-10-25": 798,
       "2026-10-26": 843,
-      "2026-10-27": 5
+      "2026-10-27": 102
     }
   },
   {
@@ -146,10 +146,10 @@
     "slug": "inventario-app",
     "status": "down",
     "uptime": "96.50%",
-    "uptimeDay": "99.97%",
+    "uptimeDay": "93.23%",
     "uptimeWeek": "50.74%",
     "uptimeMonth": "47.49%",
-    "uptimeYear": "85.63%",
+    "uptimeYear": "85.62%",
     "time": 926,
     "timeDay": 0,
     "timeWeek": 619,
@@ -257,7 +257,7 @@
       "2026-10-23": 838,
       "2026-10-24": 724,
       "2026-10-25": 792,
-      "2026-10-27": 0
+      "2026-10-27": 97
     }
   },
   {
@@ -514,7 +514,7 @@
     "status": "up",
     "uptime": "92.40%",
     "uptimeDay": "100.00%",
-    "uptimeWeek": "63.75%",
+    "uptimeWeek": "64.72%",
     "uptimeMonth": "74.31%",
     "uptimeYear": "92.40%",
     "time": 2829,
@@ -610,11 +610,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/respetalaamazonia.org.ico",
     "slug": "respeta-la-amazonia",
     "status": "up",
-    "uptime": "95.87%",
+    "uptime": "95.88%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "95.73%",
     "uptimeMonth": "99.02%",
-    "uptimeYear": "95.87%",
+    "uptimeYear": "95.88%",
     "time": 946,
     "timeDay": 550,
     "timeWeek": 4872,
