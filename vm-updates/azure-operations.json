@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T07:19:42Z",
+  "generatedAt": "2026-11-03T18:54:41Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -52,16 +52,16 @@
         "name": "Start-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-02T12:01:02Z",
-        "lastEnded": "2026-11-02T12:03:16Z"
+        "lastStarted": "2026-11-03T12:00:54Z",
+        "lastEnded": "2026-11-03T12:03:38Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-02T12:01:15Z",
-        "lastEnded": "2026-11-02T12:03:37Z"
+        "lastStarted": "2026-11-03T12:00:49Z",
+        "lastEnded": "2026-11-03T12:03:03Z"
       },
       {
         "account": "FR-MAIA-Automation",
@@ -423,21 +423,6 @@
         "healthy": true
       },
       {
-        "vm": "snipe-inventario-srv",
-        "resourceGroup": "snipe-inventario-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-02T04:17:19Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "backuppolicy-snipe-inventario",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "Webserver-Ar-Dev",
         "resourceGroup": "websrv-dev-app-greenpeace-arg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -453,51 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "Redmine-rt-srv",
-        "resourceGroup": "redmine-rt-andino-rg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-02T04:54:15Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "Backupolicy-redmine",
-        "frequency": "Diario",
-        "retentionDays": 31.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "bronces-integrado-wp-srv",
-        "resourceGroup": "losbronces_camp_cl",
-        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-02T05:57:47Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BKPPolicy-losbroncesintegrado",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-02T11:04:23Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -508,6 +448,21 @@
         "policy": "DefaultPolicy",
         "frequency": "Diario",
         "retentionDays": 30.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "snipe-inventario-srv",
+        "resourceGroup": "snipe-inventario-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-03T04:13:21Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "backuppolicy-snipe-inventario",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
@@ -678,6 +633,21 @@
         "healthy": true
       },
       {
+        "vm": "Redmine-rt-srv",
+        "resourceGroup": "redmine-rt-andino-rg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-03T04:44:14Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "Backupolicy-redmine",
+        "frequency": "Diario",
+        "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
         "vm": "Piryp-admin-2024-srv",
         "resourceGroup": "piryp-server",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +658,36 @@
         "policy": "EnhancedPolicy-piryp2024",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-03T05:54:39Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-03T11:08:59Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
