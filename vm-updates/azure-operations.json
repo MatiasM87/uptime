@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:18:18Z",
+  "generatedAt": "2026-11-15T18:19:31Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -438,36 +438,6 @@
         "healthy": true
       },
       {
-        "vm": "bronces-integrado-wp-srv",
-        "resourceGroup": "losbronces_camp_cl",
-        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-14T05:57:00Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BKPPolicy-losbroncesintegrado",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-14T11:11:48Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +658,36 @@
         "policy": "BkpPolicy-webappcupon",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-15T05:50:06Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-15T11:08:41Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
