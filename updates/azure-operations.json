@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T08:21:59Z",
+  "generatedAt": "2026-11-23T23:10:30Z",
   "automation": {
     "accounts": 1,
     "publishedRunbooks": 9,
@@ -52,32 +52,32 @@
         "name": "Start-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-20T12:00:45Z",
-        "lastEnded": "2026-11-20T12:03:34Z"
+        "lastStarted": "2026-11-23T12:01:24Z",
+        "lastEnded": "2026-11-23T12:03:11Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Start-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-20T12:01:15Z",
-        "lastEnded": "2026-11-20T12:03:37Z"
+        "lastStarted": "2026-11-23T12:00:47Z",
+        "lastEnded": "2026-11-23T12:03:06Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-OpenVPN-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-20T23:01:22Z",
-        "lastEnded": "2026-11-20T23:02:36Z"
+        "lastStarted": "2026-11-23T23:01:43Z",
+        "lastEnded": "2026-11-23T23:03:09Z"
       },
       {
         "account": "FR-MAIA-Automation",
         "name": "Stop-VM",
         "state": "Published",
         "lastStatus": "Completed",
-        "lastStarted": "2026-11-20T23:01:47Z",
-        "lastEnded": "2026-11-20T23:04:11Z"
+        "lastStarted": "2026-11-23T23:01:39Z",
+        "lastEnded": "2026-11-23T23:02:54Z"
       }
     ]
   },
@@ -423,81 +423,6 @@
         "healthy": true
       },
       {
-        "vm": "Webserver-Ar-Dev",
-        "resourceGroup": "websrv-dev-app-greenpeace-arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-16T04:24:57Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-lwaxtjjf",
-        "frequency": "Cada 7 dias",
-        "retentionDays": 28.0,
-        "rpoThresholdDays": 10.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "FGARGv2",
-        "resourceGroup": "greenpos_forma_arg",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-22T04:22:59Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BackupPolicy-FormaArg",
-        "frequency": "Diario",
-        "retentionDays": 93.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "Greenpos-Chile-srv",
-        "resourceGroup": "greenpos_chile",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-22T04:31:41Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BackupPolicy-gposchile",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "bronces-integrado-wp-srv",
-        "resourceGroup": "losbronces_camp_cl",
-        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-22T05:53:15Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BKPPolicy-losbroncesintegrado",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
-        "vm": "integracion-payu-colombia-srv",
-        "resourceGroup": "integracion_payu_colombia",
-        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
-        "lastBackupStatus": "Completed",
-        "lastBackupTime": "2026-11-22T11:05:58Z",
-        "healthStatus": "Passed",
-        "protectionStatus": "Healthy",
-        "policy": "BkpPolicy-colombiapayu",
-        "frequency": "Diario",
-        "retentionDays": 62.0,
-        "rpoThresholdDays": 1.5,
-        "stale": false,
-        "healthy": true
-      },
-      {
         "vm": "snipeit-prod-srv",
         "resourceGroup": "snipeit-prod-rg",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -554,6 +479,36 @@
         "frequency": "Diario",
         "retentionDays": 31.0,
         "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "FGARGv2",
+        "resourceGroup": "greenpos_forma_arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-23T04:26:07Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-FormaArg",
+        "frequency": "Diario",
+        "retentionDays": 93.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "Webserver-Ar-Dev",
+        "resourceGroup": "websrv-dev-app-greenpeace-arg",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-23T04:27:42Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-lwaxtjjf",
+        "frequency": "Cada 7 dias",
+        "retentionDays": 28.0,
+        "rpoThresholdDays": 10.5,
         "stale": false,
         "healthy": true
       },
@@ -648,6 +603,21 @@
         "healthy": true
       },
       {
+        "vm": "Greenpos-Chile-srv",
+        "resourceGroup": "greenpos_chile",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-23T04:43:06Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BackupPolicy-gposchile",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
         "vm": "WebSrv-AppCoupon-srv",
         "resourceGroup": "websrv-app-coupon",
         "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
@@ -688,6 +658,36 @@
         "policy": "EnhancedPolicy-piryp2024",
         "frequency": "Diario",
         "retentionDays": 31.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "bronces-integrado-wp-srv",
+        "resourceGroup": "losbronces_camp_cl",
+        "subscriptionId": "70b01afc-3cbb-4bfc-89ff-a30126b8daaa",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-23T05:59:07Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BKPPolicy-losbroncesintegrado",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
+        "rpoThresholdDays": 1.5,
+        "stale": false,
+        "healthy": true
+      },
+      {
+        "vm": "integracion-payu-colombia-srv",
+        "resourceGroup": "integracion_payu_colombia",
+        "subscriptionId": "ce31d5ca-bfab-4bd4-836d-de818b73f22d",
+        "lastBackupStatus": "Completed",
+        "lastBackupTime": "2026-11-23T11:06:03Z",
+        "healthStatus": "Passed",
+        "protectionStatus": "Healthy",
+        "policy": "BkpPolicy-colombiapayu",
+        "frequency": "Diario",
+        "retentionDays": 62.0,
         "rpoThresholdDays": 1.5,
         "stale": false,
         "healthy": true
